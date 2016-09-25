@@ -1,0 +1,682 @@
+@font-face {
+font-family: 'Trebuchet MS';
+font-style: normal;
+font-weight: normal;
+src: local('Trebuchet MS'), url('trebuc.woff') format('woff');
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../font/MyriadProBold/MyriadProBold.eot");
+    src: url("../font/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../font/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../font/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wrapper {
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: #00bff3;
+    padding-top: 30px;
+    .lenta {
+        width: 1040px;
+        margin: 0 auto;
+   
+    .contact {
+        float: left;
+        display: inline-block;
+        font-family: Arial,sans-serif;
+        font-size: 16px;
+        color: white;
+        padding-top: 10px;
+    }
+        
+    .logo {
+        background: transparent url(../img/logo.png) no-repeat;
+        float: left;
+        display: inline-block;
+        position: absolute;
+        width: 189px;
+        height: 53px;
+        padding-left: 142px;
+    }
+    
+    .name {
+        width: 146px;
+        margin-left: 190px;
+    }
+    
+    .tel {
+        margin-left: 180px;
+        font-size: 30px;
+    }
+    
+    .call {
+        text-decoration:none;
+        border-bottom: 1px dashed white;
+        margin-left: 21px;
+    }
+    
+    .soc {
+        position: relative;
+        margin-left: 60px;
+        float: left;
+        
+        .soc-icon {
+            border-radius: 27px;
+            border: 1px white;
+            background-color: white;
+            height: 27px;
+            width: 27px;
+            color:#00bff3;
+            font-size: 21px;
+            padding-left: 0px;
+        }
+        
+        .icon-gplus {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
+    }
+}
+
+header {
+    background: transparent url(../img/bg-header.png)  top no-repeat;
+    background-size: cover 549px;
+    margin: 0 auto;
+    width: 1040px;
+    height: 728px;
+    
+    .circle {
+        position: relative;
+        top:270px;
+        left:28px;
+        background-color: #ccba00;
+        opacity: 0.8;
+        width: 230px;
+        height: 230px;
+        border-radius: 225px;
+        
+        .tour {
+            display: inline-block;
+            width: 144px;
+            position: relative;
+            top: 28px;
+            left: 40px;
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 31px;
+            font-weight: bold;
+            text-align: center;
+            
+            .kod {
+                font-size: 16px;
+            }
+            
+            .kod--number {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    
+    .hotel {
+        position: relative;
+        display: inline-block;
+        top: 350px;
+        .name--hotel {
+            font-family: "Trebuchet MS", sans-serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+    
+    
+        .icon-star {
+            color: #ffc20e;
+        }
+        .eval {
+            display: inline-block;
+            width: 545px;
+            .hotel--evalution {
+                display: inline-block;
+                width: 98px;
+                font:bold 14px "Arial",sans-serif;
+            }
+        
+            a {
+                color: #777777;
+                text-decoration: none;
+            }
+        
+            ul {
+                display: inline-block;
+                width: 418px;
+                padding-left: 0;
+            }
+            .ev {
+                display: inline-block;
+                float: left;
+                margin-right: 10px;
+                list-style: none;
+                width: 50px;
+                height: 50px;
+                font:bold 18px "Arial",sans-serif;
+            }
+        
+            .ev--first {
+                width: 98px;
+                margin-right: 15px;
+            }
+            .ev--second {
+                font:bold 24px "Trebuchet MS", sans-serif;
+                margin-right: 15px;
+                padding-top: 5px;
+                background: #00bff3;
+                color: white;
+                text-align: center;
+                height: 45px;
+            }
+            
+            .kategor {
+                color: #777777;
+                font-size: 12px;
+            }
+    }
+}
+}
+    
+    .sun--day {
+        position: relative;
+        top: 145px;
+        left: 770px;
+        display: inline-block;
+        width: 160px;
+        height: 150px;
+        font:30px "Arial",sans-serif;
+        text-align: center;
+        .sun--day_kol {
+            font:100px "Trebuchet MS", sans-serif;
+            color: #777777;
+            
+        }
+        
+    }
+
+
+.content--extrime {
+    max-width: 1040px;
+    height: 420px;
+    margin: 0 auto;
+    
+    .extrime--first {
+        margin-right: 35px;
+    }
+    
+    .extrime {
+        display: inline-block;
+        float: left;
+    
+        .image--extrime {
+            display: inline-block;
+            width: 502px;
+            height: 280px;
+            background-size: cover;
+        }
+    
+        .image--extrime1 {
+            background: transparent url(../img/extrim1.png) no-repeat;
+        }
+    
+        .image--extrime2 {
+            background: transparent url(../img/extrim2.png)  no-repeat;
+        }
+        
+        .name--extrime {
+             font:bold 30px "Trebuchet MS", sans-serif; 
+             text-decoration: none;
+             border-bottom: 1px solid #cccccc;
+        }
+        
+        .more {
+            font: 14px "Arial", sans-serif; 
+            color: #777777;
+        }
+        
+        .cena--extrime {
+            position: relative;
+            top: -55px;
+            left: 395px;
+            font:bold 50px "Trebuchet MS", sans-serif; 
+        }
+        
+        .cena--extrime2 {
+            left: 425px;
+        }
+        
+        .sale {
+            position: relative;
+            top: -60px;
+            left: 465px;
+            font:bold 20px "Trebuchet MS", sans-serif;
+            color: #777777;
+            
+        }
+        
+        .line {
+            color:red;
+            text-decoration:line-through;
+        }
+    }
+}
+
+.content--text {
+    max-width: 1040px;
+    height: 1200px;
+    margin: 0 auto;
+    
+    .h1--main {
+        font:bold 50px "Trebuchet MS", sans-serif;
+    }
+    
+    .column--left {
+        width: 76%;
+    }
+    
+    .column--right {
+        width: 24%;
+        
+        h1 {
+            font:bold 100px "Trebuchet MS", sans-serif;
+            color: #777777;
+            margin-bottom: 0px;
+            margin-top: 145px;
+            margin-left: 45px;
+        }
+        
+        h2 {
+            font:bold 30px "Trebuchet MS", sans-serif;
+            margin: 0;
+            margin-left: 45px;
+        }
+        
+        .txt-right {
+            display: inline-block;
+            width: 203px;
+            color: #777777;
+            margin-left: 45px;
+            font:  18px "MyriadProBold", sans-serif;
+        }
+    }
+    
+    .column {
+        display: inline-block;
+        float: left;
+    }
+    
+    h2 {
+       font: 14px "MyriadProBold", sans-serif; 
+    }
+    
+    .txt {
+        font: 14px "MyriadProRegular", sans-serif; 
+    }
+    
+    h3 {
+        font: 18px "MyriadProBold", sans-serif; 
+    }
+    
+    .txt--blue {
+        display: inline-block;
+        border-left:2px solid #33ccf5;
+        background: #f0fbfe;
+        margin-left: 26px;
+        padding-left: 10px;
+    }
+    .text {
+        padding-left: 20px;
+    }
+    
+    h4,
+    .text--item {
+        font:  14px "MyriadProRegular", sans-serif;
+        list-style: none;
+    }
+    
+    ul li:before {
+        content:"";
+    }
+    
+    table {
+        width: 748px;
+        border-collapse: collapse;
+    }
+    
+    td {
+        width: 124px;
+        font: 14px "Arial", sans-serif;
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    
+    .main--line {
+        background: #ebebeb;
+    }
+    
+    .title {
+        font:bold 12px "Arial", sans-serif;
+        height: 30px;
+        border-bottom: 1px solid #777777;
+        width: 124px;
+        text-align: left;
+    }
+    
+   
+    .ttt1 {
+        margin-left: 105px;
+    }
+    
+    .title--left {
+        border-bottom: 1px solid #ebebeb;
+        width: 124px;
+        height: 30px;
+        margin-right: 0;
+        font-size: 12px;
+        
+    }
+    
+    .secondary {
+         width: 124px;
+    }
+    
+    
+}
+
+footer {
+    max-width: 1040px;
+    margin: 0 auto;
+    border-top: 1px solid #777777;
+    height: 55px;
+    .footer--text {
+        display: inline-block;
+        float: left;
+        padding-top: 15px;
+        font:12px "Arial", sans-serif;
+        
+    }
+    
+    .link--footer {
+        color: #00a2ff;
+    }
+    
+    .soc {
+        float: left;
+        margin-left: 550px;
+        padding-top: 15px;
+        .soc-icon {
+            border-radius: 27px;
+            border: 1px white;
+            background-color:#00bff3; 
+            height: 29px;
+            width: 29px;
+            color:white;
+            font-size: 21px;
+            padding-left: 0px;
+        }
+        
+        .icon-gplus {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+.wrapper {
+        max-width: 768px;
+        margin: 0 auto;
+}
+    
+    nav {
+        padding-top: 5px;
+        width: 100%;
+        height: 90px;
+        
+        .lenta {
+            width: 100%;
+            
+             .tel {
+                margin-left: 0px;
+                font-size: 20px;
+            }
+            
+            .soc {
+                margin-top: 8px;
+                margin-left: 20px;
+             }
+        }
+       
+    }
+    
+    .content--extrime {
+       height: 800px;
+    }
+    
+    .content--text {
+        height: 1300px;
+    .h1--main {
+        font-size: 30px;
+        }
+    .column {
+        width: 100%;   
+    }
+  
+    .column--right {
+         
+        h1,
+        h2,
+        .txt-right {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 10px;
+            font-size: 18px;
+        } 
+    }
+}
+    
+footer {
+        .soc {
+            margin-left: 270px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:320px) {
+.wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+}
+    
+
+    nav {
+        padding-top: 5px;
+        width: 100%;
+        height: 120px;
+        
+        .lenta {
+            width: 100%;
+            
+             .tel {
+                margin-left: 0px;
+                font-size: 20px;
+            }
+            
+            .soc {
+                margin-top: 8px;
+                
+             }
+        }
+ }
+    
+    
+header {
+    
+    .hotel {
+        top: 260px;
+        .eval {
+             display: block;
+             width: 320px;
+            ul {
+                width: 320px;
+            }
+            
+            .ev {
+                margin-right: 2px;
+                width:45px;
+                height: 35px;
+                font-size: 14px;
+            }
+            
+            .ev--first {
+                width: 40px;
+                .hotel--evalution {
+                    width: 50px;
+                    font-size: 12px;
+                }
+            }
+        
+        
+        
+        .ev--second {
+            font-size: 18px;
+            margin-left: 2px;
+            margin-right: 0px;
+            height: 30px;
+            width: 30px;
+        }
+    }
+         .name--hotel {
+            font-size: 20px;
+        }
+    }
+}
+    
+
+.content--extrime {
+    max-width: 320px;
+    .extrime--first {
+        margin-right:0;
+    }
+    
+    .extrime {
+        .image--extrime {
+           width: 320px;
+        }
+    
+        .name--extrime {
+            font-size: 20px;
+        }
+        
+        .more {
+            font: 14px "Arial", sans-serif; 
+            color: #777777;
+        }
+        
+        .cena--extrime { 
+            top: -45px;
+            left: 230px;
+            font-size: 40px;
+        }
+        
+        .cena--extrime2 {
+            left: 250px;
+        }
+        
+        .sale {
+            top: -50px;
+            left: 285px;
+            font-size: 16px;
+            
+        }
+        
+        .line {
+            color:red;
+            text-decoration:line-through;
+        }
+    }
+    
+    
+}
+.content--text {
+    .h1--main {
+            font-size: 30px;
+    }
+    .column {
+        width: 100%;
+    }
+    
+    .column--left {
+        
+        table {
+            width: 100%;
+        }
+        
+        .title,
+        .title--left {
+            font-size: 9px;
+        }
+        
+        .secondary {
+            font-size: 10px;
+        }
+        
+    }
+    
+    .column--right {
+         
+        h1,
+        h2,
+        .txt-right {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 10px;
+            font-size: 18px;
+        } 
+    }
+}
+    
+footer {
+    height: 50px;
+    border: 0;
+    .footer--text {
+        border-top: 1px solid #777777;
+    }
+    .soc {
+        margin-left: 0;
+    }
+}
+}
+
+
+

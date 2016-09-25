@@ -1,0 +1,442 @@
+@font-face {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trebuchet MS"), url("trebuc.woff") format("woff"); }
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "MyriadProBold"; */
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../font/MyriadProBold/MyriadProBold.eot");
+  src: url("../font/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProBold/MyriadProBold.woff") format("woff"), url("../font/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+.wrapper {
+  min-width: 1024px;
+  margin: 0 auto; }
+
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #00bff3;
+  padding-top: 30px; }
+  nav .lenta {
+    width: 1040px;
+    margin: 0 auto; }
+    nav .lenta .contact {
+      float: left;
+      display: inline-block;
+      font-family: Arial,sans-serif;
+      font-size: 16px;
+      color: white;
+      padding-top: 10px; }
+    nav .lenta .logo {
+      background: transparent url(../img/logo.png) no-repeat;
+      float: left;
+      display: inline-block;
+      position: absolute;
+      width: 189px;
+      height: 53px;
+      padding-left: 142px; }
+    nav .lenta .name {
+      width: 146px;
+      margin-left: 190px; }
+    nav .lenta .tel {
+      margin-left: 180px;
+      font-size: 30px; }
+    nav .lenta .call {
+      text-decoration: none;
+      border-bottom: 1px dashed white;
+      margin-left: 21px; }
+    nav .lenta .soc {
+      position: relative;
+      margin-left: 60px;
+      float: left; }
+      nav .lenta .soc .soc-icon {
+        border-radius: 27px;
+        border: 1px white;
+        background-color: white;
+        height: 27px;
+        width: 27px;
+        color: #00bff3;
+        font-size: 21px;
+        padding-left: 0px; }
+      nav .lenta .soc .icon-gplus {
+        margin-left: 12px;
+        margin-right: 12px; }
+
+header {
+  background: transparent url(../img/bg-header.png) top no-repeat;
+  background-size: cover 549px;
+  margin: 0 auto;
+  width: 1040px;
+  height: 728px; }
+  header .circle {
+    position: relative;
+    top: 270px;
+    left: 28px;
+    background-color: #ccba00;
+    opacity: 0.8;
+    width: 230px;
+    height: 230px;
+    border-radius: 225px; }
+    header .circle .tour {
+      display: inline-block;
+      width: 144px;
+      position: relative;
+      top: 28px;
+      left: 40px;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 31px;
+      font-weight: bold;
+      text-align: center; }
+      header .circle .tour .kod {
+        font-size: 16px; }
+      header .circle .tour .kod--number {
+        background-color: black;
+        color: white; }
+  header .hotel {
+    position: relative;
+    display: inline-block;
+    top: 350px; }
+    header .hotel .name--hotel {
+      font-family: "Trebuchet MS", sans-serif;
+      font-weight: bold;
+      font-size: 35px; }
+    header .hotel .icon-star {
+      color: #ffc20e; }
+    header .hotel .eval {
+      display: inline-block;
+      width: 545px; }
+      header .hotel .eval .hotel--evalution {
+        display: inline-block;
+        width: 98px;
+        font: bold 14px "Arial",sans-serif; }
+      header .hotel .eval a {
+        color: #777777;
+        text-decoration: none; }
+      header .hotel .eval ul {
+        display: inline-block;
+        width: 418px;
+        padding-left: 0; }
+      header .hotel .eval .ev {
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+        list-style: none;
+        width: 50px;
+        height: 50px;
+        font: bold 18px "Arial",sans-serif; }
+      header .hotel .eval .ev--first {
+        width: 98px;
+        margin-right: 15px; }
+      header .hotel .eval .ev--second {
+        font: bold 24px "Trebuchet MS", sans-serif;
+        margin-right: 15px;
+        padding-top: 5px;
+        background: #00bff3;
+        color: white;
+        text-align: center;
+        height: 45px; }
+      header .hotel .eval .kategor {
+        color: #777777;
+        font-size: 12px; }
+
+.sun--day {
+  position: relative;
+  top: 145px;
+  left: 770px;
+  display: inline-block;
+  width: 160px;
+  height: 150px;
+  font: 30px "Arial",sans-serif;
+  text-align: center; }
+  .sun--day .sun--day_kol {
+    font: 100px "Trebuchet MS", sans-serif;
+    color: #777777; }
+
+.content--extrime {
+  max-width: 1040px;
+  height: 420px;
+  margin: 0 auto; }
+  .content--extrime .extrime--first {
+    margin-right: 35px; }
+  .content--extrime .extrime {
+    display: inline-block;
+    float: left; }
+    .content--extrime .extrime .image--extrime {
+      display: inline-block;
+      width: 502px;
+      height: 280px;
+      background-size: cover; }
+    .content--extrime .extrime .image--extrime1 {
+      background: transparent url(../img/extrim1.png) no-repeat; }
+    .content--extrime .extrime .image--extrime2 {
+      background: transparent url(../img/extrim2.png) no-repeat; }
+    .content--extrime .extrime .name--extrime {
+      font: bold 30px "Trebuchet MS", sans-serif;
+      text-decoration: none;
+      border-bottom: 1px solid #cccccc; }
+    .content--extrime .extrime .more {
+      font: 14px "Arial", sans-serif;
+      color: #777777; }
+    .content--extrime .extrime .cena--extrime {
+      position: relative;
+      top: -55px;
+      left: 395px;
+      font: bold 50px "Trebuchet MS", sans-serif; }
+    .content--extrime .extrime .cena--extrime2 {
+      left: 425px; }
+    .content--extrime .extrime .sale {
+      position: relative;
+      top: -60px;
+      left: 465px;
+      font: bold 20px "Trebuchet MS", sans-serif;
+      color: #777777; }
+    .content--extrime .extrime .line {
+      color: red;
+      text-decoration: line-through; }
+
+.content--text {
+  max-width: 1040px;
+  height: 1200px;
+  margin: 0 auto; }
+  .content--text .h1--main {
+    font: bold 50px "Trebuchet MS", sans-serif; }
+  .content--text .column--left {
+    width: 76%; }
+  .content--text .column--right {
+    width: 24%; }
+    .content--text .column--right h1 {
+      font: bold 100px "Trebuchet MS", sans-serif;
+      color: #777777;
+      margin-bottom: 0px;
+      margin-top: 145px;
+      margin-left: 45px; }
+    .content--text .column--right h2 {
+      font: bold 30px "Trebuchet MS", sans-serif;
+      margin: 0;
+      margin-left: 45px; }
+    .content--text .column--right .txt-right {
+      display: inline-block;
+      width: 203px;
+      color: #777777;
+      margin-left: 45px;
+      font: 18px "MyriadProBold", sans-serif; }
+  .content--text .column {
+    display: inline-block;
+    float: left; }
+  .content--text h2 {
+    font: 14px "MyriadProBold", sans-serif; }
+  .content--text .txt {
+    font: 14px "MyriadProRegular", sans-serif; }
+  .content--text h3 {
+    font: 18px "MyriadProBold", sans-serif; }
+  .content--text .txt--blue {
+    display: inline-block;
+    border-left: 2px solid #33ccf5;
+    background: #f0fbfe;
+    margin-left: 26px;
+    padding-left: 10px; }
+  .content--text .text {
+    padding-left: 20px; }
+  .content--text h4,
+  .content--text .text--item {
+    font: 14px "MyriadProRegular", sans-serif;
+    list-style: none; }
+  .content--text ul li:before {
+    content: ""; }
+  .content--text table {
+    width: 748px;
+    border-collapse: collapse; }
+  .content--text td {
+    width: 124px;
+    font: 14px "Arial", sans-serif;
+    border-bottom: 1px solid #ebebeb; }
+  .content--text .main--line {
+    background: #ebebeb; }
+  .content--text .title {
+    font: bold 12px "Arial", sans-serif;
+    height: 30px;
+    border-bottom: 1px solid #777777;
+    width: 124px;
+    text-align: left; }
+  .content--text .ttt1 {
+    margin-left: 105px; }
+  .content--text .title--left {
+    border-bottom: 1px solid #ebebeb;
+    width: 124px;
+    height: 30px;
+    margin-right: 0;
+    font-size: 12px; }
+  .content--text .secondary {
+    width: 124px; }
+
+footer {
+  max-width: 1040px;
+  margin: 0 auto;
+  border-top: 1px solid #777777;
+  height: 55px; }
+  footer .footer--text {
+    display: inline-block;
+    float: left;
+    padding-top: 15px;
+    font: 12px "Arial", sans-serif; }
+  footer .link--footer {
+    color: #00a2ff; }
+  footer .soc {
+    float: left;
+    margin-left: 550px;
+    padding-top: 15px; }
+    footer .soc .soc-icon {
+      border-radius: 27px;
+      border: 1px white;
+      background-color: #00bff3;
+      height: 29px;
+      width: 29px;
+      color: white;
+      font-size: 21px;
+      padding-left: 0px; }
+    footer .soc .icon-gplus {
+      margin-left: 12px;
+      margin-right: 12px; }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto; }
+
+  nav {
+    padding-top: 5px;
+    width: 100%;
+    height: 90px; }
+    nav .lenta {
+      width: 100%; }
+      nav .lenta .tel {
+        margin-left: 0px;
+        font-size: 20px; }
+      nav .lenta .soc {
+        margin-top: 8px;
+        margin-left: 20px; }
+
+  .content--extrime {
+    height: 800px; }
+
+  .content--text {
+    height: 1300px; }
+    .content--text .h1--main {
+      font-size: 30px; }
+    .content--text .column {
+      width: 100%; }
+    .content--text .column--right h1,
+    .content--text .column--right h2,
+    .content--text .column--right .txt-right {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+      font-size: 18px; }
+
+  footer .soc {
+    margin-left: 270px; } }
+@media screen and (max-width: 320px) {
+  .wrapper {
+    max-width: 320px;
+    margin: 0 auto; }
+
+  nav {
+    padding-top: 5px;
+    width: 100%;
+    height: 120px; }
+    nav .lenta {
+      width: 100%; }
+      nav .lenta .tel {
+        margin-left: 0px;
+        font-size: 20px; }
+      nav .lenta .soc {
+        margin-top: 8px; }
+
+  header .hotel {
+    top: 260px; }
+    header .hotel .eval {
+      display: block;
+      width: 320px; }
+      header .hotel .eval ul {
+        width: 320px; }
+      header .hotel .eval .ev {
+        margin-right: 2px;
+        width: 45px;
+        height: 35px;
+        font-size: 14px; }
+      header .hotel .eval .ev--first {
+        width: 40px; }
+        header .hotel .eval .ev--first .hotel--evalution {
+          width: 50px;
+          font-size: 12px; }
+      header .hotel .eval .ev--second {
+        font-size: 18px;
+        margin-left: 2px;
+        margin-right: 0px;
+        height: 30px;
+        width: 30px; }
+    header .hotel .name--hotel {
+      font-size: 20px; }
+
+  .content--extrime {
+    max-width: 320px; }
+    .content--extrime .extrime--first {
+      margin-right: 0; }
+    .content--extrime .extrime .image--extrime {
+      width: 320px; }
+    .content--extrime .extrime .name--extrime {
+      font-size: 20px; }
+    .content--extrime .extrime .more {
+      font: 14px "Arial", sans-serif;
+      color: #777777; }
+    .content--extrime .extrime .cena--extrime {
+      top: -45px;
+      left: 230px;
+      font-size: 40px; }
+    .content--extrime .extrime .cena--extrime2 {
+      left: 250px; }
+    .content--extrime .extrime .sale {
+      top: -50px;
+      left: 285px;
+      font-size: 16px; }
+    .content--extrime .extrime .line {
+      color: red;
+      text-decoration: line-through; }
+
+  .content--text .h1--main {
+    font-size: 30px; }
+  .content--text .column {
+    width: 100%; }
+  .content--text .column--left table {
+    width: 100%; }
+  .content--text .column--left .title,
+  .content--text .column--left .title--left {
+    font-size: 9px; }
+  .content--text .column--left .secondary {
+    font-size: 10px; }
+  .content--text .column--right h1,
+  .content--text .column--right h2,
+  .content--text .column--right .txt-right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 18px; }
+
+  footer {
+    height: 50px;
+    border: 0; }
+    footer .footer--text {
+      border-top: 1px solid #777777; }
+    footer .soc {
+      margin-left: 0; } }
+
+/*# sourceMappingURL=styles.css.map */
