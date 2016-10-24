@@ -1,0 +1,524 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+    #header {
+    max-height: 90px;
+    }
+    .banner {
+    max-width: 1200px;
+    height:700px;
+	/*background-image: url('../img/ban1.png');*/
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+    
+    /*PHILOOPHY*/
+    .img__block {
+        width: 650px;
+    }
+    .text__block {
+        width: 650px;
+    }
+    
+    .text__block2 {
+    
+    left: 540px;
+}
+    
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .menu__item {
+        margin-left: 18px;
+    }
+    
+    #header {
+        max-height: 90px;
+    }
+    /*BANNER****************/
+    .banner {
+        max-width: 992px;
+        height:500px;
+    }
+    
+    .title__text {
+        margin-top: 5%;
+    }
+    
+    /*.btn__right,
+    .btn__left {
+        margin-top: 500px;
+    }
+    
+    .btn__left {
+        left:46%;
+    }
+    
+    .carousel-control.btn__right {
+        right: 46%;
+    }*/
+    
+    .slide {
+        height: 565px;
+    }
+    
+    /*PHILOOPHY*/
+    
+    .text__block {
+        width: 450px;
+    }
+    
+    .num__block {
+        margin-left: 0;
+    }
+    
+    .smile__block {
+        left: 30px;
+    }
+    
+    .txt__block {
+        width: 340px;
+        top:85px;
+    }
+    
+    .title__block {
+        margin-top: 35px;
+    }
+    
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+    
+    .logo {
+        margin: 5px;
+        
+    }
+    
+    #header {
+        max-height: 70px;
+    }
+    .banner {
+        max-width: 768px;
+        height:400px;
+    }
+     .menu-btn  {
+        display: block;
+        height: 40px;
+        width: 40px;
+        background-color:"#1485cc";
+        border-radius: 50%;
+        color: white;
+    }
+    
+    #top_menu {
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    
+    /*BANNER*/
+    #banner {
+        height: 450px;
+    }
+    .logo__white {
+        margin-left:38%;/* 280px;*/
+        /*margin-top: 30px;*/
+    }
+    
+    .contacts {
+            margin-right: 18px;
+    }
+    
+    .btn__banner {
+        top: -5px;
+        margin: 0;
+    }
+    
+    .title__h1 {
+        margin: 0;
+        margin-top: 1%;
+}
+    
+    .slide__contr {
+        top:-270px;
+    }
+    
+    
+    /*PHILOSOPHY*/
+    .img__block {
+        width: 500px;
+        height: 200px;
+    }
+    
+    .text__block {
+        width: 400px;
+        height: 150px;
+    }
+    
+    .text__block2 {
+        left: 360px;
+
+    }
+    
+    .title__block {
+        margin-top: 20px;
+    }
+
+    
+    .txt__block {
+        top: 65px;
+        width: 280px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:767px)
+{
+    .animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+    nav{
+		height: 60px;
+		line-height: 60px;
+		
+		position: relative;
+	}
+    
+    .menu_btn{
+		height: 40px;
+		width: 40px;
+		
+		
+	}
+	#top_menu{
+		background-color: #2a2e48;
+		padding: 20px 0;
+        z-index: 100;
+        margin-top: 0;
+	}
+    .menu li{
+		display: block;
+		text-align: center;
+	}
+	.menu li a{
+		display: block;
+	}
+	.menu li a:hover{
+		background-color: #fff;
+		color: #000;
+	}
+    
+    #header {
+        max-height: 60px;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+@media only screen and (max-width : 580px){
+    .btn__banner {
+        /*top: 20px; */
+        height: 30px;
+        width: 250px;
+        font-size: 12px;
+    }
+    
+    #banner {
+        height: 350px;
+    }
+    
+    .logo__white {
+        margin-left: 150px;
+    }
+    
+    .title__h1 {
+        font-size: 30px;
+    }
+    
+    .h2__title {
+        font-size: 20px;
+    }
+    
+    .h3__title {
+        display: none;
+    }
+    
+    .title__text {
+        margin: 0;
+    margin-left: 130px;
+    }
+    
+   
+    
+    .slide__contr {
+        top: -390px;
+        width: 60px;
+        left: 45%;
+        
+    }
+    
+    .slide {
+        height: 381px;
+    }
+    
+    /*PHILOSOPhY*/
+    
+     .text__block2 {
+        left: 420px;
+
+    }
+    
+    .text__block {
+        width: 150px;
+    }
+    .title__block,
+    .txt__block {
+        display: none;
+    }
+    
+    .h2__philos {
+        display: inline-block;
+    }
+    
+    .num__philos{
+        font-size: 65px;
+    }
+    .h1__philos {
+        font-size: 74px;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #header {
+        max-height: 60px;
+    }
+    
+    #banner {
+    height: 280px;
+    }
+    .banner {
+        max-width: 480px;
+        height:300px;
+    }
+    .menu-btn {
+         display: block;
+    height: 40px;
+    width: 40px;
+    background-color: #e84545;
+    border-radius: 50%;
+    color: white;
+}
+    .menu {
+        width: 120px;
+        margin-left: 300px;
+    }
+    
+    /*BANNER**************/
+    
+    
+    .contacts {
+        margin-top: 20px;
+    }
+    
+    .btn__banner {
+        /*top: 20px; */
+        height: 30px;
+        width: 250px;
+        font-size: 12px;
+    }
+    
+    .logo__white {
+        display: none;
+    }
+    
+    .title__h1 {
+        font-size: 30px;
+    }
+    
+    .h2__title {
+        font-size: 20px;
+    }
+    
+    .h3__title {
+        display: none;
+    }
+    
+    .title__text {
+        margin-left: 100px;
+}
+   
+    
+    .slide__contr {
+        top: -440px;
+        width: 60px;
+        left: 45%;
+    }
+    
+    /*PHILOSOPHY*/
+    
+    .img__block {
+        width: 450px;
+        height: 180px;
+    }
+    
+    .text__block {
+        display: none;
+    }
+    
+    .num__philos {
+        display: none;
+    }
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    #header {
+        max-height: 50px;
+    }
+    .banner {
+        max-width: 320px;
+        height:200px;
+    }
+    .menu-btn {
+    height: 40px;
+    width: 40px;
+    background-color: #e84545;
+    border-radius: 50%;
+    color: white;
+}
+     .menu {
+        width: 120px;
+        margin-left: 200px;
+    }
+    
+    /*BANNER*/
+   /* .contacts {
+        font-size: 16px;
+    }
+    .btn__banner {
+        top: 20px;
+    margin-left: 70px;
+    height: 30px;
+    width: 200px;
+    font-size: 12px;
+    }*/
+    
+     /*BANNER**************/
+    
+    
+    .contacts {
+        margin-top: 20px;
+        margin-right: 20px;
+        font-size: 12px;
+    }
+    
+    .img__call {
+        background-position: -49px -10px;
+        height: 30px;
+        width: 20px;
+    }
+    .call {
+        font-size: 10px;
+    }
+    
+    .btn__banner {
+        /*top: 20px; */
+        height: 25px;
+        width: 200px;
+        font-size: 10px;
+    }
+    
+   
+    .title__h1 {
+        font-size: 18px;
+    }
+    
+    .h2__title {
+        font-size: 16px;
+    }
+    
+    .h3__title {
+        display: none;
+    }
+    
+    .title__text {
+        margin-left: 45px;
+        margin-top: 5px;
+    }
+    
+    
+    .slide__contr {
+        top: -505px;
+        width: 60px;
+        left: 40%;
+    }
+    
+    
+    
+    
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
