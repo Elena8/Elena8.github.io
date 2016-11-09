@@ -1,0 +1,1096 @@
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    
+    .header__logo-wrap {
+        /*max-width: 60px;*/
+        display: inline-block;
+        padding: 0;
+        
+        .logo {
+            display: inline-block;
+            height: 54px;
+            width: 135px;
+            margin-top: 20px;
+            background-image: url("../img/logo.png");
+            background-size: cover;
+        }
+        
+    }
+
+.col-md-9 {
+        width: 53%;
+        
+    }
+    
+
+
+.header__menu {
+    display: inline-block;
+    /*max-width:75%;/*630px;/* 52.5%;*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    text-align: center;
+    /*margin-left: 35.5%;*/
+    
+    .menu {
+        max-width: 630px;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+
+    .menu__item {
+        display: inline-block;
+        margin-left: 3%;
+    }
+
+    .first {
+        margin-left: 0;
+    }
+
+    .menu__link {
+        color:#8d8d8d;
+        text-decoration: none;
+        font:14px 'PT Sans Narrow', arial;
+    }
+
+    .menu__link:hover,
+    .menu__link:focus {
+	    text-decoration: none;
+	    color:#1485cc;
+    }
+}
+}
+
+.banner {
+    
+    .title_block {
+        position: absolute;
+        z-index: 100;
+        margin: 45px 24% 0;
+        text-align: center;
+        display: block;
+        
+        .title__text {
+            margin-top: 180px;
+        }
+        
+        .title__h1 {
+            font: 44px "Roboto Bold", sans-serif;
+            color:#62d5ff;
+            text-transform: uppercase;
+    
+        }
+
+        .h2__title {
+            font: 32px /*"Veronica script One"*/ "RupsterScriptFree", sans-serif;
+            color:#ffffff;
+        }
+
+        .h3__title {
+            font: 16px "Roboto Regular", sans-serif;
+            color:#ffffff;
+        }
+        
+        
+        
+        .banner__logo-wrap {
+            display: inline-block;
+            
+            
+            .logo__white {
+                display:block;
+                /*background: transparent url("../img/sprite.png") no-repeat;
+                background-position: -70px -10px;
+                height: 90px;
+            width: 215px;*/
+                /*margin-left: 32%;
+                margin-top: 45px;*/
+                
+                .img__logo-white {
+                    max-width: 209px;
+                    width: 100%;
+                    height: auto;
+                    
+                }
+            }
+            
+            
+
+            
+        }
+        
+        
+        
+        
+
+
+.btn__banner {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    top: 40px;
+    /*margin-left: 350px;*/
+    /*margin: 0 18%;*/
+    border-radius: 60px;
+    border: none;
+    font: 14px "Roboto Medium", sans-serif;
+    text-transform: uppercase;
+    background: #62d5ff;
+    color: white;
+    
+}
+}
+    .banner__call {
+        display: inline-block;
+        position: absolute;
+        z-index: 100;
+        margin-left: 70%;
+        
+        .contacts {
+            float: right;
+            margin-top: 60px;
+            font: 18px "Roboto Bold",sans-serif;
+            color: white;
+    
+        }
+
+        .call {
+            font: 14px "Roboto Regular",sans-serif;
+            text-align: center;
+            color: white;
+            width: 85px;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        .img__call {
+            display: inline-block;
+            background: transparent url("../img/sprite.png") no-repeat;
+            background-position: -10px -10px;
+            height: 50px;
+            width: 50px;
+    
+        }
+    }
+    
+    
+    .col-sm-12 {
+        padding: 0;
+    }
+    
+    .slides__img {
+        background-size: cover;
+    }
+
+
+
+}
+
+.philosophy {
+    display: block;
+    background:transparent url(../img/tri.png);
+    background-size: cover;
+    background-position: center top;
+    max-width: 1400px;
+    width: 100%;
+    border: none;
+    z-index: -3;
+    
+    .num__philos-wrap {
+    
+        .num__philos {
+        /*display: inline-block;*/
+        /*background: url(../img/num_01.png) no-repeat;*/
+        background-size: cover;
+        max-width: 70px;
+        width: 100%;
+        height:auto; 
+        /* background:url(../img/sprite__number.png);
+        background-position: -40px -20px;
+        height: 83px;
+        width: 80px;*/
+        }
+    }
+    
+    .h1__philos {
+        font: 94px "Roboto Light",sans-serif;
+        color:#f3f7fa; 
+        text-transform: uppercase;
+    }
+
+    .title__philisophy {
+        text-align: center;
+        display: block;
+        position: relative;
+    
+    }
+
+    .h2__philos {
+        position: relative;
+        top: -100px;
+        font: 42px "Veronica script One", sans-serif;
+        color:#1485cc;
+    
+    }
+    
+    .block__philos {
+        height: 260px;
+        max-width: 1400px;
+        width: 100%;
+        
+        .img__block1 {
+            float: right;
+            background: transparent;
+            background: url(../img/img1_phil.png) ;
+            max-width: 700px;
+            width: 100%;
+            height: 260px;
+            background-size: cover;
+        }
+
+        .img__block2 {
+            display: inline-block;
+            float: left;
+            background: transparent;
+            background: url(../img/img2_phil.png) ;
+            max-width: 700px;
+            width: 100%;
+            height: 260px;
+            background-size: cover; 
+        }
+
+        .img__block3 {
+            float: right;
+            background: transparent;
+            background: url(../img/img3_phil.png) ;
+            max-width: 700px;
+            width: 100%;
+            height: 260px;
+            background-size: cover;
+        }
+        
+        .text__block {
+            position: absolute;
+            z-index: 20;
+            margin-top: 29px;
+            display: inline-block;
+            width: 750px;
+            height: 200px;
+            background: white;
+            -webkit-box-shadow: 0px 10px 47px -27px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 10px 47px -27px rgba(0,0,0,0.75);
+            box-shadow: 0px 10px 47px -27px rgba(0,0,0,0.75);
+            
+            
+
+
+            .num__block {
+                display: inline-block;
+                margin-top: 29px;
+                margin-left: 80px;
+                font:104px "Roboto Thin", sans-serif;
+                color:#e8eff6;
+    
+            }
+
+            .smile__block {
+                display: inline-block;
+                position: absolute;
+                background: url(../img/sprite.png);
+    
+    
+            }
+
+            .smile__block1 {
+                background-position: -190px -110px;
+                height: 50px;
+                width: 50px;
+                left: 105px;
+                top: 65px;
+            }
+
+            .smile__block2 {
+                background-position: -120px -110px;
+                height: 50px;
+                width: 50px;
+                left: 105px;
+                top: 65px;
+            }
+
+            .smile__block3 {
+                background-position: -250px -100px;
+                height: 70px;
+                width: 70px;
+                left: 105px;
+                top: 65px;
+            }
+
+            .title__block {
+                position: absolute;
+                display: inline-block;
+                text-transform: uppercase;
+                margin-top: 45px;
+                font:34px "Roboto Bold", sans-serif;
+                color:#1485cc;
+            }
+
+            .txt__block {
+                display: inline-block;
+                position: absolute;
+                width: 400px;
+                top: 95px;
+                font:18px "Roboto Light", sans-serif;
+            }
+            
+            
+        }
+        
+        .text__block1 {
+                float: left;
+            }
+
+            .text__block2 {
+                float: right;
+                left: 45.7%;
+                right: 0;
+            }
+    }
+    
+    
+
+
+
+
+
+
+}
+
+.events {
+        max-width: 1400px;
+        width: 100%;
+        .title__events {
+            text-align: center;
+            display: block;
+            position: relative;
+        }
+    
+            .h1__events {
+                font: 94px "Roboto Light",sans-serif;
+                color:#f3f7fa; 
+                text-transform: uppercase;
+            }
+            
+            .num__events-wrap {
+            
+                .num__events {
+                    background-size: cover;
+                    max-width: 70px;
+                    width: 100%;
+                    height:auto; 
+        
+                }
+            }
+            
+            .h2__events {
+                position: relative;
+                left: -40%;
+                top: -20px;
+                font: 42px "Veronica script One", sans-serif;
+                color:#1485cc;
+    
+            }
+    
+    .events__block {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        
+        
+        
+        .triangle__events {
+            margin-top: 40px;
+            width: 28%;
+            display: inline-block;
+            
+            .link__events {
+                display: block;
+                /*display: inline-block;
+                background:url(../img/tri_blue.png) no-repeat;
+                height: 182px;
+                width: 159px;
+                background-size: cover;*/
+                /*font-size: 40px;
+                color:#1485cc;*/
+                .img__triangle {
+                    max-width: 159px;
+                    width: 100%;
+                    background-size: cover;
+                    height: auto;
+                }
+                
+                
+                
+            }
+            
+            .link__events:hover .img__triangle {
+                /*background:url(../img/tri_blue_light.png);
+                /*height: 182px;
+                width: 159px;*/
+                /*max-width: 159px;
+                    width: 100%;
+                    background-size: cover;
+                    height: auto;*/
+                background: transparent;
+                visibility: hidden;
+                
+                
+            }
+            
+            .link__events:hover {
+                
+                
+                background:url(../img/tri_blue_light.png) no-repeat;
+                width: 159px;
+                    width: 100%;
+                    
+                    height: 180px;
+               
+                
+            }
+            
+            .triangle__events-title {
+                display: inline-block;
+                position: relative;
+                left: 14px;
+                top: -32px;
+                z-index: -10;
+                
+            
+            
+                .num__ev {
+                    font: 32px "Roboto Thin", sans-serif;
+                    color:#e8eff6;
+                }
+
+                .name__events {
+                    font: 16px "Roboto Black", sans-serif;
+                    color:#1485cc;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+        .triangle__events4 {
+            margin-left: 18%;
+            margin-left: 20%;
+            margin-right: 5%;
+        }
+        
+       /* .triangle__events5 {
+            margin-right: 10%;
+        }*/
+        
+        .triangle__events2 {
+            width: 33%;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+        
+    }
+    
+    /*MODAL WINDOW*/
+
+.modal__window {
+    display: none;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+
+
+
+
+    
+.block__modal {
+    margin: 0 5%;
+
+
+.modal__img {
+    float: left;
+    display: inline-block;
+    margin-right: 2%;
+    background: url(../img/sprite_img.png);
+    background-position: -10px -980px;
+    height: 248px;
+    width: 390px;
+}
+
+.modal__img2 {
+    float: right;
+    margin-right:0;
+    margin-left: 2%;
+    background-position: -400px -980px;
+    
+}
+
+.h1__modal-window {
+    text-align: center;
+    font: 42px "Veronica script One", sans-serif;
+    color:#1485cc;
+    
+}
+
+.block__modal__h1 {
+    font: 22px "Roboto Bold", sans-serif;
+    color:#1485cc;
+}
+
+.text__modal {
+    display: block;
+    font: 14px "Roboto Light", sans-serif;
+   text-align:justify;
+}
+
+
+}
+    
+}
+    
+.modal__window:target {
+    display: block;
+    pointer-events: auto;
+    overflow: auto; 
+}
+
+ 
+
+.modal__window >div {
+
+    max-width: 856px;
+    width: 100%;
+    height: 1130px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    /*border-radius: 10px;*/
+    background: #fff;
+    
+}
+    
+    
+    
+        
+    }
+
+
+
+@media only screen and (max-width:960px)
+{
+    .banner {
+    
+        .title_block {
+            
+            .title__text {
+                margin-top: 50px;
+            }
+        }
+    }
+    
+    .events {
+        .title__events {
+            .h2__events {
+                display: inline-block;
+                top: -80px;
+                left: 0;
+            }
+        }
+        .events__block {
+            width: 960px;
+            
+            .triangle__events {
+                .triangle__events-title {
+                    left: 2%;
+                    top: -20px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:768px)
+{
+    
+ header {
+     
+     .header__menu {
+         width: 80%;
+         
+         .menu__item {
+             margin-left: 0.5%;
+         }
+     }
+        
+}
+
+ .banner {
+    
+        .title_block {
+            
+            
+            .title__text {
+                margin-top:0;
+                
+                .title__h1,
+                .h2__title,
+                .h3__title {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    .philosophy {
+        .block__philos {
+            width: 768px;
+            
+            .text__block2 {
+                left: 2.5%;
+            }
+        }
+    }
+    
+    .events {
+       
+        .events__block {
+            width: 768px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:767px)
+{
+   
+    nav{
+		height: 100px;
+		line-height: 60px;
+		
+		position: relative;
+        /*header {*/
+        
+        .navbar-header {
+            width:730px; 
+    
+        .menu_btn {
+		    height: 40px;
+		    width: 40px;
+		    background-color:#1485cc;
+            display:block;
+            z-index: 111;
+		}
+        }
+        .header__menu {
+            display: none;
+        }
+	    #top_menu {
+            
+		    background-color: #2a2e48;
+		    padding: 20px 0;
+            z-index: 120;
+            margin-top: 0;
+	
+            .menu li{
+		        display: block;
+		        text-align: center;
+	        }
+	        .menu li a{
+		        display: block;
+	        }
+	        .menu li a:hover{
+		        background-color: #fff;
+		        color: #000;
+	        }
+        }
+        
+        
+        
+
+   
+    }
+    
+    
+   
+    
+}
+
+@media only screen and (max-width:480px)
+{
+    nav {
+    
+       
+            
+            .navbar-header {
+        
+            .menu_btn {
+                
+                right: 270px;
+                
+                top: 30px;
+                margin: 0;
+            }
+            }
+        
+    }
+    
+    .banner {
+        .title_block {
+            width: 70%;
+            right: 0;
+            margin: 10px 15%;
+            left: 0;
+            
+            .h2__title,
+            .h3__title {
+                display: none;
+            }
+            
+            .banner__logo-wrap {
+                width: 150px;
+            }
+            
+            .btn__banner {
+                height: 40px;
+                width: 250px;
+            }
+            
+            .title__text {
+                margin-top: 20px;
+            }
+            
+        }
+        
+        .banner__call {
+            .contacts {
+                margin-top: 10px;
+                
+                .number,
+                .call {
+                    font-size: 14px;
+                }
+                
+                .img__call {
+                    display: none;
+                }
+            }
+            
+            
+            
+        }
+        
+         
+    }
+
+    
+    
+    .philosophy {
+        max-width: 480px;
+        
+        .title__philisophy {
+            height: 80px;
+       
+            .num__philos-wrap {
+                .num__philos {
+                    width: 40px;
+            
+                }
+            }
+        
+            .h1__philos,
+            .h1__events {
+                font-size: 50px
+            }
+        
+            .h2__philos {
+                top: -75px;
+                font-size: 28px;
+            }
+        
+        }
+        .block__philos {
+            width: 480px;
+            margin: 0;
+            
+            .img__block {
+                width: 480px;
+                float: left;
+            }
+            
+            .text__block {
+                float: left;
+                left: 100px;
+                width: 370px;
+                
+                .num__block {
+                    font-size: 70px;
+                    margin-left: 10px;
+                    margin-top: 50px;
+                }
+                
+                .smile__block {
+                    left: 18px;
+                    top: 67px;
+                }
+                
+                .title__block {
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+                
+                .txt__block {
+                    width: 280px;
+                    top: 60px;
+                }
+            }
+            
+        }
+    }
+
+    .events {
+        .title__events {
+            .num__events {
+                width: 40px;
+            }
+            .h1__events {
+                font-size: 50px;
+            }
+            .h2__events {
+                top: -50px;
+                font-size: 28px;
+            }
+        }
+       
+        .events__block {
+            width: 480px;
+            margin: 0;
+            .triangle__events2 {
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 37%;
+            }
+            .triangle__events {
+            
+                .link__events {
+                    width:100px; 
+                
+                }
+                .triangle__events-title {
+                    .num__ev {
+                        font-size: 24px;
+                    }
+                    .name__events {
+                        font-size: 12px;   
+                    }
+                }
+            }
+        }
+}
+}
+
+@media only screen and (max-width:320px)
+{
+    nav {
+        height: 80px;
+        
+        .navbar-header {
+        
+            .menu_btn {
+                
+                right: 430px;
+                
+            }
+        }
+    }
+    .banner {
+        .row {
+            height: 200px;
+        
+        .title_block {
+            margin: 10px auto;
+            .banner__logo-wrap {
+            
+                .logo__white {
+               
+                
+                    .img__logo-white {
+                        width: 100px;
+                   
+                    }
+                }
+            
+             }
+            
+            .title__text {
+                .title__h1 {
+                    font-size: 24px;
+                }
+                
+                .btn__banner {
+                    width: 200px;
+                    height: 35px;
+                    font-size: 12px;
+                } 
+            }
+        }
+        
+        .banner__call {
+            width: 110px;
+            padding: 0;
+            
+            .contacts {
+            
+                .number,
+                .call {
+                    font-size: 12px;
+                }
+            }
+        }
+        }
+    }
+    
+    .philosophy {
+        max-width: 320px;
+        padding: 0;
+        
+        .title__philisophy {
+            max-width: 320px;
+            height: 60px;
+            margin: 0;
+       
+            .num__philos-wrap {
+                .num__philos {
+                    width: 25px;
+            
+                }
+            }
+        
+            .h1__philos,
+            .h1__events {
+                font-size: 40px
+            }
+        
+            .h2__philos {
+                top: -67px;
+                width: 300px;
+                left: 0;
+                right: 0;
+            }
+        
+        }
+        
+        .block__philos {
+            width: 320px;
+            .img__block {
+                width: 320px;
+                float: left;
+            }
+            
+            .text__block {
+                float: left;
+                left: 24px;
+                width: 297px;
+                height: 230px;
+                
+                .num__block {
+                    font-size: 70px;
+                    margin-left:0;
+                    margin-top: 50px;
+                }
+                
+                .smile__block {
+                    left: 5px;
+                    top: 67px;
+                }
+                
+                .title__block {
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+                
+                .txt__block {
+                    width: 220px;
+                    top: 40px;
+                }
+            }
+        }
+    }
+    
+.events {
+    max-width: 320px;
+    padding: 0;
+        .title__events {
+            width: 100%;
+            .num__events-wrap {
+                .num__events{
+                    width: 25px;
+                }
+            }
+            .h1__events {
+                font-size: 40px;
+            }
+            .h2__events {
+                top: -45px;
+                font-size: 28px;
+            }
+        }
+       
+        .events__block {
+            width: 320px;
+            margin: 0;
+            
+            .triangle__events {
+                width: 42%;
+            
+                .link__events {
+                    width:100px; 
+                
+                }
+                .triangle__events-title {
+                    .num__ev {
+                        font-size: 24px;
+                    }
+                    .name__events {
+                        font-size: 12px;   
+                    }
+                }
+            }
+            .triangle__events2 {
+                margin-left: 0;
+                margin-right: 0;
+                width: 55%;
+            }
+            
+            .triangle__events4 {
+                margin-left: 0;
+            }
+        }
+}
+    
+}
