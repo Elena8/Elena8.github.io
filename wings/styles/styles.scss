@@ -599,9 +599,60 @@ header {
         
     }
 
+@media only screen and  (max-device-width : 1024px) {
+    header {
+        .header__menu {
+            width: 65%;
+        }
+    }
+    
+    .banner {
+        .title_block {
+            .title__text {
+            
+                margin-top: 30px;
+
+            }
+        }
+    }
+    
+     .philosophy {
+         max-width: 1024px;
+        .block__philos {
+            
+            max-width: 1024px;
+            margin: 0 auto;
+            
+            .img__block {
+                
+            }
+            
+            .text__block2 {
+                left: 27%;
+            }
+        }
+    }
+    
+    .events {
+        max-width: 1024px;
+        .title__events {
+            .h2__events {
+                left: 0;
+                top: -80px;
+                display: inline-block;
+            }
+        }
+       
+        .events__block {
+            width: 1024px;
+        }
+    }
+    
+}
 
 
-@media only screen and (max-width:960px)
+
+/*@media only screen and (max-width:960px)
 {
     .banner {
     
@@ -620,7 +671,7 @@ header {
                 top: -80px;
                 left: 0;
             }
-        }
+       /* }
         .events__block {
             width: 960px;
             
@@ -633,7 +684,7 @@ header {
         }
     }
     
-}
+}*/
 
 @media only screen and (max-width:768px)
 {
@@ -668,16 +719,39 @@ header {
     }
     
     .philosophy {
+        max-width: 768px;
+            margin: 0;
+    padding: 0;
         .block__philos {
-            width: 768px;
+            /*width: 768px;*/
+            max-width: 768px;
+            width: 100%;
+            margin: 0 auto;
+            
+            .img__block {
+                
+            }
             
             .text__block2 {
-                left: 2.5%;
+                
+                left: 20%;
+            }
+            
+            .text__block {
+                width: 80%;
+                
             }
         }
     }
     
     .events {
+        max-width: 768px;
+        .title__events {
+            .h2__events {
+                left: 0;
+                top: -80px;
+            }
+        }
        
         .events__block {
             width: 768px;
@@ -812,6 +886,8 @@ header {
     
     .philosophy {
         max-width: 480px;
+        .row {
+            margin: 0;
         
         .title__philisophy {
             height: 80px;
@@ -871,9 +947,15 @@ header {
             }
             
         }
+        }
     }
 
     .events {
+        max-width: 480px;
+        padding: 0;
+        margin: 0;
+        .row {
+            margin: 0;
         .title__events {
             .num__events {
                 width: 40px;
@@ -888,8 +970,8 @@ header {
         }
        
         .events__block {
-            width: 480px;
-            margin: 0;
+            width: 90%;
+            margin: 0 auto;
             .triangle__events2 {
                 margin-left: 2%;
                 margin-right: 2%;
@@ -912,6 +994,7 @@ header {
             }
         }
 }
+    }
 }
 
 @media only screen and (max-width:320px)
@@ -978,6 +1061,8 @@ header {
     .philosophy {
         max-width: 320px;
         padding: 0;
+        .row {
+            padding: 0;
         
         .title__philisophy {
             max-width: 320px;
@@ -1013,10 +1098,12 @@ header {
             }
             
             .text__block {
+                width: 320px;
                 float: left;
-                left: 24px;
-                width: 297px;
-                height: 230px;
+                position: relative;
+                left: 0;
+                margin-top: 0;
+                height: 240px;
                 
                 .num__block {
                     font-size: 70px;
@@ -1041,17 +1128,17 @@ header {
             }
         }
     }
+    }
     
 .events {
     max-width: 320px;
-    padding: 0;
+     
+    .row {
         .title__events {
-            width: 100%;
             .num__events-wrap {
-                .num__events{
-                    width: 25px;
-                }
-            }
+            .num__events {
+                width: 25px;
+                }}
             .h1__events {
                 font-size: 40px;
             }
@@ -1060,6 +1147,22 @@ header {
                 font-size: 28px;
             }
         }
+        
+       /* .title__events {
+            width: 100%;
+            
+                .num__events{
+                    width: 25px;
+                }
+           
+            .h1__events {
+                font-size: 40px;
+            }
+            .h2__events {
+                top: -45px;
+                font-size: 28px;
+            }
+        }*/
        
         .events__block {
             width: 320px;
@@ -1077,7 +1180,7 @@ header {
                         font-size: 24px;
                     }
                     .name__events {
-                        font-size: 12px;   
+                        font-size: 11px;   
                     }
                 }
             }
@@ -1091,6 +1194,7 @@ header {
                 margin-left: 0;
             }
         }
+}
 }
     
 }

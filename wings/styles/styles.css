@@ -378,19 +378,62 @@ width: 215px;*/
     /*border-radius: 10px;*/
     background: #fff; }
 
-@media only screen and (max-width: 960px) {
-  .banner .title_block .title__text {
-    margin-top: 50px; }
+@media only screen and (max-device-width: 1024px) {
+  header .header__menu {
+    width: 65%; }
 
-  .events .title__events .h2__events {
-    display: inline-block;
-    top: -80px;
-    left: 0; }
-  .events .events__block {
-    width: 960px; }
-    .events .events__block .triangle__events .triangle__events-title {
-      left: 2%;
-      top: -20px; } }
+  .banner .title_block .title__text {
+    margin-top: 30px; }
+
+  .philosophy {
+    max-width: 1024px; }
+    .philosophy .block__philos {
+      max-width: 1024px;
+      margin: 0 auto; }
+      .philosophy .block__philos .text__block2 {
+        left: 27%; }
+
+  .events {
+    max-width: 1024px; }
+    .events .title__events .h2__events {
+      left: 0;
+      top: -80px;
+      display: inline-block; }
+    .events .events__block {
+      width: 1024px; } }
+/*@media only screen and (max-width:960px)
+{
+    .banner {
+    
+        .title_block {
+            
+            .title__text {
+                margin-top: 50px;
+            }
+        }
+    }
+    
+    .events {
+        .title__events {
+            .h2__events {
+                display: inline-block;
+                top: -80px;
+                left: 0;
+            }
+       /* }
+        .events__block {
+            width: 960px;
+            
+            .triangle__events {
+                .triangle__events-title {
+                    left: 2%;
+                    top: -20px;
+                }
+            }
+        }
+    }
+    
+}*/
 @media only screen and (max-width: 768px) {
   header .header__menu {
     width: 80%; }
@@ -404,13 +447,27 @@ width: 215px;*/
     .banner .title_block .title__text .h3__title {
       margin: 0; }
 
-  .philosophy .block__philos {
-    width: 768px; }
-    .philosophy .block__philos .text__block2 {
-      left: 2.5%; }
+  .philosophy {
+    max-width: 768px;
+    margin: 0;
+    padding: 0; }
+    .philosophy .block__philos {
+      /*width: 768px;*/
+      max-width: 768px;
+      width: 100%;
+      margin: 0 auto; }
+      .philosophy .block__philos .text__block2 {
+        left: 20%; }
+      .philosophy .block__philos .text__block {
+        width: 80%; }
 
-  .events .events__block {
-    width: 768px; } }
+  .events {
+    max-width: 768px; }
+    .events .title__events .h2__events {
+      left: 0;
+      top: -80px; }
+    .events .events__block {
+      width: 768px; } }
 @media only screen and (max-width: 767px) {
   nav {
     height: 100px;
@@ -471,60 +528,68 @@ width: 215px;*/
 
   .philosophy {
     max-width: 480px; }
-    .philosophy .title__philisophy {
-      height: 80px; }
-      .philosophy .title__philisophy .num__philos-wrap .num__philos {
-        width: 40px; }
-      .philosophy .title__philisophy .h1__philos,
-      .philosophy .title__philisophy .h1__events {
-        font-size: 50px; }
-      .philosophy .title__philisophy .h2__philos {
-        top: -75px;
-        font-size: 28px; }
-    .philosophy .block__philos {
-      width: 480px;
+    .philosophy .row {
       margin: 0; }
-      .philosophy .block__philos .img__block {
+      .philosophy .row .title__philisophy {
+        height: 80px; }
+        .philosophy .row .title__philisophy .num__philos-wrap .num__philos {
+          width: 40px; }
+        .philosophy .row .title__philisophy .h1__philos,
+        .philosophy .row .title__philisophy .h1__events {
+          font-size: 50px; }
+        .philosophy .row .title__philisophy .h2__philos {
+          top: -75px;
+          font-size: 28px; }
+      .philosophy .row .block__philos {
         width: 480px;
-        float: left; }
-      .philosophy .block__philos .text__block {
-        float: left;
-        left: 100px;
-        width: 370px; }
-        .philosophy .block__philos .text__block .num__block {
-          font-size: 70px;
-          margin-left: 10px;
-          margin-top: 50px; }
-        .philosophy .block__philos .text__block .smile__block {
-          left: 18px;
-          top: 67px; }
-        .philosophy .block__philos .text__block .title__block {
-          margin-top: 20px;
-          font-size: 30px; }
-        .philosophy .block__philos .text__block .txt__block {
-          width: 280px;
-          top: 60px; }
+        margin: 0; }
+        .philosophy .row .block__philos .img__block {
+          width: 480px;
+          float: left; }
+        .philosophy .row .block__philos .text__block {
+          float: left;
+          left: 100px;
+          width: 370px; }
+          .philosophy .row .block__philos .text__block .num__block {
+            font-size: 70px;
+            margin-left: 10px;
+            margin-top: 50px; }
+          .philosophy .row .block__philos .text__block .smile__block {
+            left: 18px;
+            top: 67px; }
+          .philosophy .row .block__philos .text__block .title__block {
+            margin-top: 20px;
+            font-size: 30px; }
+          .philosophy .row .block__philos .text__block .txt__block {
+            width: 280px;
+            top: 60px; }
 
-  .events .title__events .num__events {
-    width: 40px; }
-  .events .title__events .h1__events {
-    font-size: 50px; }
-  .events .title__events .h2__events {
-    top: -50px;
-    font-size: 28px; }
-  .events .events__block {
-    width: 480px;
+  .events {
+    max-width: 480px;
+    padding: 0;
     margin: 0; }
-    .events .events__block .triangle__events2 {
-      margin-left: 2%;
-      margin-right: 2%;
-      width: 37%; }
-    .events .events__block .triangle__events .link__events {
-      width: 100px; }
-    .events .events__block .triangle__events .triangle__events-title .num__ev {
-      font-size: 24px; }
-    .events .events__block .triangle__events .triangle__events-title .name__events {
-      font-size: 12px; } }
+    .events .row {
+      margin: 0; }
+      .events .row .title__events .num__events {
+        width: 40px; }
+      .events .row .title__events .h1__events {
+        font-size: 50px; }
+      .events .row .title__events .h2__events {
+        top: -50px;
+        font-size: 28px; }
+      .events .row .events__block {
+        width: 90%;
+        margin: 0 auto; }
+        .events .row .events__block .triangle__events2 {
+          margin-left: 2%;
+          margin-right: 2%;
+          width: 37%; }
+        .events .row .events__block .triangle__events .link__events {
+          width: 100px; }
+        .events .row .events__block .triangle__events .triangle__events-title .num__ev {
+          font-size: 24px; }
+        .events .row .events__block .triangle__events .triangle__events-title .name__events {
+          font-size: 12px; } }
 @media only screen and (max-width: 320px) {
   nav {
     height: 80px; }
@@ -553,72 +618,89 @@ width: 215px;*/
   .philosophy {
     max-width: 320px;
     padding: 0; }
-    .philosophy .title__philisophy {
-      max-width: 320px;
-      height: 60px;
-      margin: 0; }
-      .philosophy .title__philisophy .num__philos-wrap .num__philos {
-        width: 25px; }
-      .philosophy .title__philisophy .h1__philos,
-      .philosophy .title__philisophy .h1__events {
-        font-size: 40px; }
-      .philosophy .title__philisophy .h2__philos {
-        top: -67px;
-        width: 300px;
-        left: 0;
-        right: 0; }
-    .philosophy .block__philos {
-      width: 320px; }
-      .philosophy .block__philos .img__block {
-        width: 320px;
-        float: left; }
-      .philosophy .block__philos .text__block {
-        float: left;
-        left: 24px;
-        width: 297px;
-        height: 230px; }
-        .philosophy .block__philos .text__block .num__block {
-          font-size: 70px;
-          margin-left: 0;
-          margin-top: 50px; }
-        .philosophy .block__philos .text__block .smile__block {
-          left: 5px;
-          top: 67px; }
-        .philosophy .block__philos .text__block .title__block {
-          margin-top: 10px;
-          font-size: 20px; }
-        .philosophy .block__philos .text__block .txt__block {
-          width: 220px;
-          top: 40px; }
+    .philosophy .row {
+      padding: 0; }
+      .philosophy .row .title__philisophy {
+        max-width: 320px;
+        height: 60px;
+        margin: 0; }
+        .philosophy .row .title__philisophy .num__philos-wrap .num__philos {
+          width: 25px; }
+        .philosophy .row .title__philisophy .h1__philos,
+        .philosophy .row .title__philisophy .h1__events {
+          font-size: 40px; }
+        .philosophy .row .title__philisophy .h2__philos {
+          top: -67px;
+          width: 300px;
+          left: 0;
+          right: 0; }
+      .philosophy .row .block__philos {
+        width: 320px; }
+        .philosophy .row .block__philos .img__block {
+          width: 320px;
+          float: left; }
+        .philosophy .row .block__philos .text__block {
+          width: 320px;
+          float: left;
+          position: relative;
+          left: 0;
+          margin-top: 0;
+          height: 240px; }
+          .philosophy .row .block__philos .text__block .num__block {
+            font-size: 70px;
+            margin-left: 0;
+            margin-top: 50px; }
+          .philosophy .row .block__philos .text__block .smile__block {
+            left: 5px;
+            top: 67px; }
+          .philosophy .row .block__philos .text__block .title__block {
+            margin-top: 10px;
+            font-size: 20px; }
+          .philosophy .row .block__philos .text__block .txt__block {
+            width: 220px;
+            top: 40px; }
 
   .events {
-    max-width: 320px;
-    padding: 0; }
-    .events .title__events {
-      width: 100%; }
-      .events .title__events .num__events-wrap .num__events {
+    max-width: 320px; }
+    .events .row {
+      /* .title__events {
+           width: 100%;
+           
+               .num__events{
+                   width: 25px;
+               }
+          
+           .h1__events {
+               font-size: 40px;
+           }
+           .h2__events {
+               top: -45px;
+               font-size: 28px;
+           }
+       }*/ }
+      .events .row .title__events .num__events-wrap .num__events {
         width: 25px; }
-      .events .title__events .h1__events {
+      .events .row .title__events .h1__events {
         font-size: 40px; }
-      .events .title__events .h2__events {
+      .events .row .title__events .h2__events {
         top: -45px;
         font-size: 28px; }
-    .events .events__block {
-      width: 320px;
-      margin: 0; }
-      .events .events__block .triangle__events {
-        width: 42%; }
-        .events .events__block .triangle__events .link__events {
-          width: 100px; }
-        .events .events__block .triangle__events .triangle__events-title .num__ev {
-          font-size: 24px; }
-        .events .events__block .triangle__events .triangle__events-title .name__events {
-          font-size: 12px; }
-      .events .events__block .triangle__events2 {
-        margin-left: 0;
-        margin-right: 0;
-        width: 55%; }
-      .events .events__block .triangle__events4 {
-        margin-left: 0; } }
+      .events .row .events__block {
+        width: 320px;
+        margin: 0; }
+        .events .row .events__block .triangle__events {
+          width: 42%; }
+          .events .row .events__block .triangle__events .link__events {
+            width: 100px; }
+          .events .row .events__block .triangle__events .triangle__events-title .num__ev {
+            font-size: 24px; }
+          .events .row .events__block .triangle__events .triangle__events-title .name__events {
+            font-size: 11px; }
+        .events .row .events__block .triangle__events2 {
+          margin-left: 0;
+          margin-right: 0;
+          width: 55%; }
+        .events .row .events__block .triangle__events4 {
+          margin-left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
