@@ -8,7 +8,9 @@ $(window).load(function(){
   var API_KEY = '2630817-b95f50d1e0fc2b68ed1f4d734';
   var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+input.value+"&image_type=photo";
   $.getJSON(URL, function (data) {
+	  console.log(data);
     $.each(data.hits, function (i, hit) {
+	    
         if(data.hits.length>0) {
                     
                     $(".grid").remove();
