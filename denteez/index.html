@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Denteez</title>
+  
+    <link rel="stylesheet" href="styles/fonts.min.css">
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="stylesheet" href="styles/styles.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/dest/script.min.js"></script>
+    
+</head>
+<body>
+<div class="wrapper">
+    <header>
+       <nav>
+           <div class="header__logo-wrap">
+               <a class="logo__link" href="index.html"></a>
+           </div>
+           <button class="submit-search " > <p class="icon-search-1"></p></button>
+           <input class="search__company" id="query" type="search" placeholder="Company Name">
+           <a class="chat" href="#"></a>
+           <a href="#" class="ring"></a>
+           <div class="user">
+             <img alt="" class="user__img">
+             <span class="user__name">Maximillian Feekeeper</span>
+           </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="column__left">
+           <div class="column__left-wrapper">
+            <div class="column__left-nav">
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#" class="menu__list__link"> <span  class="menu__link-img menu__link-img1"></span><span class="link__text">Feed</span></a></li>
+                    <li class="menu__list__item"><a href="#" class="menu__list__link"> <span class="menu__link-img menu__link-img2"></span><span class="link__text2">Ask a Colleague</span></a></li>
+                    <li class="menu__list__item"><a href="#" class="menu__list__link"> <span class="menu__link-img menu__link-img3"></span><span class="link__text3">Companies</span></a></li>
+                    <li class="menu__list__item"><a href="#" class="menu__list__link"> <span class="menu__link-img menu__link-img4"></span><span class="link__text4">Service Directory</span></a></li>
+                    
+                </ul>
+            </div>
+            <div class="column__left-banner">
+                <h3>Advertisement</h3>
+                <span class="banner__img"></span><br>
+                <span class="author">Ads By Denteez.com</span>
+            </div>
+            <div class="column__left-companies">
+               <h3>Featured Companies</h3>
+               <a href="#" class="seeAll">See All</a>
+               <div class="company__block">
+                   <span class="img__company img__company1"></span>
+                   <span class="text__company">
+                       <span class="name__company">Company Name</span>
+                       <span class="direction__company">Manufacturer</span><br>
+                       <span class="adress__company">Belgrad, Serbia</span><br>
+                       <a href="" class="link__company">Follow Now</a>
+                   </span>
+               </div>
+               <div class="company__block company__block2">
+                   <span class="img__company img__company2"></span>
+                   <span class="text__company">
+                   <span class="name__company">Company Name</span>
+                   <span class="direction__company">Cervice Provider</span><br>
+                   <span class="adress__company">New York,USA</span><br>
+                   <a href="" class="link__company">Follow Now</a>
+                   </span>
+               </div>
+               <div class="company__block">
+                   <span class="img__company img__company3"></span>
+                   <span class="text__company">
+                   <span class="name__company">Company Name</span>
+                   <span class="direction__company">Supplier</span><br>
+                   <span class="adress__company">London, England</span><br>
+                   <a href="" class="link__company">Follow Now</a>
+                   </span>
+               </div>
+                
+            </div>
+            <div class="column__left-footer">
+                <span>Denteez Copyright 2015</span><br>
+                <a href="#"> Terms of use</a>
+                <a class="footer__link2" href="#">Privacy of Policy</a>
+            </div>
+        </div>
+        </div>
+        <div class="column__center">
+            <!--<div  class="modalWindow">
+                 <div>
+                    <a href="#close" title="Закрыть" class="close">X</a>
+                    <h2>ERROR!!!!</h2>
+                    <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
+                </div>
+            </div>-->
+
+            <h1>Service Directory</h1>
+            <button class="add__btn">Add New Service</button>
+            <!--Serch RESULT-->
+            <div class="wrapper__search ">
+            <script id="tmpl" type="text/template">
+            
+                
+              <% for (i=0; i<data.length; i++) {%>
+              <div class="column__center__block-search clearfix ">
+              <div class="rectangle-search">
+              <a href="#" class="link__block-search"><img src="http:<%= data[i].icon%>"></a>
+              
+              </div>
+              <span class="name__block-search"><%= data[i].title%></span>
+              </div>
+              <%}%>
+            
+            </script>
+            </div>
+            <!--END Search RESULT-->
+            <div class="column__center-wrap clearfix">
+                <div class="column__center__block ">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block1"></a>
+                    </div>
+                    <span class="column__center__block-name">Accountancy</span>
+                </div>
+                <div class="column__center__block ">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block2"></a>
+                    </div>
+                    <span class="column__center__block-name">Associations</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block3"></a>
+                    </div>
+                    <span class="column__center__block-name">Buy/Shell Dental Practice</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block4"></a>
+                    </div>
+                    <span class="column__center__block-name">Clinical Waste Collection</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block5"></a>
+                    </div>
+                    <span class="column__center__block-name">Computer Service</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block6"></a>
+                    </div>
+                    <span class="column__center__block-name">CPR/Basic Life Support Training</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block7"></a>
+                    </div>
+                    <span class="column__center__block-name">Dental Recruitmant</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block8"></a>
+                    </div>
+                    <span class="column__center__block-name">Dental Software</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block9"></a>
+                    </div>
+                    <span class="column__center__block-name">Electrical Safety And Testing</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block10"></a>
+                    </div>
+                    <span class="column__center__block-name">Marketing</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block11"></a>
+                    </div>
+                    <span class="column__center__block-name">Other</span>
+                </div>
+                <div class="column__center__block">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block12"></a>
+                    </div>
+                    <span class="column__center__block-name">Repairs</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block13"></a>
+                    </div>
+                    <span class="column__center__block-name">Solicitors</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block14"></a>
+                    </div>
+                    <span class="column__center__block-name">Surgary Design</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block15"></a>
+                    </div>
+                    <span class="column__center__block-name">Training &amp; Courses</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block16"></a>
+                    </div>
+                    <span class="column__center__block-name">Web Designers</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block17"></a>
+                    </div>
+                    <span class="column__center__block-name">Cleaning Agencies</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block18"></a>
+                    </div>
+                    <span class="column__center__block-name">Dental Chair Recovery</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block19"></a>
+                    </div>
+                    <span class="column__center__block-name">Equipment Engineering</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block20"></a>
+                    </div>
+                    <span class="column__center__block-name">Selling Gold</span>
+                </div>
+                <div class="column__center__block clearfix">
+                    <div class="rectangle">
+                        <a href="#" class="link__block link__block21"></a>
+                    </div>
+                    <span class="column__center__block-name">Uniform &amp; Workwear</span>
+                </div>
+            </div>
+        </div>
+        <div class="column__right">
+           <div class="column__right-wrapper">
+            <div class="column__right-dentist">
+               <h3>People you may know</h3>
+               <a href="#" class="seeAll">See All</a>
+               <div class="dentist__block">
+                   <h4>Dennis Adams</h4>
+                   <span class="img__dentist img__dentist1"></span>
+                   <span class="text__dentist">
+                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
+                       <span class="adress__dentist">London, England</span><br>
+                       <a href="" class="link__dentist">Add Friend</a>
+                   </span>
+               </div>
+               <div class="dentist__block dentist__block2">
+                   <h4>Mary Carpenter</h4>
+                   <span class="img__dentist img__dentist2"></span>
+                   <span class="text__dentist">
+                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
+                       <span class="adress__dentist">Belgrad, Serbia</span><br>
+                       <a href="" class="link__dentist">Add Friend</a>
+                   </span>
+               </div>
+               <div class="dentist__block">
+                   <h4>Denielle Salazar</h4>
+                   <span class="img__dentist img__dentist3"></span>
+                   <span class="text__dentist">
+                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
+                       <span class="adress__dentist">Paris, France</span><br>
+                       <a href="" class="link__dentist">Add Friend</a>
+                   </span>
+               </div>
+               
+                
+            </div>
+            <div class="column__right__products">
+               <h3>Featured Products</h3>
+               <a href="#" class="seeAll">See All</a>
+                <div class="company__block">
+                   <h4>Product Name</h4>
+                   <span class="img__company img__company1"></span>
+                   <span class="text__company">
+                       
+                       Product Short Description. The quick brown fox jumps over the lazy dog.
+                   </span>
+               </div>
+               <div class="company__block">
+                   <h4>Product Name</h4>
+                   <span class="img__company img__company2"></span>
+                   <span class="text__company">
+                       
+                       Product Short Description. The quick brown fox jumps over the lazy dog.
+                   </span>
+               </div>
+            </div>
+            <div class="column__right-banner">
+                <h3>Advertisement</h3>
+                <span class="banner__img"></span><br>
+                <span class="author">Ads By Denteez.com</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
