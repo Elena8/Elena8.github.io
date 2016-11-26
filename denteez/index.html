@@ -15,17 +15,40 @@
 <div class="wrapper">
     <header>
        <nav>
-           <div class="header__logo-wrap">
+          <div class="header__logo-wrap">
                <a class="logo__link" href="index.html"></a>
            </div>
+           <div class="search__user-wrap">
+           
+           <div class="user__wrap">
+               <div class="user clearfix">
+                 <img src="img/sprite.png" alt="" class="user__img">
+                 <span class="user__name">Maximillian Feekeeper</span>
+               </div>
+               <a href="#" class="ring clearfix"></a>
+               <a class="chat clearfix" href="#"></a>
+           </div>
+           
+           <div class="wrap__search">
+               <button class="submit-search " > <p class="icon-search-1"></p></button>
+               <input class="search__company" id="query" type="search" placeholder="Company Name">
+           </div>
+           </div>
+           <!--<div class="header__logo-wrap">
+               <a class="logo__link" href="index.html"></a>
+           </div>
+           <div class="wrap__search">
            <button class="submit-search " > <p class="icon-search-1"></p></button>
            <input class="search__company" id="query" type="search" placeholder="Company Name">
-           <a class="chat" href="#"></a>
-           <a href="#" class="ring"></a>
-           <div class="user">
-             <img alt="" class="user__img">
+           
+           
+           <div class="user clearfix">
+             <img src="img/sprite.png" alt="" class="user__img">
              <span class="user__name">Maximillian Feekeeper</span>
            </div>
+           <a href="#" class="ring clearfix"></a>
+           <a class="chat clearfix" href="#"></a>
+           </div>-->
         </nav>
     </header>
     <div class="content">
@@ -42,7 +65,7 @@
             </div>
             <div class="column__left-banner">
                 <h3>Advertisement</h3>
-                <span class="banner__img"></span><br>
+                <a href="#" class="banner__img"></a><br>
                 <span class="author">Ads By Denteez.com</span>
             </div>
             <div class="column__left-companies">
@@ -84,17 +107,75 @@
             </div>
         </div>
         </div>
-        <div class="column__center">
-            <!--<div  class="modalWindow">
-                 <div>
-                    <a href="#close" title="Закрыть" class="close">X</a>
-                    <h2>ERROR!!!!</h2>
-                    <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
-                </div>
-            </div>-->
+        <div class="content-wrap">
+           
+            <div class="column__right">
+           <div class="column__right-wrapper">
+            <div class="column__right-dentist">
+               <h3>People you may know</h3>
+               <a href="#" class="seeAll">See All</a>
+               <div class="dentist__block">
+                   <h4>Dennis Adams</h4>
+                   <span class="img__dentist img__dentist1"></span>
+                   <span class="text__dentist">
+                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
+                       <span class="adress__dentist">London, England</span><br>
+                       <a href="" class="link__dentist">Add Friend</a>
+                   </span>
+               </div>
+               <div class="dentist__block dentist__block2">
+                   <h4>Mary Carpenter</h4>
+                   <span class="img__dentist img__dentist2"></span>
+                   <span class="text__dentist">
+                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
+                       <span class="adress__dentist">Belgrad, Serbia</span><br>
+                       <a href="" class="link__dentist">Add Friend</a>
+                   </span>
+               </div>
+               <div class="dentist__block">
+                   <h4>Denielle Salazar</h4>
+                   <span class="img__dentist img__dentist3"></span>
+                   <span class="text__dentist">
+                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
+                       <span class="adress__dentist">Paris, France</span><br>
+                       <a href="" class="link__dentist">Add Friend</a>
+                   </span>
+               </div>
+               
+                
+            </div>
+            <div class="column__right__products">
+               <h3>Featured Products</h3>
+               <a href="#" class="seeAll">See All</a>
+                <div class="company__block">
+                   <h4>Product Name</h4>
+                   <span class="img__company img__company1"></span>
+                   <span class="text__company">
+                       
+                       Product Short Description. The quick brown fox jumps over the lazy dog.
+                   </span>
+               </div>
+               <div class="company__block">
+                   <h4>Product Name</h4>
+                   <span class="img__company img__company2"></span>
+                   <span class="text__company">
+                       
+                       Product Short Description. The quick brown fox jumps over the lazy dog.
+                   </span>
+               </div>
+            </div>
+            <div class="column__right-banner">
+                <h3>Advertisement</h3>
+                <a href="#" class="banner__img"></a><br>
+                <span class="author">Ads By Denteez.com</span>
+            </div>
+        </div>
+        </div>
+         <div class="column__center">
+            
 
             <h1>Service Directory</h1>
-            <button class="add__btn">Add New Service</button>
+            <button class="add__btn clearfix">Add New Service</button>
             <!--Serch RESULT-->
             <div class="wrapper__search ">
             <script id="tmpl" type="text/template">
@@ -116,7 +197,9 @@
             <div class="column__center-wrap clearfix">
                 <div class="column__center__block ">
                     <div class="rectangle">
+                        
                         <a href="#" class="link__block link__block1"></a>
+                        
                     </div>
                     <span class="column__center__block-name">Accountancy</span>
                 </div>
@@ -240,67 +323,6 @@
                     </div>
                     <span class="column__center__block-name">Uniform &amp; Workwear</span>
                 </div>
-            </div>
-        </div>
-        <div class="column__right">
-           <div class="column__right-wrapper">
-            <div class="column__right-dentist">
-               <h3>People you may know</h3>
-               <a href="#" class="seeAll">See All</a>
-               <div class="dentist__block">
-                   <h4>Dennis Adams</h4>
-                   <span class="img__dentist img__dentist1"></span>
-                   <span class="text__dentist">
-                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
-                       <span class="adress__dentist">London, England</span><br>
-                       <a href="" class="link__dentist">Add Friend</a>
-                   </span>
-               </div>
-               <div class="dentist__block dentist__block2">
-                   <h4>Mary Carpenter</h4>
-                   <span class="img__dentist img__dentist2"></span>
-                   <span class="text__dentist">
-                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
-                       <span class="adress__dentist">Belgrad, Serbia</span><br>
-                       <a href="" class="link__dentist">Add Friend</a>
-                   </span>
-               </div>
-               <div class="dentist__block">
-                   <h4>Denielle Salazar</h4>
-                   <span class="img__dentist img__dentist3"></span>
-                   <span class="text__dentist">
-                       <span class="name__dentist">Dentist (Practice Owner)</span><br>
-                       <span class="adress__dentist">Paris, France</span><br>
-                       <a href="" class="link__dentist">Add Friend</a>
-                   </span>
-               </div>
-               
-                
-            </div>
-            <div class="column__right__products">
-               <h3>Featured Products</h3>
-               <a href="#" class="seeAll">See All</a>
-                <div class="company__block">
-                   <h4>Product Name</h4>
-                   <span class="img__company img__company1"></span>
-                   <span class="text__company">
-                       
-                       Product Short Description. The quick brown fox jumps over the lazy dog.
-                   </span>
-               </div>
-               <div class="company__block">
-                   <h4>Product Name</h4>
-                   <span class="img__company img__company2"></span>
-                   <span class="text__company">
-                       
-                       Product Short Description. The quick brown fox jumps over the lazy dog.
-                   </span>
-               </div>
-            </div>
-            <div class="column__right-banner">
-                <h3>Advertisement</h3>
-                <span class="banner__img"></span><br>
-                <span class="author">Ads By Denteez.com</span>
             </div>
         </div>
         </div>
