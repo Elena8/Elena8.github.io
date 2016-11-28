@@ -22,7 +22,7 @@ $(function() {
                 console.log("data.data.length",data.data.length);
                 console.log("data.data.title",data.data.title);*/
                 $(".column__center-wrap").remove();
-                $(".wrapper__search").css({'display':'flex'});
+                $(".wrapper__search").css({'display':'block'});
                 html = $('#tmpl').html();
                 content = tmpl(html, data);
                 $('.col__search-wrp').append(content);

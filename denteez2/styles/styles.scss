@@ -942,7 +942,7 @@
 
 
 
-@media only screen and (max-device-width:1146px) {
+@media screen and (max-width:1164px) {
    
         
         .wrapper{ 
@@ -982,7 +982,7 @@
     
 }
 
-@media only screen and (min-device-width:1146px) and (max-device-width:1329px) {
+@media  screen and (min-width:1165px) and (max-width:1329px) {
    
         
         .wrapper { 
@@ -1020,7 +1020,7 @@
     }
 }
 
-@media only screen and (min-device-width:1330px)  {
+@media screen and (min-width:1330px)  {
    
         
         .wrapper{ 
@@ -1034,9 +1034,9 @@
                                 width: 100%;
                                 margin: 0 auto;
                                 
-                                /*.column__center__block-search:nth-child(6n) {
+                                .column__center__block-search:nth-child(5n) {
                                     margin-right: 0;
-                                }*/
+                                }
                                 
                             }
                         }
