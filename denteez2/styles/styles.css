@@ -613,40 +613,46 @@
 @media only screen and (max-device-width: 1146px) {
   .wrapper .content .content-wrap .column__center .wrapper__search .col__search-wrp {
     display: block;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     margin: 0 auto; }
     .wrapper .content .content-wrap .column__center .wrapper__search .col__search-wrp .column__center__block-search:nth-child(3n+1) {
       margin-right: 0; }
   .wrapper .content .content-wrap .column__center .column__center-wrap .col__center-wrp {
     display: block;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     margin: 0 auto; }
     .wrapper .content .content-wrap .column__center .column__center-wrap .col__center-wrp .column__center__block:nth-child(3n) {
       margin-right: 0; } }
 @media only screen and (min-device-width: 1146px) and (max-device-width: 1329px) {
   .wrapper .content .content-wrap .column__center .wrapper__search .col__search-wrp {
     display: block;
-    width: 620px;
+    max-width: 620px;
+    width: 100%;
     margin: 0 auto; }
     .wrapper .content .content-wrap .column__center .wrapper__search .col__search-wrp .column__center__block-search:nth-child(4n+1) {
       margin-right: 0; }
   .wrapper .content .content-wrap .column__center .column__center-wrap .col__center-wrp {
     display: block;
-    width: 620px;
+    max-width: 620px;
+    width: 100%;
     margin: 0 auto; }
     .wrapper .content .content-wrap .column__center .column__center-wrap .col__center-wrp .column__center__block:nth-child(4n) {
       margin-right: 0; } }
 @media only screen and (min-device-width: 1330px) {
   .wrapper .content .content-wrap .column__center .wrapper__search .col__search-wrp {
     display: block;
-    width: 810px;
+    max-width: 810px;
+    width: 100%;
     margin: 0 auto;
     /*.column__center__block-search:nth-child(6n) {
         margin-right: 0;
     }*/ }
   .wrapper .content .content-wrap .column__center .column__center-wrap .col__center-wrp {
     display: block;
-    width: 810px;
+    max-width: 810px;
+    width: 100%;
     margin: 0 auto; }
     .wrapper .content .content-wrap .column__center .column__center-wrap .col__center-wrp .column__center__block:nth-child(5n) {
       margin-right: 0; } }
