@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Denteez__dop</title>
+  
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/imgUpload.js"></script>
+    <script src="js/template.js"></script>
+    
+</head>
+<body>
+<div class="wrapper">
+    <header>
+       
+        <div class="logo__wrap">
+            <a href="#" class="logo__link"></a>
+        </div>
+        <button class="log__in">Log In Now</button>
+        <div class="header__title">
+            <p class="h1__title">Home of Dentistry</p>
+            <p class="h3__title">Denteez was created by dentistry in order to make the life of everyone involved in dentistry easier.</p>
+        </div>
+        <div class="modal__window">
+           <form action="">
+            <div class="window">
+                <div class="window__wrap">
+                   <p class="require"> Fields marked "*" are required</p><br>
+                   <div class="input__select">
+                   
+                    <script id="tmpl" type="text/template">
+                       <select name="others__type" class="select__main" >
+                        <option>Other</option>
+                        <% for (i=0; i<data.length; i++) {%>
+                        <option value="<%=data[i].name%>" ><%=data[i].name%></option>
+                        <%}%>
+                      </select>
+                    
+                    
+                      
+                    </script>
+                   
+                   
+                   </div>
+                   <div class="inp inp__left">
+                       <p class="input_txt">Name<sup>*</sup></p> 
+                       <input type="text" name="name" class="input__name" placeholder="Dentist">
+                   </div>
+                   <div class="inp inp__right">
+                       <p class="input_txt">Email <sup>*</sup></p> 
+                       <input type="email" placeholder="rachelm@gmail.com" name="email" class="input__email">
+                   </div>
+                   <div class="inp__subject">
+                       <p class="input_txt">Subject<sup>*</sup></p> 
+                       <input type="text" name="subject" class="input__subject">
+                   </div>
+                   <div class="inp__description">
+                       <p class="input_txt input_txt-des">Description</p> <p class="description_size">(0/1000)</p> <textarea class="input__description" name="description" maxlength="1000"></textarea>
+                   </div>
+                   
+                   <div id="img__upload-id" class="img__upload">
+                        <span id="add-id" class="add">Add Photo <span class="add__img">Minimum size of 300x300 jpeg jpg png 5MB</span></span>
+                       <input type="file" class="input__file" size="1" name="img" accept="image/jpeg,image/png,image/jpg">
+                   </div>
+                   <div id="errors-id" class="errors">
+                       
+                   </div>
+                   
+                        
+                    
+                </div>
+            </div>
+             <button class="submit" type="button">Submit</button>
+            </form>
+        </div>
+    </header>
+    <div class="content">
+        
+    </div>
+    <div class="about">
+        <h1 class="h1__about">About Denteez</h1>
+        <div class="about__column-wrap">
+        <div class="about__column about__column-left">
+            <p class="text__about">
+                Why is it always so difficult to find what you are looking for dentistry?Whether it is the latest advancement in technilogy or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?
+            </p>
+        </div>
+        <div class="about__column about__column-right">
+            <p class="text__about">
+                Our mission is to give every dental professionsl the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly easily all in one place. 
+            </p>
+        </div>
+        </div>
+    </div>
+    <footer>
+       <div class="footer-wrap">
+        <a href="#" class="copyright">Denteez copyright 2015</a>
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="#" class="menu__item__link">Support</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__item__link">Privacy Policy</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__item__link">Terms of use</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+</div>
+</body>
