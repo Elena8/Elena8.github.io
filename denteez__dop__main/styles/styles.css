@@ -245,22 +245,24 @@
       max-width: 1440px;
       min-width: 970px;
       height: 73px;
-      margin: 0 9.5%;
+      margin: 0 auto;
       letter-spacing: 0.1px;
       margin-top: 26px; }
     .wrapper footer .copyright {
       color: #b7bfcd;
       font: 12px "Arial",sans-serif;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-left: 5.5%; }
     .wrapper footer .menu {
       float: right;
       margin: 0;
       width: 230px;
-      padding: 0; }
+      padding: 0;
+      margin-right: 4%; }
       .wrapper footer .menu .menu__item {
         list-style: none;
         float: left;
-        margin-right: 9.5%;
+        margin-right: 6.5%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
