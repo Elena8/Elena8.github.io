@@ -101,7 +101,8 @@
       .wrapper header .modal__window .input__name,
       .wrapper header .modal__window .input__email,
       .wrapper header .modal__window .input__input {
-        width: 100%;
+        width: 98%;
+        padding-left: 2%;
         border-radius: 6px;
         height: 48.5px;
         border: 1px solid #c8cdd5; }
@@ -109,7 +110,8 @@
         float: left;
         width: 100%; }
       .wrapper header .modal__window .input__subject {
-        width: 100%;
+        width: 98%;
+        padding-left: 2%;
         border-radius: 6px;
         height: 50px;
         border: 1px solid #c8cdd5; }
@@ -124,7 +126,8 @@
       .wrapper header .modal__window .input_new {
         margin-top: 16px; }
       .wrapper header .modal__window .input__description {
-        width: 99.2%;
+        width: 97.2%;
+        padding-left: 2%;
         resize: none;
         border-radius: 6px;
         height: 147px;
@@ -258,7 +261,7 @@
       margin: 0;
       width: 230px;
       padding: 0;
-      margin-right: 4%; }
+      margin: 0.7px 4.2% 0 0; }
       .wrapper footer .menu .menu__item {
         list-style: none;
         float: left;

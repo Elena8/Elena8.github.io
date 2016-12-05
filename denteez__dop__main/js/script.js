@@ -35,18 +35,20 @@ $(function () {
         $(".select__main").change(function () {
             console.log("place");
             var place;
-            console.log($(".select__main #idSelect").val());
+            //console.log($(".select__main #idSelect").val());
             place = $(".select__main #idSelect").val();
             if (~place.indexOf("Password")) {
-                console.log("pass find");
+                //console.log("pass find");
                 $(".input__select").append('<div class="input_new"><input placeholder="' + place + '" type="password" name="' + place + '" class="input__input" autocomplete="on" ></div>');
                         
             } else {
                        
                 $(".input__select").append('<div class="input_new"><input placeholder="' + place + '" type="text" name="' + place + '" class="input__input" autocomplete="on" ></div>');
+                
             }
         });
-                
+        $('.input__input').autocomplete;
+        console.log($('.input__input').val());
                 
         /*Закрываем окно если клик вне окна
         $(document).mouseup(function (e) {
@@ -60,15 +62,19 @@ $(function () {
                 /****Submit***/
                 
         $(".submit").click(function () {
-            var p, r,
+            var p, r, str_new,
                 str_name = $('.input__name').val(),
                 str_email = $('.input__email').val(),
                 str_subject = $('.input__subject').val(),
                 str_description = $('.input__description').val();
+            $('.input__input').autocomplete;
+            console.log($('.input__input').val());
+            str_new = $('.input__input').val();
             str_name = $.trim(str_name);
             str_email = $.trim(str_email);
             str_subject = $.trim(str_subject);
             str_description = $.trim(str_description);
+            str_new = $.trim(str_new);
             $(".errors").html('<p></p>');
             function strLength(r) {
                 var errorLen;
@@ -82,8 +88,9 @@ $(function () {
                     return 1;
                 case str_description.length:
                     return 1;
+                case str_new.length:
+                    return 1;  
                 }
-                        
             }
                 
             if (strLength(r) === 1) {
@@ -107,7 +114,7 @@ $(function () {
                             url: 'http://504080.com/api/v1/support',
                             data: mesForm,
                             success: function (data) {
-                                alert("данные отправлены!");
+                                //alert("данные отправлены!");
                             },
                             error:  function (xhr, str) {
 	                            alert('Возникла ошибка: ' + xhr.responseCode);
@@ -117,7 +124,7 @@ $(function () {
                         $('.input__email').val('');
                         $('.input__subject').val('');
                         $('.input__description').val('');
-                        //alert("данные отправлены!");
+                        alert("данные отправлены!");
                         $(".modal__window").hide();
                         $("div.input_new").remove();
 
