@@ -6,14 +6,18 @@
     border-bottom: 3px solid #71973c;
     overflow: hidden;
     min-width: 970px;
-    max-width: 1440px;
+    width: 100%;
     margin: 0 auto; }
     .wrapper header nav {
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 10px;
+      height: 55px;
+      overflow: hidden;
+      min-width: 970px;
+      max-width: 1440px;
       width: 100%;
-      height: 55px; }
+      margin: 0 auto; }
       .wrapper header nav .header__logo-wrap {
         float: left;
         margin-right: -130px; }
