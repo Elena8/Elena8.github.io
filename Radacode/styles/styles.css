@@ -293,17 +293,27 @@ footer {
     line-height: 4; }
 
 @media screen and (min-width: 1281px) {
-  header nav,
-  header .banner {
+  header nav {
     max-width: 1920px; }
+  header .banner {
+    max-width: 1440px;
+    text-align: center; }
+    header .banner .cat {
+      left: 25%; }
+    header .banner .banner__logo-wrap {
+      display: inline-block;
+      text-align: center; }
 
   .content1 .content1__block {
-    max-width: 1920px; }
+    max-width: 1280px; }
 
   .content2 .content2__block {
-    max-width: 1920px; }
+    max-width: 1280px; }
 
   footer .footer__block {
     max-width: 1920px; } }
+@media screen and (min-width: 1467px) {
+  header .banner .cat {
+    left: 35%; } }
 
 /*# sourceMappingURL=styles.css.map */

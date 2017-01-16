@@ -419,9 +419,20 @@ footer {
 
 @media screen and (min-width:1281px) {
     header {
-        nav,
-        .banner {
+        nav {
             max-width: 1920px;
+        }
+        .banner {
+            max-width: 1440px;
+            text-align: center;
+            .cat {
+                left: 25%;
+            }
+            
+            .banner__logo-wrap {
+                display: inline-block;
+                text-align: center;
+            }
         }
         
         
@@ -429,18 +440,34 @@ footer {
     
     .content1 {
         .content1__block {
-            max-width: 1920px;
+            max-width: 1280px;
         }
     }
     .content2 {
         .content2__block {
-            max-width: 1920px;
+            max-width: 1280px;
         }
     }
     footer {
         .footer__block {
             max-width: 1920px;
         }
+    }
+    
+}
+
+@media screen and (min-width:1467px) {
+    
+     header {
+        
+        .banner {
+            .cat {
+                left: 35%;
+            }
+            
+        }
+        
+        
     }
     
 }
