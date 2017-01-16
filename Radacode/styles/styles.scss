@@ -471,3 +471,31 @@ footer {
     }
     
 }
+
+@media screen and (min-width:2300px) {
+    
+     header {
+        
+        .banner {
+            .cat {
+                left: 38%;
+            }   
+        }  
+    }  
+}
+
+@media screen and (min-width:2800px) {
+    
+     header {
+        
+        .banner {
+            .cat {
+                left: 40%;
+            }
+            
+        }
+        
+        
+    }
+    
+}
