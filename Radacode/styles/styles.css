@@ -292,7 +292,7 @@ footer {
     font: 18px 'Open Sans Light', sans-serif;
     line-height: 4; }
 
-@media screen and (min-width: 1281px) {
+/*@media screen and (min-width: 1281px) {
   header nav {
     max-width: 1920px; }
   header .banner {
@@ -320,6 +320,6 @@ footer {
     left: 38%; } }
 @media screen and (min-width: 2800px) {
   header .banner .cat {
-    left: 40%; } }
+    left: 40%; } }*/
 
 /*# sourceMappingURL=styles.css.map */
