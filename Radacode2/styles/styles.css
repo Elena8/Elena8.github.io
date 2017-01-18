@@ -307,6 +307,10 @@ footer {
 
   .content1 .content1__block {
     max-width: 1280px; }
+  .content1 .content1__text {
+    margin-left: 10.2%; }
+  .content1 .content1__img__wrp {
+    left: 8%; }
 
   .content2 .content2__block {
     max-width: 1280px; }
