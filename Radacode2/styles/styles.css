@@ -276,7 +276,31 @@ footer {
     max-width: 1440px;
     text-align: center; }
     header .banner .cat {
-      margin-left: 700px; }
+      margin-left: 1000px; }
+      header .banner .cat .cat1 {
+        top: -57px;
+        width: 70px;
+        margin-left: 20px; }
+      header .banner .cat .cat2 {
+        margin-left: 99px;
+        width: 70px;
+        top: -143px; }
+      header .banner .cat .cat3 {
+        top: -165px;
+        width: 70px;
+        margin-left: 167px; }
+      header .banner .cat .cat4 {
+        width: 70px;
+        margin-left: 208px;
+        top: -178px; }
+      header .banner .cat .cat5 {
+        width: 70px;
+        margin-left: 226px;
+        top: -151px; }
+      header .banner .cat .cat6 {
+        margin-left: 200px;
+        width: 70px;
+        top: -130px; }
     header .banner .banner__logo-wrap {
       display: inline-block;
       text-align: center; }
