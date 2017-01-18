@@ -269,15 +269,6 @@ footer {
     font: 18px 'Open Sans Light', sans-serif;
     line-height: 4; }
 
-@media screen and (min-width: 2800px) {
-  header .banner .cat {
-    left: 40%; } }
-@media screen and (min-width: 2300px) {
-  header .banner .cat {
-    left: 38%; } }
-@media screen and (min-width: 1467px) {
-  header .banner .cat {
-    left: 35%; } }
 @media screen and (min-width: 1281px) {
   header nav {
     max-width: 1920px; }
@@ -285,7 +276,7 @@ footer {
     max-width: 1440px;
     text-align: center; }
     header .banner .cat {
-      left: 200px; }
+      margin-left: 700px; }
     header .banner .banner__logo-wrap {
       display: inline-block;
       text-align: center; }
@@ -387,14 +378,16 @@ footer {
   header .banner .h1 {
     margin-left: 2%;
     font-size: 22px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px; }
   header .banner .text {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     display: inline; }
   header .banner .txt-center,
   header .banner .text2 {
-    font-size: 18px;
+    font-size: 16px;
     display: inline; }
 
   .content1 .img__comp {
@@ -464,19 +457,18 @@ footer {
   header .banner .h1 {
     margin-left: 2%;
     font-size: 22px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px; }
   header .banner .text {
     margin-left: 1%;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     display: inline; }
-  header .banner .txt-center {
-    margin-left: 1%;
-    font-size: 18px;
-    display: inline; }
+  header .banner .txt-center,
   header .banner .text2 {
     margin-left: 1%;
-    font-size: 18px;
+    font-size: 16px;
     display: inline; }
 
   .content1 .content1__block__text {
