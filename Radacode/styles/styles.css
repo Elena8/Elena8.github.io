@@ -269,6 +269,7 @@ footer {
     font: 18px 'Open Sans Light', sans-serif;
     line-height: 4; }
 
+<<<<<<< HEAD
 @media screen and (min-width: 2800px) {
   header .banner .cat {
     left: 40%; } }
@@ -279,6 +280,9 @@ footer {
   header .banner .cat {
     left: 35%; } }
 @media screen and (min-width: 1281px) {
+=======
+/*@media screen and (min-width: 1281px) {
+>>>>>>> origin/master
   header nav {
     max-width: 1920px; }
   header .banner {
@@ -352,6 +356,7 @@ footer {
       top: -138px; } }
 @media screen and (min-width: 461px) and (max-width: 624px) {
   header .banner .cat {
+<<<<<<< HEAD
     margin-left: 50%; }
     header .banner .cat .ct img {
       width: 30px; }
@@ -512,5 +517,8 @@ footer {
     margin-top: 20px; }
     footer .footer__soc ul {
       padding-left: 10%; } }
+=======
+    left: 40%; } }*/
+>>>>>>> origin/master
 
 /*# sourceMappingURL=styles.css.map */
