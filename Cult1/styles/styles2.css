@@ -15,22 +15,6 @@ header {
   .contacts p {
     font: 22px 'Academia Roman', sans-serif; }
 
-/*.online__button__wrap {
-    margin-top: 25px;
-    button {
-        background:#009bba;
-        height: 70px;
-        width: 90%;
-        border: none;
-        border-radius: 30px;
-        color: white;
-        font-size: 22px;
-    }
-    button:hover {
-        background:#b5d0e3; 
-        
-    }
-}*/
 .navbar-default {
   position: fixed;
   right: 0;
@@ -340,8 +324,17 @@ h2 {
     .slider .online__button__wrap button {
       width: 40%; } }
 @media only screen and (max-width: 699px) {
+  h2 {
+    font-size: 30px; }
+
   .services h3 {
     font-size: 18px; }
+  .services .row .col-xs-3 {
+    width: 50%; }
+  .services .services__block {
+    height: auto; }
+    .services .services__block ul {
+      display: none; }
 
   footer .row .col-xs-8 {
     width: 100%; }
@@ -357,22 +350,31 @@ h2 {
     width: 50%; } }
 @media only screen and (max-width: 550px) {
   .services .row .col-xs-3 {
-    width: 50%; }
-  .services .services__block {
-    height: 415px; } }
+    width: 100%; }
+  .services .services__block .services__img__wrap img {
+    max-width: 433px;
+    width: 100%;
+    height: auto; } }
 @media only screen and (max-width: 500px) {
   .slider .logo__img {
     width: 130px; }
   .slider .logo {
     top: 24%; }
   .slider .online__button__wrap button {
-    width: 38%;
+    width: 50%;
     font-size: 16px;
     height: 35px; }
 
-  .services .services__block {
-    height: 390px; } }
+  footer .btn__online {
+    width: 50%; } }
 @media only screen and (max-width: 450px) {
+  .price .table__price th {
+    font-size: 14px;
+    font-weight: bold; }
+
+  .online .time__select {
+    width: 40%; }
+
   footer .row .col-xs-8 {
     width: 50%; }
   footer .list__item {
@@ -380,7 +382,9 @@ h2 {
     border-right: none; }
   footer .btn__online {
     margin-left: 0;
-    width: 100%; } }
+    width: 100%; }
+  footer .footer-btn__text {
+    display: none; } }
 @media only screen and (max-width: 400px) {
   .slider .logo__img {
     width: 90px; }
@@ -389,11 +393,9 @@ h2 {
   .slider .online__button__wrap {
     top: 58%; }
     .slider .online__button__wrap button {
-      width: 45%;
-      font-size: 15px; }
-
-  .services .services__block {
-    height: 370px; }
+      width: 60%; }
+  .slider .link__online {
+    font-size: 18px; }
 
   footer .btn__online {
     font-size: 14px; } }

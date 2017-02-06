@@ -1322,3 +1322,9 @@ a.ui-button:active,
     width: 70%;
     }
 }
+@media only screen and (max-width: 450px) {
+    .ui-widget.ui-widget-content {
+    
+    width: 80%;
+    }
+}
