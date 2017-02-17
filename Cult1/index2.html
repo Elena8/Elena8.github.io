@@ -18,43 +18,38 @@
    <link rel="stylesheet" href="styles/flexslider.css">
    <link rel="stylesheet" href="styles/jquery-ui.css">
    <link rel="stylesheet" href="styles/fonts.css">
+   <!--<link rel="stylesheet" href="styles/reset.css" />-->
+   <link rel="stylesheet" href="styles/styles_countdown.css">
+   <link rel="stylesheet" href="styles/jquery.countdown.css">
+   <!-- <link rel="stylesheet" href="styles/styles_timer.css" />-->
+
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
     
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqgZhc7BIUEnCmfSjPkWrt9x6EV3HKYAA"></script>
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <!--<script src="js/countdown.js"></script>-->
     <script src="js/script.js"></script>
     
 </head>
 <body>
-<!--<header class="container-fluid">
-    <div class="container">
-        <div class="row clearfix">
-            <div class="logo__wrap col-md-3">
-                <a href="index.html" class="logo__link"><img class="logo__img" src="img/cult__logo.png" alt=""></a>
-            </div>
-            <div class="contacts col-md-6">
-                <p class="icon-location">
-                    г.Новосибирск, ул.Вокзальная магистраль,1
-                </p>
-                <p class="icon-phone"> 286-26-50</p>
-                <p class="icon-tablet">8(913)007-26-50</p>
-            </div>
-            <div class="online__button__wrap col-md-3">
-                <button>ONLINE запись</button>
-            </div>
-        </div>
-    </div>
-</header>-->
+
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
        <div class="container">
         <div class="row">
+           <div class="online__button__wrap col-xs-4 col-sm-3 col-md-3">
+                <button><a class="link__online" href="#online__add">ONLINE запись</a></button>
+            </div>
             <button class="navbar-toggle collapsed menu-btn" data-toggle="collapse" data-target="#top-menu">
                             <span class="glyphicon glyphicon-align-justify" ></span>
             </button>
-            <div class="menu__header collapse navbar-collapse navbar-right col-xs-5 col-sm-12 col-md-12 col-lg-12" id="top-menu">
+            <div class="menu__header collapse navbar-collapse navbar-right col-xs-5 col-sm-9 col-md-9 col-lg-9" id="top-menu">
             <ul>
                 <li class="list__item"><a href="index2.html" class="list__item__link">Главная</a></li>
                 <li class="list__item"><a href="#service" class="list__item__link">Услуги</a></li>
@@ -70,16 +65,44 @@
 </nav>
 <section class="slider container-fluid">
     <div class="row clearfix">
+       
+            
+        
+        
         <div class="logo col-md-3">
                 <a href="index.html" class="logo__link"><img class="logo__img" src="img/cult__logo.png" alt=""></a>
             </div>
-        <div class="online__button__wrap col-xs-12 col-sm-4 col-md-3">
+        <!--<div class="online__button__wrap col-xs-12 col-sm-4 col-md-3">
                 <button><a class="link__online" href="#online__add">ONLINE запись</a></button>
+            </div>-->
+        <div class="transparent col-xs-12 col-sm-12 col-md-12"></div>
+        <div class="block__actions col-md-12">
+                <!--<div class="timer-area">
+                    <h1>Акция</h1>
+                    <ul id="countdown">
+                        <li> <span class="days">00</span>
+                            <p class="timeRefDays">days</p>
+                        </li>
+                        <li> <span class="hours">00</span>
+                            <p class="timeRefHours">hours</p>
+                        </li>
+                        <li> <span class="minutes">00</span>
+                            <p class="timeRefMinutes">minutes</p>
+                        </li>
+                        <li> <span class="seconds">00</span>
+                            <p class="timeRefSeconds">seconds</p>
+                        </li>
+                    </ul>
+                </div>-->
+                <div class="block__text__action">
+                    <h2 class="action__h2">АКЦИЯ!</h2>
+                    <span class="txt__action">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</span>
+                </div>
+                <div id="countdown"></div>	
             </div>
-        <div class="col-sm-12">
+        <div class="flx-slider__wrap col-sm-12">
             <div class="flexslider">
                 <ul class="slides">
-                    <!--<li><img src="img/IMG_3321.png" class="slides__img1 slides__img"  /></li>-->
                     <li><img src="img/slide7.png" class="slides__img2 slides__img"  /></li>
                     <li><img src="img/slide1.png" class="slides__img3 slides__img"  /></li>
                     <li><img src="img/slide5.png" class="slides__img4 slides__img"  /></li>
@@ -89,6 +112,33 @@
         </div>
     </div>
 </section>
+<section class="actions container-fluid">
+    <div class="row clearfix">
+        <!--<div class="col-sm-12 col-xs-12 col-md-12">
+            <div class="block__actions">
+                <div class="timer-area">
+                    <h1>Акция</h1>
+                    <ul id="countdown">
+                        <li> <span class="days">00</span>
+                            <p class="timeRefDays">days</p>
+                        </li>
+                        <li> <span class="hours">00</span>
+                            <p class="timeRefHours">hours</p>
+                        </li>
+                        <li> <span class="minutes">00</span>
+                            <p class="timeRefMinutes">minutes</p>
+                        </li>
+                        <li> <span class="seconds">00</span>
+                            <p class="timeRefSeconds">seconds</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+        
+    </div>
+</section>
+
 <section class="services container-fluid">
    <div class="container">
      <h2 id="service">Услуги</h2>
@@ -97,7 +147,7 @@
               <div class="services__block">
                  
                   <div class="services__img__wrap services__img__wrap1">
-                      <img src="img/IMG_4576.png" alt="" class="services__img">
+                      <img src="img/serv1.png" alt="" class="services__img">
                   </div>
                   <h3>Маникюр</h3>
                   <ul>
@@ -145,7 +195,7 @@
           <div class="col-md-3 col-sm-3 col-xs-3">
             <div class="services__block">
              <div class="services__img__wrap services__img__wrap4">
-                 <img src="img/IMG_4433.png" alt="" class="services__img">
+                 <img src="img/serv4.png" alt="" class="services__img">
              </div>
                   <h3>Дизайн</h3>
                   <ul>
@@ -213,131 +263,121 @@
         <div class="row clearfix">
             <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
                <table class="table__price">
-                   <tr>
-                       <th>МАНИКЮР(без покрытия)</th>
+                   <tr class="table__line">
+                       <th class="main__th">МАНИКЮР(без покрытия)</th>
                    
-                       <th><span class="icon-clock"></span></th>
+                       <th class="main__th"><span class="icon-clock"></span></th>
                   
-                       <th><span class="icon-rouble"></span></th>
+                       <th class="main__th"><span class="icon-rouble"></span></th>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>классический</td>
                        <td>30</td>
                        <td>400</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>комбинированный</td>
                        <td>30</td>
                        <td>400</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>аппаратный</td>
                        <td>30</td>
                        <td>400</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>европейский</td>
                        <td>30</td>
                        <td>350</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>японский маникюр Masure</td>
                        <td>40</td>
                        <td>600</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>детский</td>
                        <td>20</td>
                        <td>300</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>мужской</td>
                        <td>40</td>
                        <td>600</td>
                    </tr>
-               <!--</table>-->
-                
-            <!--</div>-->
-            <!--<div class="col-md-6">-->
-               
-                
-            <!--</div>
-        
-            <div class="col-md-6">-->
-               <!--<table class="table__price">-->
-                   <tr>
+              
+              
+                   <tr class="table__line">
                        <th>ПЕДИКЮР(без покрытия)</th>
                    
-                       <th><span class="icon-clock"></span></th>
+                       <th class="main__th"><span class="icon-clock"></span></th>
                   
-                       <th><span class="icon-rouble"></span></th>
+                       <th class="main__th"><span class="icon-rouble"></span></th>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>классический</td>
                        <td>60</td>
                        <td>1000</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>аппаратный</td>
                        <td>60</td>
                        <td>1200</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>кислотный Kart</td>
                        <td>60</td>
                        <td>1500</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>мини</td>
                        <td>30</td>
                        <td>500</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>МУЖСКОЙ:</td>
                        <td></td>
                        <td></td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>классический</td>
                        <td>60</td>
                        <td>1200</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>аппаратный</td>
                        <td>60</td>
                        <td>1400</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>кислотный Kart</td>
                        <td>60</td>
                        <td>1700</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>допразмягчитель Farmona</td>
                        <td></td>
                        <td>100</td>
                    </tr>
-               <!--</table>
                
-               <table class="table__price">-->
-                   <tr>
-                       <th>УХОД:</th>
+                   <tr class="table__line">
+                       <th class="main__th">УХОД:</th>
                    
-                       <th><span class="icon-clock"></span></th>
+                       <th class="main__th"><span class="icon-clock"></span></th>
                   
-                       <th><span class="icon-rouble"></span></th>
+                       <th class="main__th"><span class="icon-rouble"></span></th>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>SPA-программа для рук(скраб,маска+парафинотерапия)</td>
                        <td>20</td>
                        <td>600</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Бразильский маникюр</td>
                        <td></td>
                        <td>300</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Маска д/стоп</td>
                        <td></td>
                        <td>100</td>
@@ -347,130 +387,120 @@
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
               <table class="table__price">
-                   <tr>
-                       <th>КУЛЬТУРА ЦВЕТА:</th>
+                   <tr class="table__line">
+                       <th class="main__th">КУЛЬТУРА ЦВЕТА:</th>
                    
-                       <th><span class="icon-clock"></span></th>
+                       <th class="main__th"><span class="icon-clock"></span></th>
                   
-                       <th><span class="icon-rouble"></span></th>
+                       <th class="main__th"><span class="icon-rouble"></span></th>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Маникюр (все виды)+гель пок. Kodi/Beautix</td>
                        <td>80</td>
                        <td>1100/1240</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Маникюр (все виды)+лак Emi</td>
                        <td>50</td>
                        <td>600</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Укрепление ногтей гель</td>
                        <td>40</td>
                        <td>1000</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Укрепление ногтей гель база Kodi</td>
                        <td>20</td>
                        <td>200</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Наращивание (1 ноготь)</td>
                        <td>10</td>
                        <td>150</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>IBX system</td>
                        <td>20</td>
                        <td>300</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Педикюр классический+гель пок. Kodi/Beautix</td>
                        <td></td>
                        <td>1600/1790</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Педикюр аппаратный+гель пок. Kodi/Beautix</td>
                        <td></td>
                        <td>1800/1940</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Минипедикюр+гель пок. Kodi/Beautix</td>
                        <td></td>
                        <td>1200/1340</td>
                    </tr>
-              <!-- </table>-->
-               
-               
-            <!--</div>
-            
-            <div class="col-md-6">-->
-               <!--<table class="table__price">-->
-                   <tr>
-                       <th>ДИЗАЙН:</th>
+              
+                   <tr class="table__line">
+                       <th class="main__th">ДИЗАЙН:</th>
                    
-                       <th><span class="icon-clock"></span></th>
+                       <th class="main__th"><span class="icon-clock"></span></th>
                   
-                       <th><span class="icon-rouble"></span></th>
+                       <th class="main__th"><span class="icon-rouble"></span></th>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>фрэнч/лунки пустые</td>
                        <td></td>
                        <td>250</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>лунки цветные/двойной фрэнч</td>
                        <td></td>
                        <td>300</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>градиент Цвета(1 ноготь)</td>
                        <td></td>
                        <td>30</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>роспись (1 ноготь)</td>
                        <td></td>
                        <td>от 50</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>битое стекло, северное сияние, втирка блестки, фольга и т.д.(1 ноготь)</td>
                        <td></td>
                        <td>от 50</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>инкрустация стразами (1 ноготь)</td>
                        <td></td>
                        <td>от 100</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Svarovsky crystal pixie (1 ноготь)</td>
                        <td></td>
                        <td>300</td>
                    </tr>
-              <!-- </table>-->
-               
-           <!-- </div>
-            <div class="col-md-6">-->
-               <!--<table class="table__price">-->
-                   <tr>
-                       <th>ДОПОЛНИТЕЛЬНО:</th>
+              
+                   <tr class="table__line">
+                       <th class="main__th">ДОПОЛНИТЕЛЬНО:</th>
                    
-                       <th><span class="icon-clock"></span></th>
+                       <th class="main__th"><span class="icon-clock"></span></th>
                   
-                       <th><span class="icon-rouble"></span></th>
+                       <th class="main__th"><span class="icon-rouble"></span></th>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>снятие без последующего покрытия</td>
                        <td>20</td>
                        <td>250</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>снятие (не от "CULT") с последующим покрытием</td>
                        <td>15</td>
                        <td>200</td>
                    </tr>
-                   <tr>
+                   <tr class="table__line">
                        <td>Снятие нарощенных ногтей</td>
                        <td>30</td>
                        <td>400</td>
@@ -546,7 +576,7 @@
                 <li class="list__item"><a href="#contacts" class="list__item__link">Контакты</a></li>
                 
             </ul>
-            <button class="btn__online"><a class="link__online" href="#online__add">ONLINE <span class="footer-btn__text">запись</span></a></button>
+            <!--<button class="btn__online"><a class="link__online" href="#online__add">ONLINE <span class="footer-btn__text">запись</span></a></button>-->
             </div>
             <div class="footer__contacts col-md-3 col-sm-4 col-xs-4">
                <span class="footer__contacts__h3">Контакты</span>

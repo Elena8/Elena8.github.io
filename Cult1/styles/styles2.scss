@@ -35,12 +35,12 @@ nav {
     background: #009bba;
 }
 .menu__header {
-    width: 100%;
+    width: 75%;//100%;
     margin-top: 10px;
     .list__item {
         list-style: none;
         float: left;
-        margin-right: 10%;
+        margin-right: 8%;//10%;
     }
     .list__item:last-child {
         margin-right: 0;
@@ -55,6 +55,21 @@ nav {
     .list__item__link:hover {
         color: #bfbfbf;
     }
+}
+
+.online__button__wrap {
+    opacity: 0.6;
+    button {
+        width: 100%;
+        height: 48px;
+    }
+    .link__online {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        
+    }
+    
 }
 ////////END NAVIGATION/////////////////////
 
@@ -117,7 +132,47 @@ nav {
         font-size: 22px;
     }
 }
+.transparent {
+    position: absolute;
+    background: #93a5b5;
+    opacity: 0.6;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 2;
+    height: 30%;
+    top: 70%;
+}
 ///// END Slider ////////////////////////
+
+///// ACTIONS /////////////////////////
+.block__actions {
+    position: absolute;
+    z-index: 3;
+    top:80%;
+    padding-left: 45px;
+    
+}
+.block__text__action {
+    width: 50%;
+}
+.action__h2 {
+    margin-top: 0;
+    font-weight: 600;
+    color: black;
+}
+.txt__action {
+    font-size: 18px;
+    color: black;
+}
+.block__text__action,
+#countdown {
+    float: left;
+}
+
+.actions {
+    padding-left: 0;
+    padding-right: 0;
+}
+///// END ACTIONS //////////////////////
 
 ////// SERVICES  //////////////////////
 .services {
@@ -127,6 +182,10 @@ nav {
         max-width: 100%;
         //height: 300px;
    
+    }
+    
+    #service {
+        margin-top: 8%;
     }
 
     .services__img {
@@ -178,6 +237,7 @@ nav {
     .photo__nails {
         max-width: 100%;
         height: auto;
+        padding-bottom: 5px;
         border: 1px solid lightgray;
     }
 } 
@@ -190,26 +250,27 @@ nav {
         width: 100%;
         background: #f6f6f4;
         margin-top: 15px;
-        tr {
+        /*tr*/ .table__line {
             border-bottom: 1px solid #2aa5a7;   
         }
-        th {
+        /*th*/.main__th {
             padding-top: 5px;
             padding-bottom: 5px;
             padding-left: 10px;
             font: 18px sans-serif;
             font-weight: normal;
         }
-        td {
+        .table__line td {
             padding-top: 5px;
             padding-bottom: 5px;
             padding-left: 10px;
+            text-align: left;
             font: 20px,sans-serif;
         }
-        th:last-child,
-        td:last-child,
-        th:nth-child(2),
-        td:nth-child(2) {
+        .main__th:last-child,
+        .table__line td:last-child,
+        .main__th:nth-child(2),
+        .table__line td:nth-child(2) {
             text-align: center;
             border-left: 1px solid #2aa5a7; 
             
@@ -409,7 +470,12 @@ footer {
     
 }
 //////// END FOOTER /////////////////
-h2 {
+//h2
+#service,
+#portfolio,
+#price,
+#online__add,
+#contacts {
     text-align: center;
     margin-bottom: 40px;
     font-family: 'Roboto Medium', arial;
@@ -422,8 +488,21 @@ h2 {
     .menu__header {
     
         .list__item {
-            margin-right: 7%;
+            margin-right: 4%;//7%;
         }
+    }
+    .online__button__wrap {
+        .link__online {
+            font-size: 18px;
+        }
+    }
+    
+    .block__text__action {
+        width: 30%;
+    }
+    
+    .block__actions {
+        top:75%;
     }
     
     ///////////////////////
@@ -450,7 +529,27 @@ h2 {
     
 }
 
+@media only screen and (max-width : 784px) {
+    .action__h2 {
+        font-size: 22px;
+    }
+    .txt__action {
+        font-size: 16px;
+    }
+    
+}
+
 @media only screen and (max-width : 767px) {
+    .transparent {
+        //margin-top: 238px;
+        top:70%;
+        height: 34%;
+    }
+    .online__button__wrap {
+        button {
+            height: 57px;
+        }
+    }
     .menu-btn {
         background-color: #b5d0e3;
         background-color: #b5d0e3;
@@ -495,16 +594,15 @@ h2 {
 }
     //////////////////////////
 .slider {
-    .row {
-        .col-sm-12 {
-            top: 15px;
-        }
+    .flx-slider__wrap {
+        top: 15px;
+        
     }
-    .online__button__wrap {
+    /*.online__button__wrap {
         button {
             height: 50px;
         }
-    }
+    }*/
     .logo {
         top: 19%;
     }
@@ -522,9 +620,25 @@ h2 {
     
 }
 @media only screen and (max-width : 699px) {
-    h2 {
+    #service,
+#portfolio,
+#price,
+#online__add,
+#contacts {
         font-size: 30px;
     }
+    .slider{
+        .logo {
+            top: 22%;
+        }
+    }
+.block__text__action {
+        width: 40%;
+    }
+    
+    .block__actions {
+        top:72%;
+    } 
 .services {
     h3 {
         font-size: 18px;
@@ -555,13 +669,22 @@ footer {
 }
 }
 
+@media only screen and (max-width : 660px) {
+   .transparent {
+   
+    height: 35%;
+} 
+
+    
+}
+
 @media only screen and (max-width : 600px) {
 .slider {
     .logo__img {
         width: 150px;
     }
     .logo {
-        top: 22%;
+        top: 25%;
     }
         
 }
@@ -577,6 +700,26 @@ footer {
 }
 
 @media only screen and (max-width : 550px) {
+ #service,
+#portfolio,
+#price,
+#online__add,
+#contacts {
+        font-size: 22px;
+    }
+    .transparent {
+    
+    height: 36%;
+}
+.slider {
+    .logo__img {
+        width: 130px;
+    }
+    .logo {
+        top: 28%;
+    }
+        
+}
 .services {
     .row {
         .col-xs-3 {
@@ -596,25 +739,47 @@ footer {
     }
         
 }
+    .block__text__action {
+    width: 45%;
+}
+    .online__button__wrap {
+        .link__online {
+            font-size: 14px;
+            font-weight: 600;
+    }
+        
+    } 
 }
 
 @media only screen and (max-width : 500px) {
+    .block__actions {
+    padding-left: 15px;
+}
+ .block__text__action {
+    width: 55%;
+}
+    .action__h2 {
+        font-size: 18px;
+    }
+    .txt__action {
+        font-size: 14px;
+    }
 .slider {
     .logo__img {
-        width: 130px;
+        //width: 130px;
     }
     .logo {
-        top: 24%;
+        //top: 24%;
     }
     
-     .online__button__wrap {
+    /* .online__button__wrap {
         button {
             width: 50%;
             font-size: 16px;
             height: 35px;
         }
     }
-    
+    */
         
 }
 
@@ -624,14 +789,42 @@ footer {
     }
         
 }
-footer {
+/*footer {
     .btn__online {
         width: 50%;
     }
         
-    }
+    }*/
+}
+@media only screen and (max-width : 470px) {
+    .online__button__wrap {
+        width: 45%;
+}
+    
+    
 }
 @media only screen and (max-width : 450px) {
+    .transparent {
+    
+    height: 37.5%;
+}
+.slider {
+    .logo__img {
+        width: 100px;
+    }
+    .logo {
+        top: 33%;
+    }
+        
+}
+.block__text__action {
+    width: 100%;
+}
+.action__h2 {
+    font-size: 14px;
+        margin-bottom: 2px;
+    display: inline-block;
+}
 .price {
     .table__price {
         th {
@@ -659,11 +852,11 @@ footer {
         float: none;
         border-right: none;
     }
-    .btn__online {
+    /*.btn__online {
         margin-left: 0;
         width: 100%;
         
-    }
+    }*/
     
     .footer-btn__text {
         display: none;
@@ -674,15 +867,18 @@ footer {
 }
 
 @media only screen and (max-width : 400px) {
+.online__button__wrap {
+        width: 50%;
+}
 .slider {
     .logo__img {
-        width: 90px;
+        width: 80px;
     }
     .logo {
-        top: 28%;
+        top: 36%;
     }
     
-    .online__button__wrap {
+    /*.online__button__wrap {
         top: 58%;
         button {
             width: 60%;//45%;
@@ -692,7 +888,7 @@ footer {
     }
     .link__online {
         font-size: 18px;
-    }
+    }*/
         
 }
 
@@ -704,10 +900,56 @@ footer {
 }
 
 footer {
-    .btn__online {
+    /*.btn__online {
         font-size: 14px;
     }
-    
+    */
         
+}
+}
+@media only screen and (max-width : 390px) {
+    .transparent {
+    top: 70%;
+    height: 40%;
+}
+    .slider {
+        .flx-slider__wrap {
+            top: 20px;
+        }
+    }
+}
+@media only screen and (max-width : 360px) {
+    .transparent {
+    
+    height: 41%;
+}
+}
+
+@media only screen and (max-width : 359px) {
+    .transparent {
+    
+    height: 41%;
+}
+.slider {
+    .logo {
+        top: 41%;
+    }
+    .logo__img {
+        width: 70px;
+    }
+        
+}
+.online {
+    .time__select {
+        font-size: 12px;
+    }
+}
+    
+}
+
+@media only screen and (max-width : 340px) {
+    .transparent {
+    
+    height: 43%;
 }
 }
