@@ -580,10 +580,11 @@ footer {
     */ } }
 @media only screen and (max-width: 390px) {
   .transparent {
-    top: 70%; }
+    top: 70%;
+    height: 46%; }
 
   .slider .flx-slider__wrap {
-    top: 20px; } }
+    top: 30px; } }
 @media only screen and (max-width: 360px) {
   .online__button__wrap {
     padding-left: 0; } }
@@ -597,6 +598,6 @@ footer {
     font-size: 12px; } }
 @media only screen and (max-width: 340px) {
   .transparent {
-    height: 43%; } }
+    height: 49.5%; } }
 
 /*# sourceMappingURL=styles2.css.map */
