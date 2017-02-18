@@ -483,6 +483,15 @@ footer {
     text-transform: uppercase;
     color: #4c6675; 
 }
+@media only screen and (max-width : 999px) {
+    .menu__header {
+        .list__item__link {
+            font-size: 20px;
+        }
+        
+    } 
+    
+}
 @media only screen and (max-width : 992px) {
     
     .menu__header {
@@ -933,6 +942,16 @@ footer {
         padding-left: 0;
         
     }
+    
+    .slider {
+    .logo {
+        top: 40%;
+    }
+    .logo__img {
+        width: 70px;
+    }
+        
+}
 }
 
 @media only screen and (max-width : 359px) {
@@ -940,15 +959,7 @@ footer {
     
     //height: 41%;
 }
-.slider {
-    .logo {
-        top: 41%;
-    }
-    .logo__img {
-        width: 70px;
-    }
-        
-}
+
 .online {
     .time__select {
         font-size: 12px;
