@@ -562,6 +562,7 @@ footer {
         }
     }
     .menu__header {
+        width: 100%;
         position: absolute;
         //margin-left: 56%;
         margin-top: 56px;
@@ -867,6 +868,10 @@ footer {
 }
 
 @media only screen and (max-width : 400px) {
+     .transparent {
+    
+    height: 41%;
+}
 .online__button__wrap {
         width: 50%;
 }
@@ -877,6 +882,10 @@ footer {
     .logo {
         top: 36%;
     }
+    
+    .flx-slider__wrap {
+    top: 20px;
+}
     
     /*.online__button__wrap {
         top: 58%;
@@ -893,6 +902,7 @@ footer {
 }
 
 .services {
+    margin-top: 20px;
     .services__block {
         //height: 370px;
     }
@@ -910,7 +920,7 @@ footer {
 @media only screen and (max-width : 390px) {
     .transparent {
     top: 70%;
-    height: 40%;
+    //height: 40%;
 }
     .slider {
         .flx-slider__wrap {
@@ -919,16 +929,16 @@ footer {
     }
 }
 @media only screen and (max-width : 360px) {
-    .transparent {
-    
-    height: 41%;
-}
+    .online__button__wrap {
+        padding-left: 0;
+        
+    }
 }
 
 @media only screen and (max-width : 359px) {
     .transparent {
     
-    height: 41%;
+    //height: 41%;
 }
 .slider {
     .logo {
