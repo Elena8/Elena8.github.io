@@ -138,7 +138,7 @@ header {
   text-transform: uppercase;
   background: #f2f2f2; }
 .services .services__block {
-  height: 470px;
+  height: auto;
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.5); }
 .services ul {
   padding-left: 0;
@@ -322,6 +322,9 @@ footer {
   text-transform: uppercase;
   color: #4c6675; }
 
+@media only screen and (max-width: 999px) {
+  .menu__header .list__item__link {
+    font-size: 20px; } }
 @media only screen and (max-width: 992px) {
   .menu__header .list__item {
     margin-right: 4%; }
@@ -587,13 +590,13 @@ footer {
     top: 30px; } }
 @media only screen and (max-width: 360px) {
   .online__button__wrap {
-    padding-left: 0; } }
-@media only screen and (max-width: 359px) {
-  .slider .logo {
-    top: 41%; }
-  .slider .logo__img {
-    width: 70px; }
+    padding-left: 0; }
 
+  .slider .logo {
+    top: 40%; }
+  .slider .logo__img {
+    width: 70px; } }
+@media only screen and (max-width: 359px) {
   .online .time__select {
     font-size: 12px; } }
 @media only screen and (max-width: 340px) {
