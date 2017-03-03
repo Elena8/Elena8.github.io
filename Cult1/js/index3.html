@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Cult</title>
+   
+    
+</head>
+<body>
+
+<a>1</a>
+<a>2</a>
+
+<script>
+    var a=0;
+    for ( var j=0; j<2; j++) {
+        a = document.body.children[j].childNodes[0].nodeValue;
+        a=parseInt(a);
+        a =+ a;
+    }
+    alert (a);
+    var a = document.body.children[0].childNodes[0].nodeValue;
+    var b = document.body.children[1].childNodes[0].nodeValue;
+    alert(parseInt(a)+parseInt(b));
+    
+    
+</script>
+
+</body>

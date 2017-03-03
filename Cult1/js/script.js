@@ -14,16 +14,16 @@ $(function(){
   });
     
     
-   $( "#datepicker" ).datepicker();
+   /*$( "#datepicker" ).datepicker();
     
     $("td").click(function(){
         console.log("dfhvhdgfhgdfh");
         console.log($(this).text());
         console.log($(this).attr("data-month"));
         console.log($(this).attr("data-year"));
-    });
+    });*/
     
-   /* $(document).ready(function(){
+   /*$(document).ready(function(){
 			$("#countdown").countdown({
 				date: "01 april 2017 12:00:00",
 				format: "on"
@@ -61,6 +61,22 @@ $(function(){
                 }
         });
     
+    
+    /////////////////////////////////////////////////
+    
+    
+	
+
+
+/*function showDate(date) {
+	alert('The date chosen is ' + date);
+}*/
+
+
+	//$('#inlineDatepicker').datepick({onSelect: showDate});
+   
+    
+  
     
     
 });
