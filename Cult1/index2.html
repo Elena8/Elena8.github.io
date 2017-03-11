@@ -477,11 +477,23 @@
     <div class="container">
         <h2 id="online__add">Запишитесь онлайн</h2>
         <div class="row clearfix">
-            <!--<form action="#">-->
+            <form method="post" action="" id="ajaxform">
+                <div class="modal__window_wrap col-md-6">
+                    <h2 class="modal__window__h2">Заявка ONLINE</h2>
+                    <span class="modal__window_txt modal__window__text">Ваши данные:</span>
+                    <span class="modal__window_txt modal__window__name">Имя:<span class="modal__name-form"></span> </span>
+                    <span class="modal__window_txt modal__window__tel">Телефон:<span class="modal__tel-form"></span></span>
+                    <span class="modal__window_txt modal__window__data">Дата:<span class="modal__data-form"></span></span>
+                    <span class="modal__window_txt modal__window__time">Время:<span class="modal__time-form"></span></span>
+                    <span class="modal__window_txt modal__window__comment">Комментарий:<span class="modal__comment-form"></span></span>
+                    <span class="modal__window__footer">Наши администраторы свяжутся с Вами в ближайщее время.</span>
+                    <button class="btn__ago">Назад</button>
+                    <button type="submit" class="btn__post">Отправить</button>
+                </div>
              <div class="col-md-6 col-sm-6">
               <div class="online__time">
                   <span class="select__text">Выберите время:</span>
-                  <select class="time__select" name="time__select" id="">
+                  <select class="time__select" name="time__select" id="idSelect">
                       <option value="10.00-12.00">10.00-12.00</option>
                       <option value="12.00-14.00">12.00-14.00</option>
                       <option value="14.00-16.00">14.00-16.00</option>
@@ -499,12 +511,12 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-6">
-               <span class="t1">Имя:</span><input class="input__txt input__name" type="text" placeholder="Ваше имя"> <br>
+               <span class="t1">Имя:</span><input class="input__txt input__name" name="inp__name" type="text" placeholder="Ваше имя"> <br>
                <span class="t1">Номер телефона:</span><input class="input__txt input_telNumber" type="text" placeholder="Номер телефона"><br>
                <span class="t1">Сообщение</span><textarea class="online__txtarea" name="online__text" id="" maxlength="500"></textarea><br>
                <button class="btn__form">Отправить</button>
             </div>
-          <!-- </form>-->
+          </form>
         </div>
     </div>
 </section>
