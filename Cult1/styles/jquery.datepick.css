@@ -221,3 +221,15 @@ button.datepick-cmd {
 .datepick-clear-fix {
 	clear: both;
 }
+
+@media only screen and (max-width : 767px) {
+    .datepick { 
+    width: 45%;
+}
+}
+
+@media only screen and (max-width : 550px) {
+    .datepick { 
+    width: 70%;
+}
+}

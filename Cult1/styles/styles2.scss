@@ -688,6 +688,25 @@ footer {
     
 }
     
+.modal__window_wrap {
+   
+    margin-left: 0;
+    
+    .btn__post {
+        width: 30%;
+    }
+    
+    .modal__window__footer,
+    .modal__window_txt,
+     .modal__name-form,
+    .modal__tel-form,
+    .modal__data-form,
+    .modal__time-form,
+    .modal__comment-form {
+        font-size: 14px;
+    }
+}
+    
 }
 @media only screen and (max-width : 699px) {
     #service,

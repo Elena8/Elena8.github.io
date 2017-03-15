@@ -452,7 +452,20 @@ footer {
       text-align: center;
       left: 0; }
       .slider .online__button__wrap button {
-        width: 40%; } }
+        width: 40%; }
+
+  .modal__window_wrap {
+    margin-left: 0; }
+    .modal__window_wrap .btn__post {
+      width: 30%; }
+    .modal__window_wrap .modal__window__footer,
+    .modal__window_wrap .modal__window_txt,
+    .modal__window_wrap .modal__name-form,
+    .modal__window_wrap .modal__tel-form,
+    .modal__window_wrap .modal__data-form,
+    .modal__window_wrap .modal__time-form,
+    .modal__window_wrap .modal__comment-form {
+      font-size: 14px; } }
 @media only screen and (max-width: 699px) {
   #service,
   #portfolio,
