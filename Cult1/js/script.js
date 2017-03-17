@@ -3,7 +3,7 @@ $(function(){
     $(".map").addMarker({
       zoom: 100, // Initial zoom level (optional)
       coords: [55.035738, 82.900490], // Map center (optional)
-    address: "Вокзальная магистраль 1, Новосибирск",
+    //address: "Вокзальная магистраль 1, Новосибирск",
         text:"<b>Cult</b>"
       //type: "ROADMAP" // Map type (optional)
     });
