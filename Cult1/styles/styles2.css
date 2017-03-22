@@ -96,8 +96,7 @@ header {
 .block__actions {
   position: absolute;
   z-index: 3;
-  top: 80%;
-  padding-left: 45px; }
+  top: 80%; }
 
 .block__text__action {
   width: 50%; }
