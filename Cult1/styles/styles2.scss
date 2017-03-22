@@ -256,16 +256,16 @@ nav {
         /*th*/.main__th {
             padding-top: 5px;
             padding-bottom: 5px;
-            padding-left: 10px;
+            padding-left:1%;// 10px;
             font: 18px sans-serif;
             font-weight: normal;
         }
         .table__line td {
             padding-top: 5px;
             padding-bottom: 5px;
-            padding-left: 10px;
+            padding-left: 1%;//10px;
             text-align: left;
-            font: 20px,sans-serif;
+            font: 14px sans-serif;
         }
         .main__th:last-child,
         .table__line td:last-child,
@@ -975,18 +975,7 @@ footer {
     top: 20px;
 }
     
-    /*.online__button__wrap {
-        top: 58%;
-        button {
-            width: 60%;//45%;
-            //font-size: 15px;
-        }
-        
-    }
-    .link__online {
-        font-size: 18px;
-    }*/
-        
+   
 }
 
 .services {
@@ -996,14 +985,17 @@ footer {
     }
         
 }
+    
+    .price { 
+        .table__price {
+            .table__line td{
+                font-size: 12px;
+            }
+        }
+    } 
+   
 
-footer {
-    /*.btn__online {
-        font-size: 14px;
-    }
-    */
-        
-}
+
 }
 @media only screen and (max-width : 390px) {
     .transparent {
@@ -1054,9 +1046,3 @@ footer {
 }
 }
 
-@media only screen and (max-width : 320px) {
-    .navbar-default {
-        width: 320px;
-    }
-    
-}

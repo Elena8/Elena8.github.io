@@ -13,27 +13,7 @@ $(function(){
     animation: "slide"
   });
     
-    
-   /*$( "#datepicker" ).datepicker();
-    
-    $("td").click(function(){
-        console.log("dfhvhdgfhgdfh");
-        console.log($(this).text());
-        console.log($(this).attr("data-month"));
-        console.log($(this).attr("data-year"));
-    });*/
-    
-   /*$(document).ready(function(){
-			$("#countdown").countdown({
-				date: "01 april 2017 12:00:00",
-				format: "on"
-			},
-			
-			function() {
-				// callback function
-			});
-		});*/
-    
+   
     var note = $('#note'),
                 ts = new Date(2017, 3, 1),
                 newYear = true;
@@ -61,31 +41,9 @@ $(function(){
                 }
         });
     
-    
-    /////////////////////////////////////////////////
-    
-    
-	
-
-
-/*function showDate(date) {
-	alert('The date chosen is ' + date);
-}*/
-
-
-	//$('#inlineDatepicker').datepick({onSelect: showDate});
    
-    
-  
     
     
 });
-/*$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});*/
-
-
 
 //AIzaSyDqgZhc7BIUEnCmfSjPkWrt9x6EV3HKYAA
