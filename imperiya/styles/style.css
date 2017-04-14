@@ -1,0 +1,942 @@
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Arsenal';
+}
+/* Modal */
+.modal__window_wrap {
+    display: none;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    position: absolute;
+    z-index: 10;
+    background: #fce65f;
+    top: 30%;
+    left: 30%;
+    position: fixed; 
+}
+
+.close {
+    position: absolute;
+    z-index: 15;
+    padding: 0;
+    top:0;
+    right:0;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+}
+
+.modal__bg:target {
+    pointer-events: auto;
+
+}
+
+.modal__bg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display:none;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed; 
+}
+
+.modal__window__h2,
+.about__form__h2 {
+    text-align: center;
+    margin-top: 3px;
+    letter-spacing: -0.1px;
+    font-family: 'Arsenal',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+.modal__input {
+    padding-left: 10px;
+    width: 99%;
+    height: 40px;
+    margin-bottom: 10px;
+    background: #fef3b4;
+    border: 1px solid #fef3b4;
+}
+
+.modal__btn {
+    margin: 0 30%;
+    padding: 5px 0;
+    border: none;
+    background: #3b73e4;
+    color: white;
+    width: 42%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.modal__btn:hover {
+     background: #1a4fbd;
+}
+
+.modal__window_wrap input::-webkit-input-placeholder {
+  text-indent: 13px; }
+
+/*HEADER*/
+.header-nav {
+    background: #fff;
+    border-color: #fff;
+    margin-bottom: 0;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+#top-menu {
+    padding: 0;
+    width: 100%;
+    margin-top: 4.5%;
+}
+.menu__header ul {
+    padding-left: 0;
+}
+.list__item {
+    float: left;
+    list-style: none;
+    margin-right: 3%;
+}
+
+.list__item:last-child {
+    margin-right: 0;
+}
+
+.list__item__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #31313f;
+/*    font-family:'Arsenal', sans-serif;*/
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.list__item__link:hover {
+    color: #13a3e9;
+}
+
+.social {
+    float: left;
+    width: 25%;
+    padding-top: 1.4%;
+    
+}
+
+#id_contacts {
+    float: right;
+    
+}
+
+.contacts__number1 {
+    font-size: 16px;
+}
+
+.contacts__number {
+    font-size: 20px;
+    font-family:'Arsenal', sans-serif;
+}
+
+.link__call {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #89c8f1;
+}
+
+.soc__link {
+    text-decoration: none;
+    color: #14a3e9;
+    padding: 5px 4px;
+    font-size: 16px;
+    border: 1px solid #14a3e9;
+    border-radius: 50.5%;
+}
+
+.soc__link:hover {
+    text-decoration: none;
+    color: #b8e3f8;
+    border: 1px solid #b8e3f8;
+}
+
+/* SLIDER */
+
+.slider .col-sm-12 {
+    padding: 0;
+}
+
+.slider__text_rect {
+    position: absolute;
+    z-index: 2;
+    height: 472px;
+    background: #4179cc;
+    opacity: 0.5;
+}
+
+.slider__text__block {
+    border: 2px solid #fce561;
+    margin-top: 20%;
+    padding: 25px 6% 40px 4%;
+/*    padding-bottom: 40px;*/
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+.h2__slide {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+
+/* SERVICE */
+.services,
+.about__h,
+.about__company,
+.clients,
+.news,
+.seo,
+.reviews,
+.footer_content {
+    margin-top: 60px;
+}
+
+.h3 {
+    margin-top: 0;
+    margin-bottom: 7%;
+    color: #676767;
+}
+
+
+.h2__rect {
+    position: absolute;
+/*    margin: 1% 42%;*/
+    margin: 1%;
+    left: 45%;
+    height: 79px;
+    width: 79px;
+    border: 2px solid #fef2b2;
+    z-index: -1;
+}
+
+
+
+.h2 {
+    font-size: 30px;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    
+}
+
+.service__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.h3,
+.service__text {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+/*    font-family:'Arsenal', sans-serif;*/
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.service__rect {
+    z-index: -1;
+    position: absolute;
+    top: 120px;
+    /*left: 25%;*/
+    margin: 0 19.5%;
+    width: 40%;
+    height: 82px;
+    border: 1px solid #d2d9df;
+}
+
+/*.link__service {
+    display: block;
+}*/
+
+.block__service:hover .service__rect {
+    background: #d2d9df;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 25px 0;
+    background: #f8d231;
+}
+
+.img__about,
+.link__about {
+    display: block;
+}
+
+.link__about {
+    text-transform: uppercase;
+    color: black;
+    font-size: 16px;
+/*    font-family:'Arsenal', sans-serif;*/
+    font-weight: 700;
+    padding-top: 10px;
+    text-decoration: none;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.link__about:hover {
+    text-decoration: underline;
+    color: black;
+}
+.block__about {
+    text-align: center;
+}
+
+.img__about {
+    margin: 0 auto;
+}
+
+/* ABOUT COMPANY */
+.about__company .h3 {
+    margin-bottom: 6.1%;
+}
+
+.about__company__form {
+    text-align: center;
+    padding: 15px 25px;
+    background: #fce65f;
+    width: 97%;
+}
+
+.about__input {
+    padding-left: 10px;
+    width: 98%;
+    height: 39px;
+    margin-bottom: 10px;
+    background: #fef3b4;
+    border: 0;
+}
+
+.about__form__btn {
+    margin: 8px 25% 0px;
+    padding: 3px 0;
+    border: none;
+    background: #3b73e4;
+    color: white;
+    width: 41%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+.about__form__btn:hover {
+    background: #1a4fbd;
+}
+
+#id_comment {
+    padding-left: 10px;
+    width: 98%;
+    height: 110px;
+    background: #fef3b4;
+    border: 1px solid #fef3b4;
+    resize: none;
+}
+
+.about__company__form input::-webkit-input-placeholder,
+.about__company__form textarea::-webkit-input-placeholder {
+  text-indent: 13px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.about__company__text {
+    padding: 0 3%;
+}
+
+.about__company__txt {
+    display: block;
+    text-align: justify;
+    margin-bottom: 25px;
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* REVIEWS */
+.reviews__photo {
+    float: left;
+}
+
+.reviews__block,
+.block__news {
+    margin-bottom: 5%;
+}
+
+
+.reviews__rect {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #fce561;
+    font-size: 40px;
+    line-height: 1.1;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.reviews__text {
+    display: block;
+    float: left;
+   padding: 10px 7px 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+}
+
+.reviews__name {
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    color: #949494;
+}
+
+.reviews__data {
+    display: block;
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+    color: #949494;
+}
+
+/* NEWS */
+.news__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.news__h3 {
+    display: block;
+    padding: 5px 0;
+    color: #88a5ed;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 18px;
+}
+
+.news__text {
+    display: inline-block;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.news__txt {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
+}
+
+.news__data {
+    display: block;
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+    color: #676767;
+}
+
+.block__news:hover .news__h3 {
+    color:#e1e1e1;
+}
+
+.block__transparent {
+    display: none;
+    position: absolute;
+    background: #e1e1e1;
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.news__img__link {
+  display: inline-block;
+    position: relative;
+}
+
+
+.news__img__link:hover .block__transparent {
+    display: block;
+}
+
+/* SEO */
+
+#text_more {
+    display: none;
+}
+
+#text_more,
+.seo__txt1 {
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+
+#button_d {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border: none;
+    color: white;
+    background: #686868;
+    margin: 10px auto;
+}
+
+#button_d:hover {
+    background: #88a5ed;
+}
+
+/* FOOTER */
+.footer_content {
+    background: #444444;
+}
+
+.logo__footer,
+.footer__service,
+.footer__menu,
+.footer__contacts {
+    float: left;
+}
+
+.logo__footer {
+    margin-top: 7px;
+}
+
+.footer_content .row {
+    padding: 30px 15px;
+}
+
+.h3__footer {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+/*    font-family: 'Arsenal', sans-serif;*/
+    color: white;
+}
+
+.footer__service__list__item,
+.footer__list__item,
+.item__contacts {
+    list-style: none;
+    padding-bottom: 7px;
+}
+
+.footer__service__item__link:hover,
+.footer__item__link:hover {
+    text-decoration: none;
+   color: #e6c434;
+}
+
+.footer__service,
+.logo__footer,
+.footer__contacts,
+.footer__menu {
+    padding-left: 0;
+}
+
+
+.footer__service__item__link,
+.footer__item__link {
+    padding-left: 1%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    
+}
+
+.footer_content ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.item__contacts {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.contacts {
+    font-weight: 700;
+}
+
+.add__email {
+    font-size: 14px;
+    font-weight: 700;
+/*    font-family: 'Arsenal', sans-serif;*/
+    color: #e6c434;
+}
+
+.input__footer {
+    background: #737373;
+    border: none;
+    width: 83%;
+    height: 30px;
+}
+
+.footer__contacts__block input::-webkit-input-placeholder {
+    color: white;
+    text-indent: 13px;
+}
+
+.btn__footer {
+    position: relative;
+    font-size: 20px;
+    top:2px;
+    left: -5px;
+    background: #f8d231;
+    border: none;
+    color: #444444;
+}
+
+.btn__footer:hover {
+    background: #deb407;
+}
+
+.footer .row {
+    text-align: center;
+}
+
+.footer {
+    background: #f8d231;
+}
+
+.footer__author {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    color: #444444;
+}
+
+.link__mnogoslov {
+    text-decoration: underline;
+    color: #444444;
+}
+
+.link__mnogoslov:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1900px) and (min-width: 2500px) {
+    
+.h2__rect {
+    margin-top: 0.2%;
+    left: 48%;
+
+    
+}
+}
+@media only screen and (max-width: 1000px) {
+    .list__item__link {
+    font-size: 14px;
+}
+    .contacts__number1 {
+    font-size: 14px;
+}
+
+.contacts__number {
+    font-size: 18px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 992px) {
+
+.modal__window_wrap {
+    left: 5%;  
+    }
+.slider__text__block {
+    padding: 10px 6% 10px 4%;
+        
+    }
+/*
+.h2__rect {
+    position: absolute;
+    margin: 1% 34%;
+}
+*/
+.block__service {
+        margin-bottom: 10px;
+    }
+.service__rect {
+        top: 40px;
+    left: 20%;
+    /*top: 120px;*/
+    /*left: 25%;*/
+    margin:0;
+    width: 40%;
+    height: 40%;
+    border: 1px solid #d2d9df;
+}
+    .service__text {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin: 10% 0;
+    font-size: 14px;
+}
+    
+    .news__img__wrap {
+        text-align: center;
+    }
+    
+    .link__service {
+        float: left;
+    }
+    
+    .service__img {
+    max-width: 95%;
+    height: auto;
+}
+    
+    .block__about {
+        margin-bottom: 15px;
+    }
+    
+    .block__client {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    
+}
+
+@media only screen and (max-width: 871px) {
+    .slider__text__block {
+        font-size: 14px;
+        
+    }
+    
+    .h2__slide {
+        font-size: 23px;
+    }
+    
+}
+
+@media only screen and (max-width: 801px) {
+     .slider__text__block {
+        padding: 0 4%;
+        
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+/*
+.h2__rect {
+        display: none;
+}
+*/
+.h2 {
+    font-size: 22px;
+    
+}
+
+.h3 {
+    font-size: 16px;
+}
+
+.about__company__txt,
+#text_more,
+.seo__txt1 {
+    font-size: 16px;  
+}
+    
+#top-menu {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    margin-top: 56px;
+    border-top: none; 
+}
+.menu__header ul {
+    
+      background:#e2e4e6;
+      opacity: 0.8;
+      padding-left: 0;
+      width: 50%;
+      float: right; 
+}
+ .list__item {
+        margin-right: 0;
+      float: none;
+      border-bottom: 1px solid;
+
+    }
+    
+.list__item__link {
+    display: block;
+    padding-top: 5px;*/
+    padding-bottom: 5px;
+      font-size: 14px;
+      text-align: center; 
+    }
+    
+.list__item__link:hover {
+    text-decoration: none;
+    background: #5787e6;
+      color: #bfbfbf; 
+    }
+.social {
+        width: 25%;
+    }
+#id_contacts {
+    padding-top: 10px;
+    float: left;
+    /*width: 45%;*/
+    }
+    
+    .service__img {
+    max-width: 80%;
+    height: auto;
+}
+    
+ .service__rect {
+    left: 15%;
+    width: 45%;
+    height: 45%;
+   
+}
+    
+    
+    .logo__footer__img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+     
+
+    
+} 
+
+@media only screen and (max-width: 750px) {
+    .slider__text__block {
+        display: none;
+    }
+    
+    .logo__footer,
+    .footer__service,
+    .footer__menu,
+    .footer__contacts {
+        margin-bottom: 10px;
+    }
+    
+    
+    
+}
+
+
+@media only screen and (max-width: 620px) {
+
+.contacts__number1 {
+    font-size: 14px;
+}
+
+.contacts__number {
+    font-size: 16px;
+    }
+.soc__link {
+    font-size: 12px;
+}
+    
+.service__rect {
+    width: 55%;
+   
+}
+    
+.clients__logo {
+    max-width: 50%;
+    height: auto;
+}
+
+}
+@media only screen and (max-width: 550px) {
+    .about__form__btn,
+    .modal__btn {
+       font-size: 16px; 
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .social {
+        width: 50%;
+    }
+    
+.service__rect {
+    width: 65%;
+    height: 55%;
+   
+}
+
+.service__text {
+    margin: 12% 0;
+    font-size: 12px;
+}
+
+}
+
+@media only screen and (max-width: 460px) {
+
+.service__rect {
+    top: 30px;
+    width: 85%;
+    }
+    
+}
+
+
