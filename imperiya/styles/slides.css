@@ -5,7 +5,7 @@ http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
 /*-----------------------------------------------------------------------------------*/
 .slider_container{  margin:auto; clear:both; /*background:url(images/shadow_top.png) no-repeat top center;*/ padding:30px 0 0 0;}
 .flex-caption{ position: absolute;/* right:11px;*/ bottom:0px;height: 100%;}
-.caption_title_line{float:left; width:50%; height:100%; padding:5px 15px 10px 15px;background:url(../img/rect.png) repeat;color: #303030;}
+.caption_title_line{float:left; width:48.9%; height:100%; padding:5px 15px 10px 15px;background:url(../img/rect.png) repeat;color: #303030;}
 .flex-caption h2{ color:#303030;font-size:20px; padding:5px 0 5px 0; margin:0px;font-family: 'Ovo', serif;}
 
 .flex-container a:active,
@@ -18,32 +18,32 @@ http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
 *********************************/ 
 .flexslider {width: 100%; margin: 0; padding: 0 0 30px 0;/*background:url(images/shadow_bottom.png) no-repeat center bottom;*/}
 .flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {width: 100%; display: block;height: auto; background-size: cover; }
+.flexslider .slides img {width: 100%; display: block;height: 709px; background-size: cover; }
 .flex-pauseplay span {text-transform: capitalize;}
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
 html[xmlns] .slides {display: block;} 
 * html .slides {height: 1%;}
 .no-js .slides > li:first-child {display: block;}
-.flexslider {position: relative; zoom: 1;max-height: 709px;}
+.flexslider {position: relative; zoom: 1;height: auto;}
 .flexslider .slides {zoom: 1;}
 .flexslider .slides > li {position: relative;}
 .flex-container {zoom: 1; position: relative;}
 
 /* Direction Nav */
-.flex-direction-nav li a {width:30px; height:30px; margin:0; display: block; position: absolute; /*right:11px;*/left:50%; cursor: pointer; text-indent: -9999px;}
-.flex-direction-nav li a.next {background:url(../img/next.png) no-repeat center; bottom:50%;/*background: #3b73e4;*/left: 51%;}
-.flex-direction-nav li a.prev {background:url(../img/prev.png) no-repeat center;bottom:50%;/*background: #fce561;*/left: 47%;}
-.flex-direction-nav li a.next:hover {background:url(images/next_a.png) no-repeat center;}
-.flex-direction-nav li a.prev:hover {background:url(images/prev_a.png) no-repeat center;}
-.flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+.slider .flex-direction-nav li a {width:51px; height:51px; margin:0; display: block; position: absolute; /*right:11px;*/left:50%; cursor: pointer; text-indent: -9999px;}
+.slider .flex-direction-nav li a.next {background:url(../img/next.png) no-repeat center; bottom:48%;/*background: #3b73e4;*/left: 49.97%;}
+.slider .flex-direction-nav li a.prev {background:url(../img/prev.png) no-repeat center;bottom:48%;/*background: #fce561;*/left: 43.6%;}
+.slider .flex-direction-nav li a.next:hover {background:url(images/next_a.png) no-repeat center;}
+.slider .flex-direction-nav li a.prev:hover {background:url(images/prev_a.png) no-repeat center;}
+.slider .flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
-.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-nav li:first-child {margin: 0;}
-.flex-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
-.flex-control-nav li a:hover {background-position: 0 -13px;}
-.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+.slider .flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.slider .flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.slider .flex-control-nav li:first-child {margin: 0;}
+.slider .flex-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
+.slider .flex-control-nav li a:hover {background-position: 0 -13px;}
+.slider .flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
 
 /* Media Queries
 /*-----------------------------------------------------------------------------------*/
@@ -56,16 +56,40 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:40px;}
 .flex-caption { display:none;}
 }*/
+@media only screen and (max-width: 992px) {
+    .flexslider .slides img {max-width: 100%; display: block;height: auto; background-size: cover; }
+    .slider .flex-direction-nav li a { width: 30px;height: 30px;}
+    
+}
 
+@media only screen and (max-width: 560px) {
+    .slider .flex-direction-nav li a.prev {left: 42%;}
+    
+}
+
+@media only screen and (max-width: 395px) {
+    .caption_title_line{width:59%;  padding:2% 2% 2% 2%;}
+    .slider .flex-direction-nav li a.prev {left: 50%;}
+    .slider .flex-direction-nav li a.next {left: 61%;}
+}
+
+@media only screen and (max-width: 330px) {
+    .caption_title_line{width:62%;  padding:2% 2% 2% 2%;}
+    .slider .flex-direction-nav li a.prev {left: 53%;}
+    .slider .flex-direction-nav li a.next {left: 64%;}
+}
+
+/*
 @media only screen and (max-width: 750px) {
 .flexslider {width: 100%;margin: 0;padding:0 0 30px 0;
         background:none;}
 .flex-direction-nav li a {display: none;}
 .caption_title_line {display: none;}
 }
+*/
 
 @media only screen and (min-width: 2300px) {
 .caption_title_line {width: 55%;}
-.flex-direction-nav li a.prev {display: none;}
-.flex-direction-nav li a.next {display: none;}
+.slider .flex-direction-nav li a.prev {display: none;}
+.slider .flex-direction-nav li a.next {display: none;}
 }
