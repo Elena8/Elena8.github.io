@@ -46,7 +46,7 @@
              
          });
          
-          $('.close').click(function(){
+          $('.close__window').click(function(){
              $('.modal__bg').hide(); $('.modal__window_wrap').hide();
              
          })

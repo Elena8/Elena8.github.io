@@ -20,7 +20,7 @@ body {
     position: fixed; 
 }
 
-.close {
+.close__window {
     position: absolute;
     z-index: 15;
     padding: 0;
@@ -28,11 +28,17 @@ body {
     right:0;
     width: 22px;
     height: 22px;
+    font-size: 28px;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
     line-height: 20px;
     color: black;
+}
+
+.close__window:hover {
+    text-decoration: none;
+     
 }
 
 .modal__bg:target {
@@ -190,6 +196,10 @@ body {
     font-weight: 400;
     color: #89c8f1;
     vertical-align: super;
+}
+
+.link__call:hover {
+    text-decoration: none;
 }
 
 .soc__link {
