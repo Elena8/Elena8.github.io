@@ -739,6 +739,13 @@ body {
 
 
 /* SEO */
+.line {
+    position: absolute;
+    bottom: 8%;
+    width: 97%;
+    z-index: -1;
+    border-bottom: 1px solid #e1e1e1;
+}
 .seo {
     margin-top: 75px;
 }
