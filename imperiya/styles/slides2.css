@@ -48,14 +48,25 @@ html[xmlns] .slides {display: block;}
 /* Media Queries
 /*-----------------------------------------------------------------------------------*/
 
-/*@media screen and (max-width: 1000px) {
-.slider_container{ width:100%; margin:0; clear:both; background:none; padding:30px 0 0 0;}
-.flexslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
-.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
-.flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:85px;}
-.flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:40px;}
-.flex-caption { display:none;}
-}*/
+
+@media only screen and (min-width: 1500px) {
+    .caption_title_line2{padding-top: 14%;}
+    
+}
+@media only screen and (min-width: 2000px) {
+    .caption_title_line2{padding-top: 12%;}
+    
+}
+@media only screen and (min-width: 2300px) {
+    .caption_title_line2{padding-top: 10%;}
+    .slider2 .flex-direction-nav li a {right: 11.5%;}
+    
+}
+@media only screen and (min-width: 2900px) {
+    .caption_title_line2{padding-top: 7%;}
+    
+    
+}
 
 @media only screen and (max-width: 992px) {
     .slider2 .flexslider .slides img {max-width: 47%; display: block;height: 400px; background-size: cover; }
@@ -87,33 +98,4 @@ html[xmlns] .slides {display: block;}
     .flex-caption2 { width: 53%;}
     
 }
-/*
-@media only screen and (max-width: 560px) {
-    .flex-direction-nav li a.prev {left: 42%;}
-    
-}
 
-@media only screen and (max-width: 395px) {
-    .caption_title_line{width:59%;  padding:2% 2% 2% 2%;}
-    .flex-direction-nav li a.prev {left: 50%;}
-    .flex-direction-nav li a.next {left: 61%;}
-}
-
-@media only screen and (max-width: 330px) {
-    .caption_title_line{width:62%;  padding:2% 2% 2% 2%;}
-    .flex-direction-nav li a.prev {left: 53%;}
-    .flex-direction-nav li a.next {left: 64%;}
-}
-
-@media only screen and (max-width: 750px) {
-.flexslider {width: 100%;margin: 0;padding:0 0 30px 0;
-        background:none;}
-.flex-direction-nav li a {display: none;}
-.caption_title_line {display: none;}
-}
-
-@media only screen and (min-width: 2300px) {
-.caption_title_line {width: 55%;}
-.flex-direction-nav li a.prev {display: none;}
-.flex-direction-nav li a.next {display: none;}
-}*/

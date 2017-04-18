@@ -48,14 +48,6 @@ html[xmlns] .slides {display: block;}
 /* Media Queries
 /*-----------------------------------------------------------------------------------*/
 
-/*@media screen and (max-width: 1000px) {
-.slider_container{ width:100%; margin:0; clear:both; background:none; padding:30px 0 0 0;}
-.flexslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
-.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
-.flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:85px;}
-.flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:40px;}
-.flex-caption { display:none;}
-}*/
 @media only screen and (max-width: 992px) {
     .flexslider .slides img {max-width: 100%; display: block;height: auto; background-size: cover; }
     .slider .flex-direction-nav li a { width: 30px;height: 30px;}
@@ -79,17 +71,20 @@ html[xmlns] .slides {display: block;}
     .slider .flex-direction-nav li a.next {left: 64%;}
 }
 
-/*
-@media only screen and (max-width: 750px) {
-.flexslider {width: 100%;margin: 0;padding:0 0 30px 0;
-        background:none;}
-.flex-direction-nav li a {display: none;}
-.caption_title_line {display: none;}
-}
-*/
 
+@media only screen and (min-width: 1800px) {
+    .slider .flex-direction-nav li a.prev {left: 45%;}
+    
+}
 @media only screen and (min-width: 2300px) {
-.caption_title_line {width: 55%;}
-.slider .flex-direction-nav li a.prev {display: none;}
-.slider .flex-direction-nav li a.next {display: none;}
+.caption_title_line {width: 52%;}
+.slider .flex-direction-nav li a.prev {left: 48%;}
+.slider .flex-direction-nav li a.next {left: 54%;}
+
+}
+@media only screen and (min-width: 2500px) {
+ .slides .caption_title_line {}
+.slider .flex-direction-nav li a.prev {left: 48%;}
+.slider .flex-direction-nav li a.next {left: 54%;}
+
 }
