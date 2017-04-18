@@ -83,16 +83,12 @@ html[xmlns] .slides {display: block;}
 
 }
 @media only screen and (min-width: 2500px) {
+    .flex-caption{right: 0; left: 0;}
 .slider .flex-direction-nav li a.prev {left: 49%;}
 .slider .flex-direction-nav li a.next {left: 53%;}
 
 }
 
 
-@media only screen and (min-width: 2600px) {
- .slides .caption_title_line {width: 52%;}
-.slider .flex-direction-nav li a.prev {display: none;}
-.slider .flex-direction-nav li a.next {display: none;}
 
-}
 

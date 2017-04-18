@@ -958,6 +958,16 @@ body {
 
 }
 
+@media only screen and (min-width: 2700px)  {
+    
+.slider__text__block {
+    margin-top: 16%;   
+}
+
+}
+
+
+
 @media only screen and (max-width: 1200px) {
     .list__item {
     margin-right: 3%
