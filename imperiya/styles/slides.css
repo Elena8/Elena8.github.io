@@ -30,11 +30,31 @@ html[xmlns] .slides {display: block;}
 .flex-container {zoom: 1; position: relative;}
 
 /* Direction Nav */
-.slider .flex-direction-nav li a {width:51px; height:51px; margin:0; display: block; position: absolute; /*right:11px;*/left:50%; cursor: pointer; text-indent: -9999px;}
-.slider .flex-direction-nav li a.next {background:url(../img/next.png) no-repeat center; bottom:48%;/*background: #3b73e4;*/left: 49.97%;}
-.slider .flex-direction-nav li a.prev {background:url(../img/prev.png) no-repeat center;bottom:48%;/*background: #fce561;*/left: 43.6%;}
-.slider .flex-direction-nav li a.next:hover {background:url(images/next_a.png) no-repeat center;}
-.slider .flex-direction-nav li a.prev:hover {background:url(images/prev_a.png) no-repeat center;}
+.slider .flex-direction-nav li a {width:51px; height:51px; margin:0; display: block; position: absolute; /*right:11px;*/left:50%; cursor: pointer;}
+.slider .flex-direction-nav li a.next {/*background:url(../img/next.png) no-repeat center;*/ bottom:48%;background: #3b73e4;left: 49.97%;}
+.slider .flex-direction-nav li a.prev {/*background:url(../img/prev.png) no-repeat center;*/bottom:48%;background: #fce561;left: 43.6%;}
+
+.slider .flex-direction-nav li a.prev:before {
+    padding-top: 5px;
+    padding-left: 9px;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5;
+    color: black;
+}
+.slider .flex-direction-nav li a.next:before {
+    padding-top: 5px;
+    padding-left: 9px;
+    font-size: 28px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+}
+
+.slider .flex-direction-nav li a.next:hover {/*background:url(images/next_a.png) no-repeat center;*/text-decoration:none;    background: #1a4fbd;}
+.slider .flex-direction-nav li a.prev:hover {/*background:url(images/prev_a.png) no-repeat center;*/text-decoration:none;background: #deb407;}
 .slider .flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
@@ -51,6 +71,18 @@ html[xmlns] .slides {display: block;}
 @media only screen and (max-width: 992px) {
     .flexslider .slides img {max-width: 100%; display: block;height: auto; background-size: cover; }
     .slider .flex-direction-nav li a { width: 30px;height: 30px;}
+    .slider .flex-direction-nav li a.prev:before {
+    padding-top: 0;
+    padding-left: 0;
+    font-size: 20px;
+    
+}
+.slider .flex-direction-nav li a.next:before {
+    padding-top: 0;
+    padding-left: 5px;
+    font-size: 20px;
+   
+}
     
 }
 
@@ -59,7 +91,14 @@ html[xmlns] .slides {display: block;}
     
 }
 
+/*
 @media only screen and (max-width: 395px) {
+    .caption_title_line{width:59%;  padding:2% 2% 2% 2%;}
+    .slider .flex-direction-nav li a.prev {left: 50%;}
+    .slider .flex-direction-nav li a.next {left: 61%;}
+}
+*/
+@media only screen and (max-width: 440px) {
     .caption_title_line{width:59%;  padding:2% 2% 2% 2%;}
     .slider .flex-direction-nav li a.prev {left: 50%;}
     .slider .flex-direction-nav li a.next {left: 61%;}
