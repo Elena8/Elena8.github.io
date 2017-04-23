@@ -1291,7 +1291,7 @@ body {
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
         background-color: white;
-        border-color: #b8e3f8;
+/*        border-color: #b8e3f8;*/
     }
     
     .menu-btn:hover .icon-menu-2{
