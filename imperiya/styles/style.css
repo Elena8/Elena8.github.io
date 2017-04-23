@@ -780,7 +780,7 @@ body {
 
 }
 #button_d:before {
-    padding-bottom: 4px;
+    padding-bottom: 0;/*4px;*/
     margin: 0;
 }
 
@@ -1480,6 +1480,9 @@ body {
     .block__client {
         width: 100%;
     }
+    .h2__rect {
+        left: 43%;
+    }
     
 }
 
@@ -1685,6 +1688,9 @@ body {
     }
     .slider__text__block p {
         width: 90%;
+    }
+    .h2__rect {
+        left: 41%;
     }
 }
 
