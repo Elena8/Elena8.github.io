@@ -1461,6 +1461,7 @@ body {
 
 @media only screen and (max-width: 660px) {
     #id_contacts {
+        padding-bottom: 5px;
         margin-left: 0; 
     }
     
@@ -1640,8 +1641,8 @@ body {
     
      #id_contacts {
         margin-left: 20%;
-        padding-top: 0;
-        margin-bottom: 1%;
+        padding-top: 5px;
+        padding-bottom: 5px;
          
     }
     
@@ -1752,7 +1753,7 @@ body {
     }
     #id_contacts {
         margin-left: 1%;
-        margin-top: 2%;
+/*        margin-top: 2%;*/
     }
      .slider__text__block {
         margin-top: 2%;
@@ -1778,7 +1779,7 @@ body {
 @media only screen and (max-width: 340px) {
     #id_contacts {
         width: 100%;
-         margin-top: 0;
+/*         margin-top: 0;*/
         margin-left: 0;
     }
     
