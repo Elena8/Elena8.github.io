@@ -114,7 +114,9 @@ body {
     padding-right: 10px;
 }
 .logo {
-    max-width: 100%;
+    max-width: 252px;
+    width: 100%;
+    max-height: 88px;
     height: auto;
 }
 #top-menu {
@@ -338,6 +340,11 @@ body {
     height: 82px;
     border: 2px solid #d2d9df;
 }
+.service__img {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+}
 
 .block__service {
     text-align: center;
@@ -408,6 +415,8 @@ body {
 
 .img__about {
     margin: 0 auto;
+    max-width: 101px;
+    height: auto;
 }
 
 /* ABOUT COMPANY */
@@ -554,6 +563,9 @@ body {
 }
 .reviews__photo {
     float: left;
+    max-width: 65px;
+    max-height: 65px;
+
 }
 
 .reviews__block:nth-child(2n){
@@ -615,9 +627,29 @@ body {
 }
 
 /* Clients*/
+/* Основной блок */
+.owl-wrapper-outer {
+/*	border: 1px solid #777;*/
+	border-radius: 5px;
+	overflow: hidden;
+	background: white;
+}
+
+/* 1 квадратик карусели */
+.carousel-element {
+	padding: 30px 0px;
+	text-align: center;
+/*	font-size: 300%;*/
+/*    float: left;*/
+/*	border-right: 1px solid #777;*/
+}
 .clients {
     margin-top: 60px;
     
+}
+.clients__logo {
+    max-width: 100%;
+    height: auto;
 }
 .clients .h2 {
    margin-left: 38.8%;
@@ -649,7 +681,7 @@ body {
 }
 /* NEWS */
 .news {
-    margin-top: 96px;
+    margin-top: 42px;
 }
 
 .news .h2 {
@@ -662,7 +694,8 @@ body {
     
 }
 .news__img {
-        max-width: 100%;
+        max-width: 350px;
+        width: 100%;
         height: auto;
     }
 
@@ -708,7 +741,7 @@ body {
     padding-right: 30px;
 }
 
-.block__news:hover .news__h3 {
+.news__h3:hover {
     color:#e1e1e1;
 }
 
@@ -746,6 +779,7 @@ body {
 }
 .seo {
     margin-top: 75px;
+    margin-bottom: 167px;
 }
 .seo .h2 {
     margin-left: 43.5%;
@@ -790,7 +824,7 @@ body {
 
 /* FOOTER */
 .footer_content {
-    margin-top: 13.5%;
+/*    margin-top: 13.5%;*/
     background: #444444;
 }
 
@@ -823,6 +857,11 @@ body {
 .item__contacts {
     list-style: none;
     padding-bottom: 7px;
+}
+.logo__footer__img {
+    max-width: 196px;
+    width: 100%;
+    height: auto;
 }
 
 .footer__service__item__link:hover,
@@ -994,6 +1033,9 @@ body {
     
     .block__about {
         width: 25%
+    }
+    .service__rect {
+        top: 123px;
     }
 
     
@@ -1522,7 +1564,7 @@ body {
     }
     
     .clients__logo {
-        max-width: 50%;
+        max-width: 100%;
         height: auto;
      }
     .soc__link {
