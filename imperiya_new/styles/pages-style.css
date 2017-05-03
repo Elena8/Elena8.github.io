@@ -1,0 +1,560 @@
+.page__h3 {
+   
+    margin-bottom: 43px;
+}
+.line__path {
+    background: #686868;
+    box-shadow:        inset  0  8px 8px -8px black,
+                        inset  0 -8px 8px -8px black;
+}
+
+.path__nav,
+.path__main__link {
+    color: white;
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+.path__main__link {
+    padding-right: 5px;
+    
+}
+.path__main__link:hover {
+    color: #f8d231;
+    text-decoration: none;
+}
+.path_sp {
+    padding-right: 15px;
+}
+.services__block__page {
+    margin-bottom: 35px;
+}
+.services__block__page .service__rect {
+        top: 40px;
+        left: 30%;
+        margin: 0;
+        width: 60%;
+        height: 40%;
+        border: 1px solid #d2d9df;
+    }
+.services__block__page .service__text {
+/*        float: left;*/
+        display: inline-block;
+    position: relative;
+    vertical-align: middle;
+        width: 40%;
+        margin: 0;
+    left: 6%;
+        padding-top: 25px;
+/*        font-size: 14px;*/
+    }
+
+.page__h2 {
+    margin-top: 10px;
+}
+.page__service__rect {
+        z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: 35%;
+
+    margin: 0;
+    width: 60%;
+
+    height:79px;
+    border: 2px solid #d2d9df;
+}
+.services__block__page:nth-child(2n) {
+    padding-left: 0;
+}
+.services__block__page:nth-child(2n) .page__service__rect {
+    left:32%;
+}
+.services__block__page .link__service {
+    display: inline-block;
+    width: 46%;
+}
+.services__block__page:nth-child(2n) .link__service {
+    display: inline-block;
+    width: 45%;
+}
+.page__service__img {
+    width: 100%;
+    height: auto;
+}
+.services__block__page:hover .page__service__rect {
+    background: #d2d9df;
+}
+/* SERVICES SEO */
+.page__seo {
+    margin-top: 20px;
+    margin-bottom: 121px;
+}
+.page__seo .h2 {
+    margin-left: 46.5%;
+    margin-top: 18px;
+}
+.page__seo .h3 {
+    margin-bottom: 70px;
+}
+
+/*///// NEWS /////////*/
+.page__news .news__img {
+    max-width: 1100px;
+    width: 100%;
+    height: auto;
+}
+.page__news .h2__rect {
+    margin: 2% 1%;
+}
+.page__block__news {
+    margin-bottom: 20px;
+/*    padding-left: 30px;*/
+}
+.page__news__h2 {
+    margin-top: 35px;
+    margin-left: 43%;
+}
+.page__news__h3 {
+    margin-left: 38.5%;
+    margin-bottom: 34px;
+}
+.page__news__text {
+/*    padding-right: 3%;*/
+    width: 97%;
+}
+.page__news__data {
+    margin-right: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.block__news__h3 {
+    line-height: 1.5;
+}
+
+/* GALLARY */
+.page__gallary {
+    margin-top: 13px;
+    margin-bottom: 41px;
+}
+.page__gallary .h3 {
+    margin-bottom: 6px;
+}
+.page__gallary  .flexslider {
+    padding: 0 0 24px 0;
+}
+
+.container__img {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.gallary__img__wrap {
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+/* REVIEWS */
+.reviews__page {
+    margin-top: 7px;
+}
+.reviews__page .h3 {
+    margin-bottom: 26px;
+}
+.reviews__page .reviews__text {
+    width: 97%;
+    padding-right: 0;
+    padding-bottom: 14px;
+}
+.reviews__page .reviews__name {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+}
+.reviews__page .reviews__block {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 57px
+}
+.reviews__page .reviews__block:nth-child(n) {
+    margin-bottom: 21px;
+    
+}
+.reviews__page .reviews__data {
+    line-height: 2.4;
+    letter-spacing: -0.5px;
+    margin-right: 2.5%;
+}
+.form__rewies__wrap {
+    margin-bottom: 70px;
+}
+.btn__reviews:hover {
+    background: #1a4fbd;
+}
+.reviews__form__h2 {
+/*    text-align: center;*/
+/*    margin-top: 3px;*/
+    margin-bottom: 17px;
+    letter-spacing: 0.1px;
+    font-family: 'Arsenal',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+.inp__reviews__name {
+    width: 97.4%;
+    height: 40px;
+    margin-bottom: 10px;
+    background: #e1e1e1;
+    border: 0;
+    padding-left: 3%;
+}
+.inp__reviews__comment {
+    width: 97.4%;
+    height: 110px;
+    margin-bottom: 10px;
+    background: #e1e1e1;
+    border: 0;
+    padding-left: 3%;
+    resize: none;
+}
+.btn__reviews {
+/*    margin: 7px 0 0 3%;*/
+    padding: 3px 0;
+    border: none;
+    background: #3b73e4;
+    color: white;
+    width: 45%;
+    height: 41px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* CONTACTS */
+.page__contacts {
+    margin-bottom: 34px;
+}
+.page__contacts .page__h2 {
+    margin-top: 34px;
+    margin-left: 42.1%;
+}
+.page__contacts .page__h3 {
+    margin-left: 43%;
+    margin-bottom: 25px;
+}
+.item__page__contacts {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: "Arsenal",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    width: 86%;
+    padding-bottom: 0;
+    line-height: 1.3;
+    
+}
+.name__contacts {
+    font-family: "Arsenal",sans-serif;
+    font-size: 16px;
+    width: 33%;
+    vertical-align: top;
+    font-weight: 700;
+}
+.page__contacts__block {
+    padding-right: 0;
+}
+.contacts__map {
+    padding-left: 0;
+    
+}
+.contacts__map img {
+    width: 95.5%;
+    height: 517px;
+}
+.page__contacts__block table {
+    margin-bottom: 17px;
+}
+.page__contacts__block .about__company__form {
+    width: 94.5%;
+}
+.page__contacts__block .about__input,
+.page__contacts__block #id_comment {
+    width: 86%;
+}
+
+/* ABOUT */
+.page__about__h2,
+.page__about__h3 {
+    margin-left: 0;
+    text-align: center;
+}
+.page__about {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .services__block__page .service__text {
+        padding-top: 10px;
+    }
+     .page__service__rect {
+        top: 70px;
+    }
+    
+    .gallary__img {
+        width: 100%;
+        height: auto;
+    }
+    .contacts__map img {
+    width: 100%;
+    height: auto;
+}
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .page__news__h2,
+    .page__news__h3,
+    .page__h2,
+    .page__h3,
+    .page__seo .h2,
+    .page__seo .h3,
+    .page__contacts .page__h2,
+    .page__contacts .page__h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .page__service__rect {
+        top: 40px;
+    }
+    .services__block__page .service__text {
+        padding-top: 55px;
+    }
+    
+/*    GALLARY  */
+    .gallary__img__wrap {
+       padding-left: 15px;
+    }
+    
+/*    REVIEWS */
+    .form__rewies__wrap {
+        text-align: center;
+    }
+    .inp__reviews__name,
+    .inp__reviews__comment {
+    width: 80%;
+    
+}
+    .btn__reviews {
+        width: 35%
+    }
+    
+  /*    CONTACTS */
+    .page__contacts__block table {
+        margin: 0 auto 17px;
+    }
+    .page__contacts__block .about__company__form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .page__contacts__block {
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+    .contacts__map {
+        padding-left: 15px;
+        text-align: center;
+    }
+    .contacts__map img {
+        width: 90%;
+    }
+ 
+ 
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .page__service__img {
+        width: 90%;
+        height: auto;
+    }
+    .services__block__page,
+    .services__block__page:nth-child(2n) {
+        padding-left:30px;
+        padding-right: 30px;
+    }
+    .page__service__rect {
+        top: 80px;
+        width: 50%;
+    }
+    .services__block__page .service__text {
+        left: 0;
+        padding-top: 110px;
+    }
+    .services__block__page:nth-child(2n) .link__service,
+    .services__block__page .link__service{
+        width: 44%;
+    }
+    .page__service__rect {
+        left:32%;
+    }
+    .block__news__h3 {
+        line-height: 1.1;
+    } 
+    /*    GALLARY  */
+    .gallary__img__wrap {
+        text-align: center;
+    }
+    
+    .gallary__img {
+        width: 80%;
+        height: auto;
+    }
+    
+    /*    CONTACTS */
+    .page__contacts__block .about__company__form {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .contacts__map img {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .page__service__rect {
+        top: 60px;
+        
+    }
+    .services__block__page .service__text {
+        padding-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page__service__rect {
+        top: 50px;
+        
+    }
+    .services__block__page .service__text {
+        padding-top: 75px;
+    }
+    
+/*    REVIEWS */
+    .inp__reviews__name,
+    .inp__reviews__comment {
+        width: 90%;
+    
+    }
+    .btn__reviews {
+        width: 40%;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .page__service__rect {
+        top: 40px;
+        
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .page__service__rect {
+       height: 70px;
+        
+    }
+     .services__block__page .service__text {
+        padding-top: 60px;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    
+     .services__block__page .service__text {
+        padding-top: 50px;
+    }
+    
+}
+@media only screen and (max-width: 460px) {
+    .page__service__rect {
+       top: 30px;
+        
+    }
+   
+    
+}
+@media only screen and (max-width: 425px) {
+    .page__service__rect {
+       height: 65px;
+        width: 60%;
+        
+    }
+    .services__block__page .service__text {
+        padding-top: 45px;
+        width: 50%;
+    }
+   
+    
+}
+@media only screen and (max-width: 400px) {
+    .page__service__rect {
+       height: 55px;
+        
+    }
+     /*    CONTACTS */
+    .page__contacts__block .about__company__form {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contacts__map img {
+        width: 100%;
+    }
+    .page__contacts .about__form__h2 {
+        font-size: 18px;
+    }
+    .name__contacts {
+        font-size: 14px;
+        width: 30%;
+    }
+    .item__page__contacts {
+/*        font-size: 14px;*/
+        padding-left: 10px;
+    }
+    
+    
+}
+@media only screen and (max-width: 380px) {
+    .services__block__page .service__text {
+        padding-top: 40px;
+    }
+     .page__service__rect {
+       top:25px;
+        
+    }
+    .services__block__page,
+    .services__block__page:nth-child(2n) {
+        padding-left:15px;
+        padding-right: 15px;
+    }
+    /*    CONTACTS */
+    
+    .page__contacts .about__form__h2 {
+        font-size: 16px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 340px) {
+    .services__block__page .service__text {
+        padding-top: 30px;
+    }
+    .page__service__rect {
+        top:20px;
+        height: 65px;
+        
+    }
+}
