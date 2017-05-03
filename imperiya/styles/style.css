@@ -162,7 +162,9 @@ body {
     border-bottom: 1px solid transparent;
 }
 
-.list__item__link:hover {
+.list__item__link:hover,
+.list__item__link:active,
+.list__item__link:focus {
     text-decoration: none;
     color: #13a3e9;
     border-bottom: 1px solid #13a3e9;
