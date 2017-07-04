@@ -9,30 +9,36 @@
    <!--<link href="http://allfont.ru/allfont.css?fonts=academia-roman" rel="stylesheet" type="text/css" />-->
   
    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     
    <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
    <link rel="stylesheet" type="text/css" href="styles/styles2.css" >
+<!--
    <link rel="stylesheet" type="text/css" href="styles/flexslider.min.css">
+   <link rel="stylesheet" href="styles/fm.revealator.jquery.css">
+-->
+<!--
    <link rel="stylesheet" href="styles/component.css">
+   <link rel="stylesheet" href="styles/default.css">
+-->
 
-   <link rel="stylesheet" type="text/css" href="styles/jquery.countdown.css">
+<!--   <link rel="stylesheet" type="text/css" href="styles/jquery.countdown.css">-->
   
 <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+<!--<script src="https://use.fontawesome.com/1f899a35bd.js"></script>-->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery.countdown.js"></script>
+<!--    <script src="js/jquery.flexslider-min.js"></script>-->
+<!--    <script src="js/jquery.countdown.js"></script>-->
     <script type="text/javascript" src="js/jquery.plugin.js"></script> 
-
-   <script src="js/modernizr.custom.js"></script>
-   <script src="js/toucheffects.js"></script>
-    
+<!--    <script src="js/modernizr.custom.js"></script>-->
+   
+   
+<!--    <script src="js/fm.revealator.jquery.js"></script>-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqgZhc7BIUEnCmfSjPkWrt9x6EV3HKYAA"></script>
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/script.js"></script>
@@ -40,12 +46,14 @@
    
    
   
+<!--
   <script>
 $(window).on( 'load', function() {
 $('html, body').animate({scrollTop : 0});
 }); 
     </script>
    
+-->
     
 
 
@@ -63,7 +71,7 @@ $('html, body').animate({scrollTop : 0});
     <div class="container-fluid">
        <div class="container">
         <div class="row">
-           <div class="online__button__wrap col-xs-4 col-sm-3 col-md-3">
+           <div class="online__button__wrap col-xs-5 col-sm-3 col-md-3">
                 <button><a class="link__online" href="#" rel="popup_name">ONLINE запись</a></button>
             </div>
             <div class="modal__bg">
@@ -114,10 +122,10 @@ $('html, body').animate({scrollTop : 0});
             <div class="menu__header collapse navbar-collapse navbar-right col-xs-5 col-sm-9 col-md-9 col-lg-9" id="top-menu">
             <ul>
                 <li class="list__item"><a href="index.html" class="list__item__link button__up" >Главная</a></li>
-                <li class="list__item"><a href="services.html" class="list__item__link">Услуги</a></li>
-                <li class="list__item"><a href="portfolio.html" class="list__item__link">Портфолио</a></li>
-                <li class="list__item"><a href="price.html" class="list__item__link">Прайс</a></li>
-                <li class="list__item"><a href="contacts.html" class="list__item__link">Контакты</a></li>
+                <li class="list__item"><a href="#service" class="list__item__link">Услуги</a></li>
+                <li class="list__item"><a href="#portfolio" class="list__item__link">Портфолио</a></li>
+                <li class="list__item"><a href="#price" class="list__item__link">Прайс</a></li>
+                <li class="list__item"><a href="#contacts" class="list__item__link">Контакты</a></li>
                 
             </ul>
         </div>
@@ -125,6 +133,72 @@ $('html, body').animate({scrollTop : 0});
     </div>
    </div>
 </nav>
+<section class="slider container-fluid">
+    <div class="row">
+        <div class="logo col-md-3">
+            <a href="index.html" class="logo__link"><img class="logo__img" src="img/cult__logo.png" alt="Cult"></a>
+        </div>
+    <div id="testCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#testCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#testCarousel2" data-slide-to="1"></li>
+            <li data-target="#testCarousel2" data-slide-to="2"></li>
+        </ol>
+	<!-- Слайды карусели -->
+	<div class="carousel-inner">
+		<!-- Слайд 1 -->
+		
+<!--		<img src="img/slide7.jpg" class="slides__img2 slides__img"  />-->
+		<div class="item active">
+		<img src="img/slide7.jpg" class="slides__img2 slides__img"  />
+		<div class="carousel-caption">
+                    <h2>Акция 1</h2>
+			<p>Дополнительная информация слайда 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda.</p>
+			<a href="akcii.html" class="link__akc__more">Детальнее</a>
+        </div>
+			
+		</div>
+		<!-- Слайд 2 -->
+<!--		<img src="img/slide7.jpg" class="slides__img2 slides__img"  />-->
+		<div class="item">
+			<img src="img/slide1.jpg" class="slides__img2 slides__img"  />
+		<div class="carousel-caption">
+                    <h2>Акция 2</h2>
+			<p>Дополнительная информация слайда 1</p>
+			<a href="akcii.html" class="link__akc__more">Детальнее</a>
+        </div>
+		</div>
+		<!-- Слайд 3 -->
+		
+<!--		<img src="img/slide7.jpg" class="slides__img2 slides__img"  />-->
+		<div class="item">
+			<img src="img/slide5.jpg" class="slides__img2 slides__img"  />
+		<div class="carousel-caption">
+                    <h2>Акция 3</h2>
+			<p>Дополнительная информация слайда 1</p>
+			<a href="akcii.html" class="link__akc__more">Детальнее</a>
+        </div>
+		</div>
+	</div>
+
+	<!-- Навигация карусели (следующий или предыдущий слайд) -->
+	<!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+<!--
+	<a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+-->
+	<!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+<!--
+	<a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+-->
+</div>
+    </div>
+</section>
+<!--
 <section class="slider container-fluid">
     <div class="row clearfix">
        
@@ -134,8 +208,10 @@ $('html, body').animate({scrollTop : 0});
         <div class="logo col-md-3">
                 <a href="index.html" class="logo__link"><img class="logo__img" src="img/cult__logo.png" alt="Логотип Cult"></a>
             </div>
+-->
        
-        <div class="transparent col-xs-12 col-sm-12 col-md-12"></div>
+<!--        <div class="transparent col-xs-12 col-sm-12 col-md-12"></div>-->
+<!--
         <div class="container">
         <div class="container-fluid col-md-10 block__actions">
                 <div class="block__text__action">
@@ -145,6 +221,8 @@ $('html, body').animate({scrollTop : 0});
                 <div id="countdown"></div>	
             </div>
         </div>
+-->
+<!--
         <div class="flx-slider__wrap col-sm-12">
             <div class="flexslider">
                 <ul class="slides">
@@ -157,62 +235,120 @@ $('html, body').animate({scrollTop : 0});
         </div>
     </div>
 </section>
+-->
+<!--
 <section id="id_akc" class="akc container-fluid">
    <div class="container">
     
       <div class="row clearfix">
-          <div class="akc__text">
-              <h2 id="akc">Акции</h2>
-              Запости в <b>Instagramm</b> маникюр от CULT cо ссылкой на наш профиль <b>cult.manicure</b> и сайт <b>cultmanicure.ru</b>  и получи <b>-10%</b> на следующий
-          </div>
+        <div id="testCarousel" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#testCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#testCarousel" data-slide-to="1"></li>
+		<li data-target="#testCarousel" data-slide-to="2"></li>
+	</ol>
+
+	<div class="carousel-inner">
+		<div class="item active">
+			<div class="akc__text__wrap">
+			<span class="h2__akc">Акция</span>
+			<span class="text__akc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quibusdam, magni illum rem excepturi atque laborum repellendus! Expedita numquam, officiis ipsa voluptate a. Blanditiis, eveniet sequi, officiis itaque illum eius.</span></div>
+		</div>
+		<div class="item">
+			<div class="akc__text__wrap"><span class="h2__akc">Акция</span>
+			<span class="text__akc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quibusdam, magni illum rem excepturi atque laborum repellendus! Expedita numquam, officiis ipsa voluptate a. Blanditiis, eveniet sequi, officiis itaque illum eius.</span></div>
+		</div>
+		<div class="item">
+			<div class="akc__text__wrap"><span class="h2__akc">Акция</span>
+			<span class="text__akc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quibusdam, magni illum rem excepturi atque laborum repellendus! Expedita numquam, officiis ipsa voluptate a. Blanditiis, eveniet sequi, officiis itaque illum eius.</span></div>
+		</div>
+	</div>
+
+	
+</div>
+         
        </div>
     </div>
 </section>
+-->
 
 
 <section class="services container-fluid">
    <div class="container">
      <h2 id="service">Услуги</h2>
       <div class="row clearfix">
-         <ul class="grid cs-style-3">
-				<li>
-					<figure>
-						<img src="img/serv1.jpg" alt="img04">
-						<figcaption>
-							<h3>Маникюр</h3>
-							<a href="#">Подробнее</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/serv2.jpg" alt="img01">
-						<figcaption>
-							<h3>Педикюр</h3>
-							<a href="#">Подробнее</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/serv3.jpg" alt="img02">
-						<figcaption>
-                            <h3>Уход</h3>
-							<a href="#">Подробнее</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/serv4.jpg" alt="img05">
-						<figcaption>
-							<h3>Дизайн</h3>
-							<a href="#">Подробнее</a>
-						</figcaption>
-					</figure>
-				</li>
-          </ul>
-
+          <div class="services__block__wrap col-md-3 col-sm-6 col-xs-6">
+              <div class="services__block">
+                 
+                  <a href="#" class="services__img__wrap services__img__wrap1">
+                      <img src="img/serv1.png" alt="" class="services__img">
+                      <div class="block__transparent"></div>
+                  </a>
+                  <h3>Маникюр</h3>
+                  <ul class="service__text">
+                      <li>Классический</li>
+                      <!--<li>Комбинированный</li>-->
+                      <li>Аппаратный</li>
+                      <li>Европейский</li>
+                      <li>Японский маникюр Masure</li>
+                      <li>Детский</li>
+                      <li>Мужской</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="services__block__wrap col-md-3 col-sm-6 col-xs-6">
+              <div class="services__block">
+                  <a href="#" class="services__img__wrap services__img__wrap2">
+                      <img src="img/serv2.png" alt="" class="services__img">
+                      <div class="block__transparent"></div>
+                  </a>
+                  <h3>Педикюр</h3>
+                  <ul class="service__text">
+                      <li>Классический</li>
+                      <li>Мини</li>
+                      <li>Аппаратный</li>
+                      <li>Кислотный Kart</li>
+                      <li>Мужской</li>
+                  </ul>
+              </div>
+          </div>
+      <!--</div>
+      <div class="row clearfix">-->
+          <div class="services__block__wrap col-md-3 col-sm-6 col-xs-6">
+              <div class="services__block">
+                  <a href="#" class="services__img__wrap services__img__wrap3">
+                      <img src="img/serv3.png" alt="" class="services__img">
+                      <div class="block__transparent"></div>
+                  </a>
+                  <h3>Уход</h3>
+                  <ul class="service__text">
+                      <li>SPA-программа для рук</li>
+                      <li>Бразильский маникюр</li>
+                      <li>Маска для стоп</li>
+                      
+                  </ul>
+              </div>
+          </div>
+          <div class="services__block__wrap col-md-3 col-sm-6 col-xs-6">
+            <div class="services__block">
+             <a href="#" class="services__img__wrap services__img__wrap4">
+                 <img src="img/serv4.png" alt="" class="services__img">
+                 <div class="block__transparent"></div>
+             </a>
+                  <h3>Дизайн</h3>
+                  <ul class="service__text">
+                      <li>Фрэнч</li>
+                      <li>Градиент</li>
+                      <li>Роспись</li>
+                      <li>Битое стекло, северное сияние, втирка блестки, фольга и т.д.</li>
+                      <li>Инкрустация стразами</li>
+                      
+                  </ul>
+        </div>
+          </div>
       </div>
        
    </div>
@@ -259,13 +395,540 @@ $('html, body').animate({scrollTop : 0});
             <div class="photo__wrap col-xs-6 col-sm-4 col-md-4">
                 <img class="photo__nails" src="img/photo12.jpg" alt="Дизайн ногтей">
             </div>
+<!--
             <div class="link__more__wrap">
                 <a href="portfolio.html" class="more__photo">Еще фото</a>
             </div>
+-->
         </div>
     </div>
 </section>
 
+<section class="price container-fluid">
+    <div class="container">
+        <h2 id="price">Прайс</h2>
+        <div class="row clearfix">
+           <div class="panel-group" id="collapse-group">
+ <div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">
+ <a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Маникюр, педикюр</a>
+ </h4>
+ </div>
+ <div id="el1" class="panel-collapse collapse in">
+ <div class="panel-body">
+     <table class="table__price">
+                   <tr class="table__line">
+                       <th class="main__th">МАНИКЮР(без покрытия)</th>
+                   
+                       <th class="main__th main__th2 clearfix"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>классический</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>комбинированный</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>аппаратный</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>европейский</td>
+                       <td>30</td>
+                       <td>350</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>японский маникюр Masure</td>
+                       <td>40</td>
+                       <td>600</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>детский</td>
+                       <td>20</td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>мужской</td>
+                       <td>40</td>
+                       <td>600</td>
+                   </tr>
+              
+              
+                   <tr class="table__line">
+                       <th class="main__th">ПЕДИКЮР(без покрытия)</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>классический</td>
+                       <td>60</td>
+                       <td>1000</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>аппаратный</td>
+                       <td>60</td>
+                       <td>1200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>кислотный Kart</td>
+                       <td>60</td>
+                       <td>1500</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>мини</td>
+                       <td>30</td>
+                       <td>500</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td class="main__th">МУЖСКОЙ:</td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>классический</td>
+                       <td>60</td>
+                       <td>1200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>аппаратный</td>
+                       <td>60</td>
+                       <td>1400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>кислотный Kart</td>
+                       <td>60</td>
+                       <td>1700</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>допразмягчитель Farmona</td>
+                       <td></td>
+                       <td>100</td>
+                   </tr>
+               
+                   <tr class="table__line">
+                       <th class="main__th">УХОД:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>SPA-программа для рук(скраб,маска+парафинотерапия)</td>
+                       <td>20</td>
+                       <td>600</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Бразильский маникюр</td>
+                       <td></td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Маска д/стоп</td>
+                       <td></td>
+                       <td>100</td>
+                   </tr>
+               </table>
+ </div>
+ </div>
+ </div>
+ <div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">
+ <a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Культура цвета</a>
+ </h4>
+ </div>
+ <div id="el2" class="panel-collapse collapse">
+ <div class="panel-body">
+     <table class="table__price">
+                   <tr class="table__line">
+                       <th class="main__th">КУЛЬТУРА ЦВЕТА:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Маникюр (все виды)+гель пок. Kodi/Beautix</td>
+                       <td>80</td>
+                       <td>1100/1240</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Маникюр (все виды)+лак Emi</td>
+                       <td>50</td>
+                       <td>600</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Укрепление ногтей гель</td>
+                       <td>40</td>
+                       <td>1000</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Укрепление ногтей гель база Kodi</td>
+                       <td>20</td>
+                       <td>200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Наращивание (1 ноготь)</td>
+                       <td>10</td>
+                       <td>150</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>IBX system</td>
+                       <td>20</td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Педикюр классический+гель пок. Kodi/Beautix</td>
+                       <td></td>
+                       <td>1600/1790</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Педикюр аппаратный+гель пок. Kodi/Beautix</td>
+                       <td></td>
+                       <td>1800/1940</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Минипедикюр+гель пок. Kodi/Beautix</td>
+                       <td></td>
+                       <td>1200/1340</td>
+                   </tr>
+              
+                   <tr class="table__line">
+                       <th class="main__th">ДИЗАЙН:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>фрэнч/лунки пустые</td>
+                       <td></td>
+                       <td>250</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>лунки цветные/двойной фрэнч</td>
+                       <td></td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>градиент Цвета(1 ноготь)</td>
+                       <td></td>
+                       <td>30</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>роспись (1 ноготь)</td>
+                       <td></td>
+                       <td>от 50</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>битое стекло, северное сияние, втирка блестки, фольга и т.д.(1 ноготь)</td>
+                       <td></td>
+                       <td>от 50</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>инкрустация стразами (1 ноготь)</td>
+                       <td></td>
+                       <td>от 100</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Svarovsky crystal pixie (1 ноготь)</td>
+                       <td></td>
+                       <td>300</td>
+                   </tr>
+              
+                   <tr class="table__line">
+                       <th class="main__th">ДОПОЛНИТЕЛЬНО:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>снятие без последующего покрытия</td>
+                       <td>20</td>
+                       <td>250</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>снятие (не от "CULT") с последующим покрытием</td>
+                       <td>15</td>
+                       <td>200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Снятие нарощенных ногтей</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+               </table>
+ </div>
+ </div>
+ </div>
+</div>
+ 
+            <div class="col-md-12 col-xs-12 col-sm-12">
+<!--
+               <table class="table__price">
+                   <tr class="table__line">
+                       <th class="main__th">МАНИКЮР(без покрытия)</th>
+                   
+                       <th class="main__th main__th2 clearfix"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>классический</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>комбинированный</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>аппаратный</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>европейский</td>
+                       <td>30</td>
+                       <td>350</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>японский маникюр Masure</td>
+                       <td>40</td>
+                       <td>600</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>детский</td>
+                       <td>20</td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>мужской</td>
+                       <td>40</td>
+                       <td>600</td>
+                   </tr>
+              
+              
+                   <tr class="table__line">
+                       <th class="main__th">ПЕДИКЮР(без покрытия)</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>классический</td>
+                       <td>60</td>
+                       <td>1000</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>аппаратный</td>
+                       <td>60</td>
+                       <td>1200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>кислотный Kart</td>
+                       <td>60</td>
+                       <td>1500</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>мини</td>
+                       <td>30</td>
+                       <td>500</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td class="main__th">МУЖСКОЙ:</td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>классический</td>
+                       <td>60</td>
+                       <td>1200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>аппаратный</td>
+                       <td>60</td>
+                       <td>1400</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>кислотный Kart</td>
+                       <td>60</td>
+                       <td>1700</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>допразмягчитель Farmona</td>
+                       <td></td>
+                       <td>100</td>
+                   </tr>
+               
+                   <tr class="table__line">
+                       <th class="main__th">УХОД:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>SPA-программа для рук(скраб,маска+парафинотерапия)</td>
+                       <td>20</td>
+                       <td>600</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Бразильский маникюр</td>
+                       <td></td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Маска д/стоп</td>
+                       <td></td>
+                       <td>100</td>
+                   </tr>
+               </table>
+-->
+                
+            </div>
+            
+            <div class="col-md-12 col-xs-12 col-sm-12">
+<!--
+              <table class="table__price">
+                   <tr class="table__line">
+                       <th class="main__th">КУЛЬТУРА ЦВЕТА:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Маникюр (все виды)+гель пок. Kodi/Beautix</td>
+                       <td>80</td>
+                       <td>1100/1240</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Маникюр (все виды)+лак Emi</td>
+                       <td>50</td>
+                       <td>600</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Укрепление ногтей гель</td>
+                       <td>40</td>
+                       <td>1000</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Укрепление ногтей гель база Kodi</td>
+                       <td>20</td>
+                       <td>200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Наращивание (1 ноготь)</td>
+                       <td>10</td>
+                       <td>150</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>IBX system</td>
+                       <td>20</td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Педикюр классический+гель пок. Kodi/Beautix</td>
+                       <td></td>
+                       <td>1600/1790</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Педикюр аппаратный+гель пок. Kodi/Beautix</td>
+                       <td></td>
+                       <td>1800/1940</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Минипедикюр+гель пок. Kodi/Beautix</td>
+                       <td></td>
+                       <td>1200/1340</td>
+                   </tr>
+              
+                   <tr class="table__line">
+                       <th class="main__th">ДИЗАЙН:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>фрэнч/лунки пустые</td>
+                       <td></td>
+                       <td>250</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>лунки цветные/двойной фрэнч</td>
+                       <td></td>
+                       <td>300</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>градиент Цвета(1 ноготь)</td>
+                       <td></td>
+                       <td>30</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>роспись (1 ноготь)</td>
+                       <td></td>
+                       <td>от 50</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>битое стекло, северное сияние, втирка блестки, фольга и т.д.(1 ноготь)</td>
+                       <td></td>
+                       <td>от 50</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>инкрустация стразами (1 ноготь)</td>
+                       <td></td>
+                       <td>от 100</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Svarovsky crystal pixie (1 ноготь)</td>
+                       <td></td>
+                       <td>300</td>
+                   </tr>
+              
+                   <tr class="table__line">
+                       <th class="main__th">ДОПОЛНИТЕЛЬНО:</th>
+                   
+                       <th class="main__th"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                  
+                       <th class="main__th"><i class="fa fa-rub" aria-hidden="true"></i></th>
+                   </tr>
+                   <tr class="table__line">
+                       <td>снятие без последующего покрытия</td>
+                       <td>20</td>
+                       <td>250</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>снятие (не от "CULT") с последующим покрытием</td>
+                       <td>15</td>
+                       <td>200</td>
+                   </tr>
+                   <tr class="table__line">
+                       <td>Снятие нарощенных ногтей</td>
+                       <td>30</td>
+                       <td>400</td>
+                   </tr>
+               </table>
+-->
+                
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="contacts container-fluid">
     <div class="container">
@@ -289,13 +952,17 @@ $('html, body').animate({scrollTop : 0});
 <footer class="container-fluid">
     <div class="container">
         <div class="row clearfix">
-            <div class="footer__menu col-md-6 col-sm-8 col-xs-12">
+            <div class="logo col-md-2 col-sm-4">
+            <a href="index.html" class="logo__link"><img class="logo__img" src="img/cult__logo.png" alt="Cult"></a>
+        </div>
+            <div class="footer__menu col-md-4 col-sm-4 col-xs-12">
+                <span class="footer__contacts__h3">Меню</span>
                 <ul>
-                <li class="list__item"><a href="index.html" class="list__item__link">Главная</a></li>
-                <li class="list__item"><a href="services.html" class="list__item__link">Услуги</a></li>
-                <li class="list__item"><a href="portfolio.html" class="list__item__link">Портфолио</a></li>
-                <li class="list__item"><a href="price.html" class="list__item__link">Прайс</a></li>
-                <li class="list__item"><a href="contacts.html" class="list__item__link">Контакты</a></li>
+                <li class="list__item"><i class="fa fa-check" aria-hidden="true"></i><a href="index.html" class="list__item__link">Главная</a></li>
+                <li class="list__item"><i class="fa fa-check" aria-hidden="true"></i><a href="#service" class="list__item__link">Услуги</a></li>
+                <li class="list__item"><i class="fa fa-check" aria-hidden="true"></i><a href="#portfolio" class="list__item__link">Портфолио</a></li>
+                <li class="list__item"><i class="fa fa-check" aria-hidden="true"></i><a href="#price" class="list__item__link">Прайс</a></li>
+                <li class="list__item"><i class="fa fa-check" aria-hidden="true"></i><a href="#contacts" class="list__item__link">Контакты</a></li>
                 
             </ul>
             
