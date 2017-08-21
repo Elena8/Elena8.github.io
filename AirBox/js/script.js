@@ -6,14 +6,15 @@ jQuery(document).ready(function(){
     //disable: 'mobile'
   });
     
+    $(".go_to").hide();
+  if ($(window).scrollTop()<=$(document).height()-"999") $(".go_to").fadeIn("slow")
+  $(window).scroll(function(){
+  if ($(window).scrollTop()>=$(document).height()-"999") $(".go_to").fadeOut("slow")
+  else $(".go_to").fadeIn("slow")
+  });
 
      
-    
-//  $('a[href="#"]').on('click', function(e) {
-//    e.preventDefault();
-//    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-//  });
-   
+
 
 
     

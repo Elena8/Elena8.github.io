@@ -1,24 +1,29 @@
 <!DOCTYPE HTML>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	 <link rel="stylesheet" href="style/normalize.css">
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+     <link rel="stylesheet" href="style/normalize.css">
    <link href="style/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="style/style.css">
 	
 
 	<title>AirBox</title>
 	
-
-	<!-- jQuery -->
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
 	 <script src="js/aos.js"></script>
 	 <script src="js/script.js"></script>
+	 <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 	
 </head>
 <body>
@@ -27,7 +32,7 @@
         <div class="row clearfix">
             <div class="location col-md-2 col-sm-2 col-xs-2">
                 <div class="dropdown location-dropdown">
-                    <button class="dropdown-toggle location-btn" type="button" id="location-menu-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="dropdown-toggle location-btn" type="button" id="location-menu-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
                             <span class="location_icon"></span>
                             <span class="text">Москва</span>
                     </button>
@@ -232,7 +237,7 @@
                                 <option value="Расчет мебельных фасадов">Расчет мебельных фасадов</option>
                                 <option value="Расчет оконной фурнитуры">Расчет оконной фурнитуры</option>
                                 <option value="Другая тема">Другое...</option>
-                            </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theme-j3-container"><span class="select2-selection__rendered" id="select2-theme-j3-container" title=""></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </select>                       
                         </label>
 
                         <span class="lbl">Файл к заявке</span>
@@ -265,10 +270,10 @@
                         </div>
                         <label data-item="container" class="textarea control-container">
                             <span class="lbl">Комментарий</span>
-                            <textarea style="resize: vertical;" class="form-control comments_textarea" name="message"></textarea>
+                            <textarea  class="form-control comments_textarea" name="message"></textarea>
                         </label>
                         <p class="comment">*Поля обязательные для заполнения</p>
-                        <button data-pageview="/raschet" data-command="send" class="submit" type="button">Отправить</button>
+                        <button  class="submit" type="button">Отправить</button>
                     </fieldset>
                 </form>
 
@@ -301,7 +306,7 @@
                         <input type="hidden" name="phone-clean" value="0"><input type="hidden" name="phone-clean-length" value="11"></label>
                         <label data-item="container" class="textarea control-container">
                             <span class="lbl">Комментарий</span>
-                            <textarea style="resize: vertical;" class="form-control comments_textarea" name="message"></textarea>
+                            <textarea  class="form-control comments_textarea" name="message"></textarea>
                         </label>
                         <p class="comment">*Поля обязательные для заполнения</p>
                         <button data-pageview="/callback1" id="otpravka_zwonka" data-command="send" class="submit" type="button">Заказать звонок</button>
@@ -345,7 +350,7 @@
                         <input type="hidden" name="phone-clean" value="0"><input type="hidden" name="phone-clean-length" value="11"></label>
                         <label data-item="container" class="textarea control-container">
                             <span class="lbl">Текст письма</span>
-                            <textarea style="resize: vertical;" class="form-control comments_textarea" name="message"></textarea>
+                            <textarea class="form-control comments_textarea" name="message"></textarea>
                         </label>
 
                         <p class="comment">*Поля обязательные для заполнения</p>
@@ -370,7 +375,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <div data-command="close" class="modal-close"></div>  
+                                    <button type="button" class="close" data-dismiss="modal"></button>  
                                     <span class="enter_private_header_text">Вход</span>                            
                                     <p>Для входа на сайт необходимо указать адрес<br>
                                         эл. почты и пароль, указанные при регистрации.
@@ -538,10 +543,9 @@
 </section>
 
 <section class="question">
-<!--    <img src="img/question-bg-img.jpg" alt="" class="bg__question">-->
     <div class="container">
         <div class="row">
-           <div class="question__block" data-aos="fade-right" disable='mobile'>
+           <div class="question__block" data-aos="zoom-out-up" data-aos-once="true" data-aos-disable="mobile">
             <div class="question__img__wrap">
                 <img src="img/question-img-wom.png" alt="" class="question__img">
             </div>
@@ -559,7 +563,6 @@
     <div class="left__bg"></div>
     <div class="right__top__bg"></div>
     <div class="right__bg"></div>
-<!--    <img src="img/question-bg-img.jpg" alt="" class="bg__question">-->
     <div class="container">
         <div class="row">
            <div class="icon-wrap"><img src="img/ico-kite-setup.png" alt="" class="setup__icon"></div>
@@ -604,7 +607,6 @@
     </div>
 </section>
 <section   class="advantages">
-<!--<img src="img/bg-cloud-adv2.jpg" alt="" class="bg__adv">-->
     <div class="container">
         <div class="row">
            <div class="icon_wrap__adv"><img src="img/icon-thumbs-up.png" alt="" class="adv__icon"></div>
@@ -724,8 +726,6 @@
     </div>
 </section>
 <section   class="video">
-    <div class="left__bg__video"></div>
-    <div class="right__bg__video"></div>
     <div class="container">
         <div class="row">
            <div class="icon-wrap-video"><img src="img/install-icon-tools.png" alt="" class="video__icon"></div>
@@ -734,6 +734,8 @@
                <span class="title_v2 title_v ">по монтажу</span> 
            </div>
            <div class="video__wrap clearfix">
+              <div class="left__bg__video"></div>
+    
                <div class="mac__wrap"><img src="img/install-mac.png" alt="" class="mac__img"></div>
                <div class="install__wrap">
                    <span class="install__text">Установить вентиляциционный клапан</span> <span class="install__txt1">Air box comfort</span> <span class="install__text3"> очень просто! Вам</span> <span class="install__txt2">не потребуется</span><span class="install__text3"> специальный инструмент или особая подготовка</span>
@@ -742,12 +744,12 @@
                         <button class="btn__quest">Получить консультацию специалиста</button>
                    </div>
                </div>
+               <div class="right__bg__video"></div>
            </div> 
         </div>
     </div>
 </section>
 <section  class="reviews">
-<!--    <img src="img/rev-bg.png" alt="" class="bg__rev">-->
     <div class="container">
         <div class="row">
            <div class="icon-wrap-rev"><img src="img/icon-rev.png" alt="" class="rev__icon"></div>
@@ -916,6 +918,7 @@
                 <span class="health__text2">здоровье и комфорте</span>
                 <span class="health__text3">закажите приточный вентиляционный клапан</span>
                 <span class="health__text4">AIR BOX COMFORT!</span>
+                <div class="health__cloud"></div>
                 <div class="health__link__wrap">
                     <a href="" class="link__health">Заказать AIR BOX COMFORT</a>
                 </div>
@@ -923,7 +926,6 @@
             <div class="health__img__wrap col-md-6 col-sm-5">
                 <img src="img/product-health.png" alt="" class="health__prod">
             </div>
-            <div class="health__cloud"></div>
         </div>
     </div>
 </section>
