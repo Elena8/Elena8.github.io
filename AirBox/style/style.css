@@ -1178,6 +1178,7 @@ label {
 .problems2__types {
     text-align: center;
     padding-top: 66px;
+    margin: 20px auto;
 }
 .problems2__types span {
     text-transform: uppercase;
@@ -2355,7 +2356,8 @@ padding-top: 140px;
     .main__screen__left .text1 {
         font-size: 25px;
     }
-    .main__screen__left .text2 {
+    .main__screen__left .text2,
+    .problems2__types span {
         font-size: 38px;
     }
     .main__screen__left .text3 {
@@ -2469,10 +2471,12 @@ padding-top: 140px;
 }
 @media only screen and (max-width: 767px) {
 .problems2__close {
-    padding: 50px 31% 47px 5%;
+    padding: 50px 37% 47px 5%;
+/*    padding: 50px 31% 47px 5%;*/
 }
     .problems2__open {
-    padding: 50px 5% 47px 31%;
+        padding: 50px 5% 47px 37%;
+/*    padding: 50px 5% 47px 31%;*/
 }
     .nav__delivery {
         width: 100%;
@@ -2605,6 +2609,9 @@ padding-top: 140px;
     .search {
     width: 70%;
 }
+    .problems2__types span {
+    font-size: 34px;
+}
     
 }
 @media only screen and (max-width: 650px) {
@@ -2617,6 +2624,14 @@ padding-top: 140px;
     .footer__name {
     width: 48%;
     margin-right: 16px;
+}
+    .problems2__close {
+/*    padding: 50px 37% 47px 5%;*/
+    padding: 50px 31% 47px 5%;
+}
+    .problems2__open {
+/*        padding: 50px 5% 47px 37%;*/
+    padding: 50px 5% 47px 31%;
 }
     
 }
@@ -2636,6 +2651,14 @@ padding-top: 140px;
     width: 100%;
         margin-right: 0;
     }
+    .problems2__close {
+    padding: 50px 24% 47px 5%;
+/*    padding: 50px 31% 47px 5%;*/
+}
+    .problems2__open {
+        padding: 50px 5% 47px 24%;
+/*    padding: 50px 5% 47px 31%;*/
+}
     
 }
 @media only screen and (max-width: 550px) {
@@ -2710,6 +2733,16 @@ padding-top: 140px;
     }
     .prod__name {
     font-size: 28px;
+}
+    .problems2__close {
+    padding: 50px 17% 47px 5%;
+/*    padding: 50px 31% 47px 5%;*/
+}
+    .problems2__open {
+        padding: 50px 5% 47px 17%;
+}
+    .problems2__types span {
+        font-size: 32px;
 }
     
 }
@@ -2799,6 +2832,14 @@ padding-top: 140px;
     .search {
         width:  95%
     }
+    .problems2__close {
+    padding: 50px 5% 47px 5%;
+/*    padding: 50px 31% 47px 5%;*/
+}
+    .problems2__open {
+        padding: 50px 5% 47px 5%;
+/*    padding: 50px 5% 47px 31%;*/
+}
    
 }
 @media only screen and (max-width: 450px){
@@ -2823,8 +2864,26 @@ padding-top: 140px;
     .working_hours {
         padding: 0 5px;
     }
+    .figure__left, .figure__right {
+        display: none;
+    }
+    .problems2__close .probl__name {
+        left:1px;
+    }
+    .problems2__open .probl__name {
+        left:0;
+    }
+    .problems2__close {
+        padding: 50px 7% 47px 5%;
+    }
+    .problems2__open {
+        padding: 50px 5% 47px 13%;
+    }
 }
 @media only screen and (max-width: 400px){
+    .problems2__types span {
+        font-size: 28px;
+}
 
 .link__health {
     width: 91%;
@@ -2838,6 +2897,27 @@ padding-top: 140px;
     .working_hours {
         width:100%;
     }
+    .icon__problem__open,
+    .icon__problem__close {
+    background-size: cover;
+    width: 40px;
+        height: 40px;
+    }
+    .problems2__close .probl__name, .problems2__open .probl__name {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+    .problems2__close div,
+    .problems2__open div {
+        float: none;
+        text-align: center;
+    }
+    .problems2__close {
+        padding: 50px 0% 47px 0%;
+    }
+     .problems2__open {
+    padding: 50px 0% 47px 0%;
+}
 }
 @media only screen and (max-width: 390px){
     .callback-dropdown .text,
