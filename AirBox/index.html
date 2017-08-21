@@ -1,0 +1,985 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	 <link rel="stylesheet" href="style/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+   <link href="style/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+	
+
+	<title>AirBox</title>
+	
+
+	<!-- jQuery -->
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+	 <script src="js/aos.js"></script>
+	 <script src="js/script.js"></script>
+	
+</head>
+<body>
+<section class="top__nav container-fluid">  
+    <div class="container">
+        <div class="row clearfix">
+            <div class="location col-md-2 col-sm-2 col-xs-2">
+                <div class="dropdown location-dropdown">
+                    <button class="dropdown-toggle location-btn" type="button" id="location-menu-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="location_icon"></span>
+                            <span class="text">Москва</span>
+                    </button>
+                    <div id="location-menu-container" class="dropdown-menu location-dropdown-menu">
+                        <div class="location-dropdown-menu-wrap">
+                            <span class="chose_city_header_text">Выберите ваш город</span>
+                            <div class="city_wrapper">
+                                <div class="city_block">
+                                    <ul class="stars letter-block">       
+                                        <li class="star_city">
+                                            <span class="glyphicon glyphicon-star small star" aria-hidden="true"></span>
+                                            <a href="javascript:;" data-id="5984">Москва</a>
+                                        </li>
+                                        <li class="star_city">
+                                            <span class="glyphicon glyphicon-star small star star2" aria-hidden="true"></span>
+                                            <a href="javascript:;" data-id="4864">Санкт-Петербург</a>
+                                        </li>
+                                    </ul>
+                     
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">А</li>
+                                        <li><a href="javascript:;" data-id="4283">Алматы</a></li>                          
+                                        <li><a href="javascript:;" data-id="5970">Архангельск</a></li>               
+                                        <li><a href="javascript:;" data-id="4815">Астана</a></li>               
+                                        <li><a href="javascript:;" data-id="4287">Астрахань</a></li>
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Б</li>
+                                        <li><a href="javascript:;" data-id="5294">Барнаул</a></li>               
+                                        <li><a href="javascript:;" data-id="4258">Благовещенск</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">В</li>
+                                        <li><a href="javascript:;" data-id="4313">Владивосток</a></li>               
+                                        <li><a href="javascript:;" data-id="4282">Волгоград</a></li>               
+                                        <li><a href="javascript:;" data-id="4875">Воронеж</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Е</li>
+                                        <li><a href="javascript:;" data-id="4862">Екатеринбург</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">И</li>
+                                        <li><a href="javascript:;" data-id="3896">Иркутск</a></li>               
+                                    </ul>
+                                </div>
+                                <div class="city_block letter-block">       
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">К</li>
+                                        <li><a href="javascript:;" data-id="4279">Казань</a></li>               
+                                        <li><a href="javascript:;" data-id="4836">Калининград</a></li>               
+                                        <li><a href="javascript:;" data-id="3957">Киров</a></li>               
+                                        <li><a href="javascript:;" data-id="5908">Комсомольск-на-Амуре</a></li>               
+                                        <li><a href="javascript:;" data-id="4877">Краснодар</a></li>               
+                                        <li><a href="javascript:;" data-id="3908">Красноярск</a></li>               
+                                        <li><a href="javascript:;" data-id="5906">Курган</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">М</li>
+                                        <li><a href="javascript:;" data-id="5807">Магнитогорск</a></li>               
+                                        <li><a href="javascript:;" data-id="4856">Минск</a></li>               
+                                        <li><a href="javascript:;" data-id="5984">Москва</a></li>               
+                                        <li><a href="javascript:;" data-id="4305">Мурманск</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Н</li>
+                                        <li><a href="javascript:;" data-id="5889">Нижний Новгород</a></li>               
+                                        <li><a href="javascript:;" data-id="4276">Новокузнецк</a></li>               
+                                        <li><a href="javascript:;" data-id="4301">Новосибирск</a></li>               
+                                    </ul>
+                                </div>
+                                <div class="city_block letter-block">       
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">О</li>
+                                        <li><a href="javascript:;" data-id="4295">Омск</a></li>               
+                                        <li><a href="javascript:;" data-id="3958">Оренбург</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">П</li>
+                                        <li><a href="javascript:;" data-id="4307">Пенза</a></li>               
+                                        <li><a href="javascript:;" data-id="4814">Пермь</a></li>               
+                                        <li><a href="javascript:;" data-id="3928">Пятигорск</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Р</li>
+                                        <li><a href="javascript:;" data-id="4857">Ростов-на-Дону</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">С</li>
+                                        <li><a href="javascript:;" data-id="4866">Самара</a></li>               
+                                        <li><a href="javascript:;" data-id="4864">Санкт-Петербург</a></li>               
+                                        <li><a href="javascript:;" data-id="4271">Саратов</a></li>               
+                                        <li><a href="javascript:;" data-id="5938">Симферополь</a></li>               
+                                        <li><a href="javascript:;" data-id="3921">Ставрополь</a></li>               
+                                        <li><a href="javascript:;" data-id="4281">Сургут</a></li>               
+                                    </ul>
+                                </div>
+                                <div class="city_block letter-block">       
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Т</li>
+                                        <li><a href="javascript:;" data-id="3930">Тюмень</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">У</li>
+                                        <li><a href="javascript:;" data-id="4297">Улан-Удэ</a></li>               
+                                        <li><a href="javascript:;" data-id="4280">Ульяновск</a></li>               
+                                        <li><a href="javascript:;" data-id="4832">Уфа</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Х</li>
+                                        <li><a href="javascript:;" data-id="5987">Хабаровск</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Ч</li>
+                                        <li><a href="javascript:;" data-id="4278">Челябинск</a></li>               
+                                    </ul>
+                   
+                                    <ul class="a-letter letter-block">
+                                        <li class="letter">Я</li>
+                                        <li><a href="javascript:;" data-id="3925">Ярославль</a></li>               
+                                    </ul>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="btnMenu" class="navbar-toggle menu-btn" data-toggle="collapse" data-target="#top-menu">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="nav__delivery navbar-collapse collapse  col-md-5 col-sm-10 col-xs-10" id="top-menu">
+                <ul>
+                    <li><a href="#" class="coins"><span class="coins_icon delivery_icon"></span><span class="text">Оплата</span></a></li>
+                    <li><a href="#" class="car"><span class="car_icon delivery_icon"></span><span class="text">Доставка</span></a></li>
+                    <li><a href="#" class="arrow"><span class="arrow_icon delivery_icon"></span><span class="text"> Возврат</span></a></li>
+                    <li><a href="#" class="doc"><span class="doc_icon delivery_icon"></span><span class="text">Контакты</span></a></li>
+                </ul>
+            </div>
+            <div class="call__login col-md-5 col-sm-12 col-xs-12">
+                <div class="dropdown callback-dropdown">
+                    <button class="dropdown-toggle registraition-btn registraition-btn-background-gray" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="phone_icon registraition_icon"></span>
+                        <span class="text">Связаться с нами</span>
+                        <span class="arrow_down_icon registraition_icon"></span>
+                    </button>
+                    <ul id="callback-dropdown-menu" class="dropdown-menu callback-dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#" data-toggle="modal" data-target="#calculation">
+                           <img class="ticket" src="img/icons/ticket.png" alt="">Заказать расчет
+                        </a></li>
+                        <li><a id="zwonok"  href="#" data-toggle="modal" data-target="#callModal">
+                          <img class="callback" src="img/icons/callback_icon.png" alt="">Заказать звонок
+                        </a></li>
+                        <li><a href="#">
+                          <img class="recall" src="img/icons/recall_icon.png" alt="">Оставить отзыв
+                        </a></li>
+                        <li><a data-command="send-message" href="#" data-toggle="modal" data-target="#letterModal">
+                          <img class="message" src="img/icons/message_icon.png" alt="">Написать письмо
+                        </a></li>
+                    </ul>
+<!--                    RASCHET-->
+<div class="modal fade in" role="dialog" id="calculation" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <span class="modal-title">Заявка на расчет</span>
+            </div>
+            <div class="modal-body">
+                <div class="commonErrors"></div>
+                <form id="modalDialogCalculationForm" >
+                    <fieldset>
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">ФИО*</span>
+                            <input name="name" type="text" class="form-control">
+                            <span class="form-errors__block"></span>
+                        </label>
+
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">Телефон*</span>
+                            <input name="phone" type="tel" class="form-control" placeholder="+7">
+                            <span class="form-errors__block"></span>
+                        <input type="hidden" name="phone-clean" value="0"><input type="hidden" name="phone-clean-length" value="11"></label>
+
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">Выбрать тему письма</span>
+                            <select name="theme" size="1" class="js-example-basic-single select2-hidden-accessible" tabindex="-1" style="" aria-hidden="true">
+                                <option disabled="" selected="" hidden=""></option>
+                                <option value="Расчет подоконников">Расчет подоконников</option>
+                                <option value="Расчет ЛКМ">Расчет ЛКМ</option>
+                                <option value="Расчет мебельных фасадов">Расчет мебельных фасадов</option>
+                                <option value="Расчет оконной фурнитуры">Расчет оконной фурнитуры</option>
+                                <option value="Другая тема">Другое...</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theme-j3-container"><span class="select2-selection__rendered" id="select2-theme-j3-container" title=""></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </label>
+
+                        <span class="lbl">Файл к заявке</span>
+                        <div class="modal-add-file">
+                            <div class="add_file_wrap" data-item="container">
+                                <input type="text" name="fileDisplayName" class="input_text add_file1" disabled="disabled">
+                                <input type="hidden" name="fileName">
+                                <div class="upload_wrap">
+                                    <div class="upload">
+                                        <span>Прикрепить</span>
+                                        <input class="add_file" type="file" data-url="/ajax/upload/do.json" name="files[]" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span data-command="another-file">
+                        <span class="plus">+</span><a class="more_files" href="javascript:;">Добавить еще файл</a>
+                        </span>
+                        <div data-item="another-file" class="modal-add-file hide">
+                            <div class="add_file_wrap" data-item="container">
+                                <input type="text" name="fileDisplayName" class="input_text add_file1" disabled="disabled">
+                                <input type="hidden" name="fileName">
+                                <div class="upload_wrap">
+                                    <div class="upload">
+                                        <span>Прикрепить</span>
+                                        <input class="add_file" type="file"  name="files[]" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label data-item="container" class="textarea control-container">
+                            <span class="lbl">Комментарий</span>
+                            <textarea style="resize: vertical;" class="form-control comments_textarea" name="message"></textarea>
+                        </label>
+                        <p class="comment">*Поля обязательные для заполнения</p>
+                        <button data-pageview="/raschet" data-command="send" class="submit" type="button">Отправить</button>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--               END RASCHET-->
+<!--               Modal CALL-->
+<div class="modal fade in" role="dialog" id="callModal" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <span class="modal-title">Заказать звонок</span>
+            </div>
+            <div class="modal-body">
+                <div class="commonErrors"></div>
+                <form method="post" id="callbackForm">
+                    <fieldset>
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">ФИО*</span>
+                            <input type="text" class="form-control" name="name" maxlength="50">
+                            <span class="form-errors__block"></span>
+                        </label>
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">Телефон*</span>
+                            <input type="tel" class="form-control" name="phone" maxlength="21" value="" placeholder="+7">
+                            <span class="form-errors__block"></span>
+                        <input type="hidden" name="phone-clean" value="0"><input type="hidden" name="phone-clean-length" value="11"></label>
+                        <label data-item="container" class="textarea control-container">
+                            <span class="lbl">Комментарий</span>
+                            <textarea style="resize: vertical;" class="form-control comments_textarea" name="message"></textarea>
+                        </label>
+                        <p class="comment">*Поля обязательные для заполнения</p>
+                        <button data-pageview="/callback1" id="otpravka_zwonka" data-command="send" class="submit" type="button">Заказать звонок</button>
+                    
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--               END Modal CALL-->
+<!--               Modal LETTER-->
+<div class="modal fade in" role="dialog" id="letterModal" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <span class="modal-title">Написать письмо</span>
+            </div>
+            <div class="modal-body">
+                <div class="commonErrors"></div>
+                <form method="post" id="messageForm" novalidate="" onsubmit="return false">
+                    <fieldset>
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">Кому</span>
+                            <input class="ourMail" type="email" value="market@tbm.ru" disabled="disabled">
+                        </label>
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">От кого: Имя*</span>
+                            <input type="text" class="form-control" name="name">
+                            <span class="form-errors__block"></span>
+                        </label>
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">Электронная почта*</span>
+                            <input type="email" class="form-control" name="email">
+                            <span class="form-errors__block"></span>
+                        </label>
+                        <label data-item="container" class="control-container">
+                            <span class="lbl">Телефон</span>
+                            <input type="tel" class="form-control" name="phone" value="" placeholder="+7">
+                        <input type="hidden" name="phone-clean" value="0"><input type="hidden" name="phone-clean-length" value="11"></label>
+                        <label data-item="container" class="textarea control-container">
+                            <span class="lbl">Текст письма</span>
+                            <textarea style="resize: vertical;" class="form-control comments_textarea" name="message"></textarea>
+                        </label>
+
+                        <p class="comment">*Поля обязательные для заполнения</p>
+                        <button  class="submit" type="button">Отправить
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--               END Modal LETTER-->
+                </div>
+                <div class="registration_wrap">
+                    <button class="registraition-btn registraition-btn-width" data-toggle="modal" data-target="#myModalCF">
+                        <span class="people_icon registraition_icon"></span>
+                        <span class="text">Вход / Регистрация</span>
+                    </button>
+
+             <!--        Modal -->
+                    <div class="modal fade" id="myModalCF" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div data-command="close" class="modal-close"></div>  
+                                    <span class="enter_private_header_text">Вход</span>                            
+                                    <p>Для входа на сайт необходимо указать адрес<br>
+                                        эл. почты и пароль, указанные при регистрации.
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <form name="loginForm">
+                                        <fieldset>
+                                            <label data-item="container">
+                                                <span class="lbl">Адрес электронной почты</span>
+                                                <input type="email" class="form-control" id="registratio-email" name="email" required="">
+                                                <span data-out="error" class="form-error"></span>
+                                            </label>
+                                            <label data-item="container" class="textarea lbl_pass">
+                                                <span class="lbl">Пароль</span>
+                                                <input type="password" class="form-control" id="password" name="password" required="">
+                                                <span data-out="error" class="form-error"></span>
+                                                <span class="forget-pass-a">
+                                                    <a href="#">Забыли пароль?</a>
+                                                </span>
+                                            </label>
+                                            <button  type="submit" data-command="submit" class="enter-btn">
+                                                <span class="text-btn">Войти</span>
+                                            </button>
+                                            <a class="to_registration" href="#">Зарегистрироваться</a>
+                                        </fieldset>
+                                    </form>            
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="header__nav">
+   <div class="container">
+       <div class="row">
+            <a class="logo__wrap col-md-3" href="#">
+               <img  src="img/logo.png" alt="ТБМ Маркет">
+            </a>
+            <div class="search col-md-3">
+                <form id="topSearchForm">
+                    <div class="search_wrap">
+                        <input type="text" name="query" class="search-input" placeholder="Поиск товара" value="">
+                        <button type="submit" class="search-input-btn">
+                            <span class="search_icon search-input-btn_icon"></span>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+            <div class="group-right col-md-6">
+                <div class="working_hours col-md-6">  
+                    <div>
+              <a href="tel:84959954039" data-role="button" id="telefon" rel="external" class="working_hours-h"><i class="fa fa-phone" aria-hidden="true"></i>8 (495) 995 40 39</a>
+                    <span itemprop="openingHours" datetime="Пн.-Чт.: с 8:00 до 17:00">Пн.-Чт.: с 8:00 до 17:00</span>
+                    <span itemprop="openingHours" datetime="Пт.: с 8:00 до 16:00, Сб.: с 8:00 до 17:00">Пт.: с 8:00 до 16:00, Сб.: с 8:00 до 17:00</span>
+                    
+   
+                    </div>
+                    
+                </div>
+                <div class="basket col-md-6">
+                    <a href="http://www.old.tbmmarket.ru" class="old-site">Перейти на старую версию сайта</a>
+           
+                    <div class="basket_wrap">
+                        <button id="headerSelectedButton" class="basket-btn flag-btn" onclick="document.location='/user/selected/'">
+                            <span data-id="selected-count" class="flag_icon basket-btn_icon">0</span>
+                            <span class="text">Избранное</span>
+                        </button>
+                        <button id="headerCartButton" class="basket-btn shop-basket-btn" onclick="document.location='/user/cart/'">
+                            <span data-id="cart-count" class="shop_basket_icon basket-btn_icon">0</span>
+                            <span class="text">Корзина</span>
+                            <span class="price_basket" style="display: none;"><span class="price-block-span"><span data-id="cart-sum" class="price_basket_num price-number">0</span><span class="dime">.00</span></span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </div>
+</section>
+<section id="section05"  class="main__screen">
+    <div class="container">
+        <div class="row">
+            <div class="main__screen__left col-md-6 col-sm-8">
+                <span class="text1 text">Вентиляционные клапаны</span>
+                <span class="text2 text">Air box comfort</span>
+                <span class="text3 text">обеспечат приток <b>свежего воздуха</b> в помещение</span>
+                <a href="#" class="link__main__screen">Узнать больше</a>
+                <div class="main__screen__icons__wrp clearfix">
+                    <ul>
+                        <li><img src="img/ico-coin.png" class="main__screen__icon"><span class="text">Доступная цена</span></li>
+                        <li><img src="img/ico-driller.png" class="main__screen__icon icon__driller"><span class="text">Простой монтаж</span></li>
+                        <li><img src="img/ico-window.png" class="main__screen__icon"><span class="text"> 100% комфорт</span></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="main__screen__right col-md-6 col-sm-4">
+                <img src="img/product-img.png" alt="" class="main__screen__right__img">
+            </div>
+       </div>
+    </div>
+ <a class="go_to" href="#section06"><span></span></a>
+ 
+
+</section>
+<section id="section06"  class="problems">
+    <img src="img/bg-problems.png" alt="" class="bg__problems">
+    <div class="container">
+        <div class="row">
+            <div class="problems__close col-md-4">
+               <ul class="clerfix">
+                   <li><span class="probl__name">Душно в помещении</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__co"></span></li>
+                   <li><span class="probl__name">Появляется плесень</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__dirt"></span></li>
+                   <li><span class="probl__name">Конденсат</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__drop"></span></li>
+                   <li><span class="probl__name">Грибок</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__mush"></span></li>
+               </ul>
+                
+            </div>
+            <div class="problems__types col-md-4">
+<!--               <img src="img/probl-window.png" alt="" class="problems__types__bg">-->
+                <span>Типичные <b>проблемы</b> пластиковых окон</span> 
+            </div>
+             <div class="problems__open col-md-4">
+                 <ul class="clearfix">
+                   <li><span class="icon__problem__open icon__probl__snow"></span><span class="figure__right"></span><span class="probl__name">Холодно в комнате</span></li>
+                   <li><span class="icon__problem__open icon__probl__short"></span><span class="figure__right"></span><span class="probl__name">Пыль и мусор</span></li>
+                   <li><span class="icon__problem__open icon__probl__window"></span><span class="figure__right"></span><span class="probl__name">Сквозняки</span></li>
+                   <li><span class="icon__problem__open icon__probl__alarm"></span><span class="figure__right"></span><span class="probl__name">шум</span></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+  <a class="go_to" href="#section07"><span></span></a>
+</section>
+<section  class="problems2">
+<!--    <img src="img/bg-problems.png" alt="" class="bg__problems">-->
+    <div class="container">
+        <div class="row">
+           <div class="problems__types col-md-12">
+<!--               <img src="img/probl-window.png" alt="" class="problems__types__bg">-->
+                <span>Типичные <b>проблемы</b> пластиковых окон</span> 
+            </div>
+            <div class="problems__close col-md-4">
+               <ul class="clerfix">
+                   <li><span class="probl__name">Душно в помещении</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__co"></span></li>
+                   <li><span class="probl__name">Появляется плесень</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__dirt"></span></li>
+                   <li><span class="probl__name">Конденсат</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__drop"></span></li>
+                   <li><span class="probl__name">Грибок</span><span class="figure__left"></span><span class="icon__problem__close icon__probl__mush"></span></li>
+               </ul>
+                
+            </div>
+            
+             <div class="problems__open col-md-4">
+                 <ul class="clearfix">
+                   <li><span class="icon__problem__open icon__probl__snow"></span><span class="figure__right"></span><span class="probl__name">Холодно в комнате</span></li>
+                   <li><span class="icon__problem__open icon__probl__short"></span><span class="figure__right"></span><span class="probl__name">Пыль и мусор</span></li>
+                   <li><span class="icon__problem__open icon__probl__window"></span><span class="figure__right"></span><span class="probl__name">Сквозняки</span></li>
+                   <li><span class="icon__problem__open icon__probl__alarm"></span><span class="figure__right"></span><span class="probl__name">шум</span></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+  <a class="go_to" href="#section07"><span></span></a>
+</section>
+
+<section id="section07" class="question">
+<!--    <img src="img/question-bg-img.jpg" alt="" class="bg__question">-->
+    <div class="container">
+        <div class="row">
+           <div class="question__block" data-aos="fade-right">
+            <div class="question__img__wrap">
+                <img src="img/question-img-wom.png" alt="" class="question__img">
+            </div>
+            <div class="question__text">
+                <span class="quest__text quest__text1">Как же сохранить все</span>
+                <span class="quest__text quest__text2">преимущества</span>
+                <span class="quest__text quest__text3">пластиковых окон и обеспечить себе и близким</span>
+                <span class="quest__text quest__text4">уютную атмосферу в доме?</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <a class="go_to" href="#section08"><span></span></a>
+</section>
+<section id="section08"  class="setup">
+    <div class="left__bg"></div>
+    <div class="right__top__bg"></div>
+    <div class="right__bg"></div>
+<!--    <img src="img/question-bg-img.jpg" alt="" class="bg__question">-->
+    <div class="container">
+        <div class="row">
+           <div class="icon-wrap"><img src="img/ico-kite-setup.png" alt="" class="setup__icon"></div>
+           <div class="title__setup">
+               <span class="title_ch1 title_ch">Установите приточные клапаны </span>
+               <span class="title_ch2 title_ch ">Air Box Comfort </span>
+               <span class="title_ch3 title_ch">для естественной вентиляции помещения</span> 
+           </div>
+           <div class="setup__stage__wrap clearfix">
+               <div class="ipad__wrap"><img src="img/ipad-setup.png" alt="" class="ipad__img"></div>
+               <div class="setup__stage">
+               <span class="titl__setup">Легкий монтаж</span>
+               <div class="stage" id="stage1" 
+                    data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="300"
+                    data-aos-duration="1500">
+                    <span class="num__stage clearfix">1</span> 
+                    <span class="stage__text">На пластиковое окно <b>монтируем </b> приточный вентиляционный клапан AirBox Comfort</span>
+                </div>
+                <div class="stage" id="stage2" 
+                    data-aos="fade-left"
+                    data-aos-anchor="#stage1"
+                   
+                    data-aos-duration="1800">
+                    <span class="num__stage clearfix">2</span> 
+                    <span class="stage__text">Воздух <b>попадает в помещение</b> через канал между рамой и створкой со специальным уплотнителем</span>
+                </div>
+                <div class="stage" id="stage3"
+                    data-aos="fade-left"
+                    data-aos-anchor="#stage2"
+                    
+                    data-aos-duration="1900">
+                    <span class="num__stage clearfix">3</span>
+                    <span class="stage__text"><b>Наслаждайтесь</b> тишиной и комфортом, а квартира <b>не будет</b> терять тепло,как при постоянном проветривании.</span>
+                </div>
+           </div>
+           </div>
+          <a href="#" class="link__buy">Купить Air Box Comfort</a>  
+        </div>
+    </div>
+    <a class="go_to" href="#section09"><span></span></a>
+</section>
+<section id="section09"  class="advantages">
+<!--<img src="img/bg-cloud-adv2.jpg" alt="" class="bg__adv">-->
+    <div class="container">
+        <div class="row">
+           <div class="icon_wrap__adv"><img src="img/icon-thumbs-up.png" alt="" class="adv__icon"></div>
+           <div class="title__advantages">
+               <span class="title_adv1 title_adv">Преимущества</span>
+               <span class="title_adv2 title_adv">Вентиляционных клапанов</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">1</span>
+               <span class="adv__text"><b>Не нужно</b> открывать окно на проветривание</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">2</span>
+               <span class="adv__text"><b>Устанавливается</b> на любой пластиковый профиль</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">3</span>
+               <span class="adv__text"><b>Позволяет </b>регулировать объем подаваемого воздуха</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">4</span>
+               <span class="adv__text"><b>Простой монтаж </b>вручную без фрезеровки и профиля</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">5</span>
+               <span class="adv__text"><b>Защищает </b>от образования плесени и грибков</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">6</span>
+               <span class="adv__text"><b>Исключает </b>возможность обледенения устройства</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">7</span>
+               <span class="adv__text"><b>Помогает </b>избежать появления сквозняков в квартире</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">8</span>
+               <span class="adv__text"><b>Обеспечивает </b>комфортные условия в помещении</span>
+           </div>
+           <div class="advanced__block advanced__block col-md-4 col-sm-8" data-aos="zoom-in">
+               <span class="adv__number">9</span>
+               <span class="adv__text"><b>препятствует </b>появлению конденсата на стекле</span>
+           </div>
+           
+        </div>
+    </div>
+    <a class="go_to" href="#section10"><span></span></a>
+</section>
+<section id="section10"  class="products">
+    <div class="container">
+        <div class="row">
+           <div class="icon_wrap__prod"><img src="img/icon-prod.png" alt="" class="prod__icon"></div>
+           <div class="title__products">
+               <span class="title_pr">Купить air Box</span>
+           </div>
+           <div class="products__wrap products__wrap1 clearfix">
+               <div class="prod__img__wrap col-md-7 col-sm-5 ">
+                   <img src="img/prod1.jpg" alt="" class="img__prod">
+               </div>
+               <div class="about__products__block col-md-5 col-sm-7">
+                   <span class="prod__name">Air-box comfort</span>
+                   <span class="prod__model">Ral9010 (Белый)</span>
+                   <span class="prod__cena"> 599.98 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                   <span class="prod__text__about">
+                       <p>Клапан Airbox Comfort служит для приточной вентиляции помещений. Принцип действия - движение воздуха в результате разницы давлений между помещением и окружающей средой. Монтаж клапана осуществляется но створку.</p><p>Организация воздухообмена в помещениях происходит в соответствии с требованиями "Рекомендации по организации воздухообмена в квартирах многоэтажного жилого дома"</p>
+                   </span>
+                   <div class="form__wrap">
+                   <form action="#">
+                      <div class="select__wrap">
+                          
+                       <select name="select-kol" id="sKol">
+                             <option> 1 </option>
+                             <option> 2 </option>
+                             <option> 3 </option>
+                             <option> 4 </option>
+                       </select>
+                       <i class="fa fa-sort" aria-hidden="true"></i>
+                       </div>
+                           <button class="prod__basket">В корзину</button>
+                           <a href="#" class="prod__information">Полная информация</a>
+                   </form>
+                  </div>
+               </div>
+           </div>
+           <div class="products__wrap products__wrap2 clearfix">
+              <div class="prod__img__wrap col-md-7 col-sm-5 ">
+                   <img src="img/prod2.jpg" alt="" class="img__prod">
+               </div>
+               <div class="about__products__block col-md-5 col-sm-7 ">
+                   <span class="prod__name">Air-box comfort</span>
+                   <span class="prod__model">Ral9010 (Коричневый)</span>
+                   <span class="prod__cena"> 600.04 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                   <span class="prod__text__about">
+                       <p>Клапан Airbox Comfort служит для приточной вентиляции помещений. Принцип действия - движение воздуха в результате разницы давлений между помещением и окружающей средой. Монтаж клапана осуществляется но створку.</p><p>Организация воздухообмена в помещениях происходит в соответствии с требованиями "Рекомендации по организации воздухообмена в квартирах многоэтажного жилого дома"</p>
+                   </span>
+                    <div class="form__wrap">
+                   <form action="#">
+                      <div class="select__wrap">
+                          
+                       <select name="select-kol" id="sKol">
+                             <option> 1 </option>
+                             <option> 2 </option>
+                             <option> 3 </option>
+                             <option> 4 </option>
+                       </select>
+                       <i class="fa fa-sort" aria-hidden="true"></i>
+                       </div>
+                       <button class="prod__basket">В корзину</button> 
+                       <a href="#" class="prod__information">Полная информация</a>
+                   </form>
+                   </div>
+                   
+               </div>
+               
+           </div>
+            
+        </div>
+    </div>
+    <a class="go_to" href="#section11"><span></span></a>
+</section>
+<section id="section11"  class="video">
+    <div class="left__bg__video"></div>
+    <div class="right__bg__video"></div>
+    <div class="container">
+        <div class="row">
+           <div class="icon-wrap-video"><img src="img/install-icon-tools.png" alt="" class="video__icon"></div>
+           <div class="title__video">
+               <span class="title_v1 title_v">Видеоинструкция</span>
+               <span class="title_v2 title_v ">по монтажу</span> 
+           </div>
+           <div class="video__wrap clearfix">
+               <div class="mac__wrap"><img src="img/install-mac.png" alt="" class="mac__img"></div>
+               <div class="install__wrap">
+                   <span class="install__text">Установить вентиляциционный клапан</span> <span class="install__txt1">Air box comfort</span> <span class="install__text3"> очень просто! Вам</span> <span class="install__txt2">не потребуется</span><span class="install__text3"> специальный инструмент или особая подготовка</span>
+                   <span class="quest__install">Возникли вопросы?</span>
+                   <div class="btn__quest__wrap" data-aos="fade-down">
+                        <button class="btn__quest">Получить консультацию специалиста</button>
+                   </div>
+               </div>
+           </div> 
+        </div>
+    </div>
+</section>
+<section  class="reviews">
+<!--    <img src="img/rev-bg.png" alt="" class="bg__rev">-->
+    <div class="container">
+        <div class="row">
+           <div class="icon-wrap-rev"><img src="img/icon-rev.png" alt="" class="rev__icon"></div>
+           <div class="title__rev">
+               <span class="title_rev1 title_rev">Отзывы</span>
+               <span class="title_rev2 title_rev ">покупателей</span> 
+           </div>
+           <div class="carousel__wrapper">
+           <div class="bg__carousel"></div>
+           <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+     <div class="rev__wrapper">
+             <div class="rev__header clearfix">
+               <div class="user__wrp">
+                    <span class="name">Павел Демьянов</span>
+                    <span class="profes">дизайнер</span>
+                </div>
+                <span class="stars clearfix">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                </span>
+             </div>
+             <span class="rev__text">
+                 <p>Рекомендую, комнаты сразу "задышали". Только не стоит забывать про просвет между полом и дверью (межкомнатные двери 1-1,5 см.,санузловые 2 см.). Т.к. если закрыть дверь, клапан бесполезен. Это простейшая физика))</p>
+                 <p>Должна хорошо работать вентиляция. Если нет оттока. не будет и притока воздуха, и наоборот))</p>
+                 <p>Покупайте и не сомневайтесь.</p>
+             </span>
+          </div>
+    </div>
+
+    <div class="item">
+     <div class="rev__wrapper">
+             <div class="rev__header clearfix">
+               <div class="user__wrp">
+                    <span class="name">Павел Демьянов</span>
+                    <span class="profes">дизайнер</span>
+                </div>
+                <span class="stars clearfix">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                </span>
+             </div>
+             <span class="rev__text">
+                 <p>Рекомендую, комнаты сразу "задышали". Только не стоит забывать про просвет между полом и дверью (межкомнатные двери 1-1,5 см.,санузловые 2 см.). Т.к. если закрыть дверь, клапан бесполезен. Это простейшая физика))</p>
+                 <p>Должна хорошо работать вентиляция. Если нет оттока. не будет и притока воздуха, и наоборот))</p>
+                 <p>Покупайте и не сомневайтесь.</p>
+             </span>
+          </div>
+    </div>
+
+    <div class="item">
+     <div class="rev__wrapper">
+             <div class="rev__header clearfix">
+               <div class="user__wrp">
+                    <span class="name">Павел Демьянов</span>
+                    <span class="profes">дизайнер</span>
+                </div>
+                <span class="stars clearfix">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                </span>
+             </div>
+             <span class="rev__text">
+                 <p>Рекомендую, комнаты сразу "задышали". Только не стоит забывать про просвет между полом и дверью (межкомнатные двери 1-1,5 см.,санузловые 2 см.). Т.к. если закрыть дверь, клапан бесполезен. Это простейшая физика))</p>
+                 <p>Должна хорошо работать вентиляция. Если нет оттока. не будет и притока воздуха, и наоборот))</p>
+                 <p>Покупайте и не сомневайтесь.</p>
+             </span>
+          </div>
+    </div>
+     <div class="item">
+       <div class="rev__wrapper">
+             <div class="rev__header clearfix">
+               <div class="user__wrp">
+                    <span class="name">Павел Демьянов</span>
+                    <span class="profes">дизайнер</span>
+                </div>
+                <span class="stars clearfix">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                </span>
+             </div>
+             <span class="rev__text">
+                 <p>Рекомендую, комнаты сразу "задышали". Только не стоит забывать про просвет между полом и дверью (межкомнатные двери 1-1,5 см.,санузловые 2 см.). Т.к. если закрыть дверь, клапан бесполезен. Это простейшая физика))</p>
+                 <p>Должна хорошо работать вентиляция. Если нет оттока. не будет и притока воздуха, и наоборот))</p>
+                 <p>Покупайте и не сомневайтесь.</p>
+             </span>
+          </div>
+    </div>
+     <div class="item">
+         <div class="rev__wrapper">
+             <div class="rev__header clearfix">
+               <div class="user__wrp">
+                    <span class="name">Павел Демьянов</span>
+                    <span class="profes">дизайнер</span>
+                </div>
+                <span class="stars clearfix">
+                    <ul>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                </span>
+             </div>
+             <span class="rev__text">
+                 <p>Рекомендую, комнаты сразу "задышали". Только не стоит забывать про просвет между полом и дверью (межкомнатные двери 1-1,5 см.,санузловые 2 см.). Т.к. если закрыть дверь, клапан бесполезен. Это простейшая физика))</p>
+                 <p>Должна хорошо работать вентиляция. Если нет оттока. не будет и притока воздуха, и наоборот))</p>
+                 <p>Покупайте и не сомневайтесь.</p>
+             </span>
+          </div>
+      </div>
+    </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    <span class="sr-only">Next</span>
+  </a>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+</div>
+       </div>
+        </div>
+    </div>
+</section>
+<section  class="health">
+    <div class="container">
+        <div class="row">
+            <div class="health__text__wrap col-md-6 col-sm-7">
+                <span class="health__text1">Подумайте о</span>
+                <span class="health__text2">здоровье и комфорте</span>
+                <span class="health__text3">закажите приточный вентиляционный клапан</span>
+                <span class="health__text4">AIR BOX COMFORT!</span>
+                <div class="health__link__wrap">
+                    <a href="" class="link__health">Заказать AIR BOX COMFORT</a>
+                </div>
+            </div>
+            <div class="health__img__wrap col-md-6 col-sm-5">
+                <img src="img/product-health.png" alt="" class="health__prod">
+            </div>
+            <div class="health__cloud"></div>
+        </div>
+    </div>
+</section>
+<section  class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__logo__social col-md-4 col-sm-6 col-xs-12">
+                <a href="#" class="footer__logo__link">
+                    <img src="img/footer-logo.png" alt="" class="footer__logo__img">
+                </a>
+                <div class="footer__social__wrap">
+                    <span class="name__social">Мы в соцсетях</span>
+                    <ul>
+                        <li><a href="#" class="footer__link__soc"><img src="img/vk_logo_icon.png" alt="" class="footer__soc__icons"></a></li>
+                        <li><a href="#" class="footer__link__soc"><img src="img/face_icon.png" alt="" class="footer__soc__icons"></a></li>
+                        <li><a href="#" class="footer__link__soc"><img src="img/ig_icon.png" alt="" class="footer__soc__icons"></a></li>
+                        <li><a href="#" class="footer__link__soc"><img src="img/ok_icon.png" alt="" class="footer__soc__icons"></a></li>
+                    </ul>
+                </div>
+                <a href="#" class="footer__link__catalog">Перейти в каталог</a>
+            </div>
+            <div class="footer__communications col-md-3 col-sm-6 col-xs-12">
+                <span class="h__footer__communications">Как связаться с нами?</span>
+                <span class="communic__name">E-mail</span>
+                <span class="communic__s">market@tbm.ru</span>
+                <span class="communic__name">Москва</span>
+                <span class="communic__s">8 (495) 995 40 39 </span>
+                <button class="footer__btn__call" data-toggle="modal" data-target="#callModal">Заказать звонок</button>
+            </div>
+            <div class="footer__questions col-md-5 col-sm-12 col-xs-12">
+                <span class="h__footer__quest">Остались вопросы?</span>
+                <form action="">
+                    <input type="text" class="footer__name inp_f" placeholder="Имя">
+                    <input type="text" class="footer__tel inp_f" placeholder="Телефон">
+                    <textarea name="" id="f_txt" class="footer__txt" placeholder="Ваш вопрос" ></textarea>
+                    <div class="form__footer__wrp">
+                        <button class="footer__btn__quest">Задать вопрос</button>
+                        <div class="agree__wrap">
+                            <span class="agree__text">Нажимая на эту кнопку,вы даете согласие</span>
+                            <a href="#" class="agree__link">на обработку своих персональных данных</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="author__section col-md-12 col-sm-12 col-xs-12">
+                <span class="author__footer">Разработка и продвижение сайтов <a href="#" class="footer__link__author">Mnogolend</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
