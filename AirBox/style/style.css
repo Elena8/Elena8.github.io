@@ -2087,6 +2087,9 @@ padding-top: 140px;
 }
 
 @media only screen and (max-width: 1199px) {
+    .right__bg {
+        display: none;
+    }
     .problems2 {
     display: block;
 }
@@ -2467,6 +2470,9 @@ padding-top: 140px;
 @media only screen and (max-width: 767px) {
 .problems2__close {
     padding: 50px 31% 47px 5%;
+}
+    .problems2__open {
+    padding: 50px 5% 47px 31%;
 }
     .nav__delivery {
         width: 100%;
