@@ -969,14 +969,10 @@ label {
 }
 /* SCROLL     */
 
-section {
-  position: relative;
-  width: 100%;
-/*  height: 100%;*/
-}
+
 
 .go_to {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 50%;
   z-index: 2;
@@ -989,31 +985,9 @@ section {
   text-decoration: none;
   transition: opacity .3s;
 }
-.go_to:hover {
-  opacity: .5;
-}
-/*
-#down {
- width:60px;
-height:60px;
-position:fixed;
-bottom:50px;
-left:90px;
-background-color:#000000;
-border-radius:30px; 
-}
-*/
-/*
-#section05 a span
-#section06 a span,
-#section07 a span,
-#section08 a span,
-#section09 a span,
-#section10 a span
-{
-*/
+
 .go_to span {
-    position:absolute;
+    position:fixed;
     bottom: 20px;
     left: 50%;
     width: 24px;
@@ -1199,7 +1173,62 @@ border-radius:30px;
     letter-spacing: -1px;
     line-height: 1.15;
 }
+/*------------------PROBLEMS 2----------------------*/
 
+.problems2__types {
+    text-align: center;
+    padding-top: 66px;
+}
+.problems2__types span {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1.15;
+}
+.problems2__close {
+        background: url(../img/bg-img-close.png) top right no-repeat;
+    background-size: cover;
+    padding-left: 5%;
+    padding: 30px 25px 30px 5%;
+}
+.problems2__open ul,
+.problems2__close ul {
+    list-style: none;
+/*    padding-left: 0;*/
+    
+}
+.problems2__close div {
+    
+    float: right;
+}
+.problems2__open div {
+    float: left;
+}
+
+.problems2__close .probl__name,
+.problems2__open .probl__name {
+   display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    vertical-align: top;
+    border-bottom: 2px solid #ace0f2;
+    left: 22px;
+    margin-top: 1px;
+    letter-spacing: -0.2px;
+}
+.problems2__open .probl__name {
+    left:-23px;
+}
+.problems2__open {
+    background: url(../img/bg-img-open.png) top left no-repeat;
+    background-size: cover;
+    padding: 30px 5% 30px;
+    
+}
 /*-------------- QUESTION -----------------*/
 .question {
 /*    padding: 49px 0;*/
@@ -2287,6 +2316,12 @@ padding-top: 140px;
 }
 
 @media only screen and (max-width: 992px) {
+    .problems2__close {
+    padding: 50px 44% 47px 5%;
+}
+    .problems2__open {
+        padding: 50px 5% 47px 44%;
+    }
     .call__login .callback-dropdown-menu,
     .registraition-btn {
         float:right;
@@ -2430,17 +2465,9 @@ padding-top: 140px;
     }
 }
 @media only screen and (max-width: 767px) {
-/*
-    .collapse {
-        visibility: visible;
-    }
-*/
-/*
-    .menu-btn {
-        display: none;
-    }
-    
-*/
+.problems2__close {
+    padding: 50px 31% 47px 5%;
+}
     .nav__delivery {
         width: 100%;
     padding: 0;
