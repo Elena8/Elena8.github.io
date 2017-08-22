@@ -2111,12 +2111,16 @@ label {
 
 
     }
+    .bg__carousel {
+        left: 28%;
+    }
 }
 @media only screen and (max-width: 1199px) {
     .location .location-dropdown-menu {
         width: 900px;
     }
-    .right__bg {
+    .right__bg,
+    .right__bg__video {
         display: none;
     }
     .problems2 {
