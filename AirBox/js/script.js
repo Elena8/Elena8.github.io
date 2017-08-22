@@ -2,8 +2,8 @@ jQuery(document).ready(function(){
     
      //scroll animation
   AOS.init({
-    duration: 1500,
-    disable: 'mobile'
+    duration: 1500
+//    disable: 'mobile'
   });
     
     $(".go_to").hide();
