@@ -2120,9 +2120,11 @@ label {
         width: 900px;
     }
     .right__bg,
-    .right__bg__video {
+    .right__bg__video,
+    .health__cloud {
         display: none;
     }
+    
     .problems2 {
         display: block;
     }
